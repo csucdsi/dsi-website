@@ -1,0 +1,41 @@
+project:
+  type: website
+
+website:
+  title: "Data Science at Chico State"
+  navbar:
+    logo: img/DSI_Avatar_03.ico
+
+    left:
+      - text: News & Events
+        href: index.qmd
+      - text: Student Projects
+        href: projects.qmd
+      - text: NorCal DataFest!
+        href: https://norcaldatafest.netlify.app/
+    right:
+      - text: Mission
+        href: https://www.csuchico.edu/datascience/mission.shtml
+      - icon: github
+        menu:
+          - text: CSUC DSI
+            url: https://github.com/csucdsi
+          - text: Math 490
+            url: https://github.com/DATA-490
+
+format:
+  html:
+    highlight-style: a11y
+    theme:
+      light: Chico_Light.scss
+      dark: Chico_Dark.scss
+    highlight: pygments
+    toc: true
+    code-copy: true
+    code-overflow: scroll
+    callout-icon: false
+
+execute:
+  freeze: auto
+  echo: false
+  warning: false
