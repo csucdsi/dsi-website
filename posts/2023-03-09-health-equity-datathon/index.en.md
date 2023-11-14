@@ -6,7 +6,7 @@ slug: []
 categories:
   - event
 tags: [equity, data, event, team, competition]
-banner: img/banners/HED23_banner.png
+image: HED23_banner.png
 ---
 
 To learn more and secure your spot \>\> [CIVIC-HACKERS.ORG/HED23](CIVIC-HACKERS.ORG/HED23)

@@ -7,7 +7,6 @@ categories:
   - event
 tags:
   - DataFest
-banner: img/banners/datafest_logo_sacstate.png
 ---
 
 ![](datafest_logo_sacstate_small.png)
