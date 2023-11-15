@@ -10,7 +10,6 @@ categories:
   - learning
 tags: [classes, certificate, masters, learning]
 image: DSI_Hexbin_sticker_03.png
-draft: TRUE
 ---
 
 ![](DSI_Logo_Horizontal_Small.png)
@@ -27,12 +26,6 @@ Apologies for the radio silence since Spring, it's been pretty busy over here. W
     -   See their [capstone project repositories here](https://github.com/DATA-490).
 -   Current enrollment is at 7 students: 2 from Business Information Systems, 1 from Statistics, 3 from Computer Science and 1 from Organizational Communication. *Side note: We had 2 from Statistics, but a conflict with the upper division Linear Algebra (MATH 435) class that is critical for graduate study conflicts with CSCI 211 this spring, so choices had to be made.*
 
-#### Looking Forward
-
--   Modified pre-reqs for Intro to Data Science to make entry to the field easier
--   Considering adding **Math 185: Data Science for Social Good** as an entry level requirement
--   Expanded elective courses to include new BSIS classes, and upper division research methods courses in fields such as Agriculture, Political Science and Criminal Justice
--   Reviewing the program requirements for streamlined 4+1 bended BS+MS program
 
 ## Community Coding is back in person!
 
@@ -46,7 +39,7 @@ Got data and working on analysis? Got questions on using R, Python or other prog
 
 -   [**Math 131: Introduction to Python**](https://datascience.csuchico.edu/posts/2023-11-13-intro-python-spring-2024/index.en) We are excited to offer, for the first time, Introduction to Python as MATH 131 in spring 2024. Like the sister course [MATH 130 (Intro to R)](https://norcalbiostat.github.io/MATH130/), this will be a 1 unit, credit / no credit course that only lasts the first 5 weeks of the semester. Tu/Th 2-3:15pm.
 
--   [**Math 589: Field Experience in Statistics and Data Science**](https://www.dataanalytics4fanh.science/internship/) This paid internship was launched as part of [Project DA-FANH](https://www.dataanalytics4fanh.science/), a USDA grant funded project aiming to build pathway for students of color in the intersection of Data Science/Data Analytics within food, agriculture, natural resources and human sciences (FANH) careers. Carrying 3 units, this experience could count towards the DS Certificate, or perhaps your major while providing an authentic career experience using data to make decisions.
+- **Math 185: Data Science for Social Good**. Students practice collecting and wrangling data into a usable form, visualizing large data sets to discover patterns, representing data in a meaningful way, exploring varying interpretations of the data and results, and discussing potentials for misuse and abuse. This course promotes critical reflection on the ethical, social, cultural, and political dimensions of data as well as providing direct hands on experience with both spreadsheets, and the programming language R. This Freshmen level class carries GE B4 credit. 
 
 -   **Math 500: Data Science Seminar**. This 1 unit seminar explores current and relevant applications and implementations of data science and analytical methods and tools in the field. Seminars will include external and student-led presentations and hands-on tutorials. Emphasis is placed on students sharing and getting feedback on an approved capstone or master's project
 
@@ -123,3 +116,22 @@ At the conclusion of the competition, each team will have 5 minutes and 2 slides
 This event is now rotating across the North State. Last year it was held at Sacramento State, with participants from both Chico and Sac State participating. This year we hope to draw teams from Sonoma and Cal Poly Humboldt as well.
 
 Keep an eye on our [website](https://norcaldatafest.netlify.app/) for more information and registration information. 
+
+
+## Internships
+
+Our partnership with the [Center for Healthy Communities'](https://www.csuchico.edu/chc/) Research & Evaluation team has been growing! Every semester we have placed 1-2 students from Statistics or other data related majors with them in paid internships, many of which have resulted in longer term paid positions. Some students even stayed on after graduation until finding a full time position or starting graduate school. 
+
+Our partnership with [Project DA-FANH](https://www.dataanalytics4fanh.science/) allowed for the expansion of this internship to other organizations on campus including the Center for Regenerative Agriculture and Resilient Systems, Institutional Research and Strategic Analytics, and the Louis Stokes Alilance for Minority Participation. You can read about these partners on the project [webpage](https://www.dataanalytics4fanh.science/internship/). 
+
+With one more fall cohort of internships, this USDA grant funded project aiming to build pathway for students of color in the intersection of Data Science/Data Analytics within food, agriculture, natural resources and human sciences (FANH) careers. Carrying 3 units, this experience could count towards the DS Certificate, or perhaps your major while providing an authentic career experience using data to make decisions.
+
+# More in the works
+
+DS at Chico is really ramping up. Here are some tidbits to look forward to. 
+
+-   Updating the Certificate to make entry to the field easier, such as adding **Math 185: Data Science for Social Good** and expanding elective courses to include new BSIS classes, and upper division research methods courses in fields such as Agriculture, Political Science and Criminal Justice
+-   Reviewing the program requirements for streamlined 4+1 blended BS+MS program
+- Seeking funding to support a **Wildcat Data Hub** that would provide assistance with data related tasks such as collection, wrangling/cleaning, visualization and analysis, as well as offer drop-in 1:1 consulting for students and faculty. By offering access to skilled student research assistants, this hub will not only enhance the quality and efficiency of research across disciplines but also create valuable, paid experiential learning opportunities for students.
+
+
