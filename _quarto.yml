@@ -36,6 +36,6 @@ format:
     callout-icon: false
 
 execute:
-  freeze: auto
+  freeze: true
   echo: false
   warning: false

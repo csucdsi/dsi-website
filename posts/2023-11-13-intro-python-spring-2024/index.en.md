@@ -9,7 +9,7 @@ categories:
   - data
   - learning
 tags: [classes, python, data, learning]
-banner: img/banners/python-logo-only.svg
+image: python-logo-only.svg
 ---
 
 ![](python-logo-master-v3-TM.png)
