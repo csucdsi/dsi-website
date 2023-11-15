@@ -14,7 +14,7 @@ image: DSI_Hexbin_sticker_03.png
 
 ![](DSI_Logo_Horizontal_Small.png)
 
-# It's been a busy year (or two)!
+**It's been a busy year (or two)!** 
 
 Apologies for the radio silence since Spring, it's been pretty busy over here. We have lots of updates to share with you, so what better time to do an end of the year "State of Data Science" wrap up.
 
@@ -133,5 +133,6 @@ DS at Chico is really ramping up. Here are some tidbits to look forward to.
 -   Updating the Certificate to make entry to the field easier, such as adding **Math 185: Data Science for Social Good** and expanding elective courses to include new BSIS classes, and upper division research methods courses in fields such as Agriculture, Political Science and Criminal Justice
 -   Reviewing the program requirements for streamlined 4+1 blended BS+MS program
 - Seeking funding to support a **Wildcat Data Hub** that would provide assistance with data related tasks such as collection, wrangling/cleaning, visualization and analysis, as well as offer drop-in 1:1 consulting for students and faculty. By offering access to skilled student research assistants, this hub will not only enhance the quality and efficiency of research across disciplines but also create valuable, paid experiential learning opportunities for students.
+
 
 
