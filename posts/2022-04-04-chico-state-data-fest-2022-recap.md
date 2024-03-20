@@ -1,14 +1,13 @@
 ---
 title: Chico State Data Fest 2022 Recap
-author: Faith F.
+author: Emma Mitchell
 date: '2022-04-04'
-slug: []
-categories: []
+categories: [DataFest]
 tags: []
 banner: img/dfest22.png
 ---
 
- On April 1-3rd, Chico State University hosted the ASA DataFest 2022. DataFest is an event hosted by the Chico State Data Initiative (DSI), organized by Doctor Robin Donatello. Students were presented with undisclosed data on Friday and then worked through the weekend to gain the best insights into the confidential, real-world data sets. After long nights and early mornings, teams presented their findings to the experienced panel of judges for a chance at prizes and certificates. The event is part of the university’s efforts to provide training, expand collaboration and encourage new research in the field of Data Science and Data Analytics.
+On April 1-3rd, Chico State University hosted the ASA DataFest 2022. DataFest is an event hosted by the Chico State Data Initiative (DSI), organized by Doctor Robin Donatello. Students were presented with undisclosed data on Friday and then worked through the weekend to gain the best insights into the confidential, real-world data sets. After long nights and early mornings, teams presented their findings to the experienced panel of judges for a chance at prizes and certificates. The event is part of the university’s efforts to provide training, expand collaboration and encourage new research in the field of Data Science and Data Analytics.
 
 Kick-off began at 5:30 p.m. on Friday, April 1st, when teams from both Sacramento State and Chico State arrived to unravel their first data sets. 29 students made up the six different teams, with majors from all across the board. This year we had representation from Engineering (6.8%), Statistics (17%), Mathematics (13.7%), Computer Science (51.7%), Natural Sciences (Biology) (3.4%), Social Sciences (3.4%) and Business Information Systems (3.4%). The contestants’ experience in programming varied greatly, with some who were very well-versed and others who were just beginners.
 

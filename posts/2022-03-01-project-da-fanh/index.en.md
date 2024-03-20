@@ -1,6 +1,6 @@
 ---
 title: New grant program supports Hispanic students in Data Science enabled USDA career paths.
-author: Faith F.
+author: Emma Mitchell
 date: '2022-03-01'
 slug: [announce-dafanh]
 categories: []
