@@ -3,9 +3,9 @@ title: New grant program supports Hispanic students in Data Science enabled USDA
 author: Emma Mitchell
 date: '2022-03-01'
 slug: [announce-dafanh]
-categories: []
+categories: [collaboration]
 tags: []
-banner: img/banners/dafanh-logo.png
+banner: DA-FANH-Logo.png
 ---
 
 

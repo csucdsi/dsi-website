@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2024-03-15-datafest-2024/index.en.html",
       "/posts/2023-11-15-state-of-ds-f23/index.en.html",
       "/posts/2023-11-13-intro-python-spring-2024/index.en.html",
       "/posts/2023-03-09-health-equity-datathon/index.en.html",
@@ -12,8 +13,8 @@
       "/posts/2022-09-01-student-post-intro-sql/index.en.html",
       "/posts/2022-08-01-guest-post-underlying-geometry-of-data/index.en.html",
       "/posts/2022-07-17-fall-22-guest-post-series/index.en.html",
-      "/posts/2022-04-04-chico-state-data-fest-2022-recap.html",
-      "/posts/2022-03-01-project-da-fanh/index.en.html",
+      "/posts/2022-04-04-chico-state-data-fest-2022-recap/index.html",
+      "/posts/2022-03-01-project-da-fanh/index.html",
       "/posts/2021-09-23-fall-data-challenge/index.en.html",
       "/posts/2021-09-20-tapply.html",
       "/posts/2021-05-12-dasg.html",
