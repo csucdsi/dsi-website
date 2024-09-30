@@ -1,12 +1,14 @@
 ---
-title: "News and Events"
+title: "Bridging Innovation and Opportunity"
+image: "https://github.com/jadeynryan/orcas/blob/master/inst/img/leaflet_screenshot.png?raw=true"
+image-alt: "TODO : Check this alt image."
 listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+  contents: index
+  type: grid
+  grid-columns: 2
+  sort: false
+  fields: 
+    - title
+    - description
+    - image
 ---

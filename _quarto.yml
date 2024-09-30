@@ -8,7 +8,7 @@ website:
 
     left:
       - text: News & Events
-        href: index.qmd
+        href: news.qmd
       - text: Student Projects
         href: projects.qmd
       - text: NorCal DataFest!
@@ -22,6 +22,12 @@ website:
             url: https://github.com/csucdsi
           - text: Math 490
             url: https://github.com/DATA-490
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - text: "HIGHLIGHTS"
+        contents: "tests/*.qmd"
 
 format:
   html:
@@ -34,6 +40,7 @@ format:
     code-copy: true
     code-overflow: scroll
     callout-icon: false
+    page-layout: full
 
 execute:
   freeze: true

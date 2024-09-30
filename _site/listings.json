@@ -2,6 +2,21 @@
   {
     "listing": "/index.html",
     "items": [
+      "/index/01-WDH-details.html",
+      "/index/02-DA-FANH-details.html",
+      "/index/03-Community-Coding-details.html",
+      "/index/04-Projects-details.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/2024-09-19-test-project/index.en.html"
+    ]
+  },
+  {
+    "listing": "/news.html",
+    "items": [
       "/posts/2024-03-15-datafest-2024/index.en.html",
       "/posts/2023-11-15-state-of-ds-f23/index.en.html",
       "/posts/2023-11-13-intro-python-spring-2024/index.en.html",
@@ -76,9 +91,5 @@
       "/posts/2017-03-24-DSI-kickoff.html",
       "/posts/2017-03-24-install_R_homebrew.html"
     ]
-  },
-  {
-    "listing": "/projects.html",
-    "items": []
   }
 ]

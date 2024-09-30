@@ -1,5 +1,6 @@
 ---
 title: "About Us"
+sidebar: false
 image: img/DSI_Avatar_03.png
 about:
   template: jolla

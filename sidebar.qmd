@@ -1,0 +1,8 @@
+## Sidebar Header
+
+- Link 1
+- Link 2
+- Some additional content here
+
+```{r}
+# Optional code block for analysis in the sidebar
