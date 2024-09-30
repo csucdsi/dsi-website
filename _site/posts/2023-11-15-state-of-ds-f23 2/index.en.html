@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Robin Donatello">
+<meta name="dcterms.date" content="2023-11-15">
+
+<title>State of Data Science at Chico State - Fall 23 – Data Science at Chico State</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/DSI_Avatar_03.ico" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Data Science at Chico State</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">News &amp; Events</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects.html"> 
+<span class="menu-text">Student Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../communitycoding.html"> 
+<span class="menu-text">Community Coding</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://norcaldatafest.netlify.app/"> 
+<span class="menu-text">NorCal DataFest!</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.csuchico.edu/datascience/mission.shtml"> 
+<span class="menu-text">Mission</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-github">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/csucdsi">
+ <span class="dropdown-text">CSUC DSI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/DATA-490">
+ <span class="dropdown-text">Math 490</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">State of Data Science at Chico State - Fall 23</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">classes</div>
+                <div class="quarto-category">certificate</div>
+                <div class="quarto-category">masters</div>
+                <div class="quarto-category">learning</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Robin Donatello </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 15, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#undergraduate-certificate-in-data-science" id="toc-undergraduate-certificate-in-data-science" class="nav-link active" data-scroll-target="#undergraduate-certificate-in-data-science">Undergraduate Certificate in Data Science</a></li>
+  <li><a href="#community-coding-is-back-in-person" id="toc-community-coding-is-back-in-person" class="nav-link" data-scroll-target="#community-coding-is-back-in-person">Community Coding is back in person!</a></li>
+  <li><a href="#new-courses" id="toc-new-courses" class="nav-link" data-scroll-target="#new-courses">New Courses</a></li>
+  <li><a href="#new-masters-in-data-science-and-analytics" id="toc-new-masters-in-data-science-and-analytics" class="nav-link" data-scroll-target="#new-masters-in-data-science-and-analytics">New Masters in Data Science and Analytics</a></li>
+  <li><a href="#data-science-club" id="toc-data-science-club" class="nav-link" data-scroll-target="#data-science-club">Data Science Club</a></li>
+  <li><a href="#math-stats-discord-server" id="toc-math-stats-discord-server" class="nav-link" data-scroll-target="#math-stats-discord-server">Math &amp; Stats Discord Server</a></li>
+  <li><a href="#norcal-datafest-2024---save-the-date" id="toc-norcal-datafest-2024---save-the-date" class="nav-link" data-scroll-target="#norcal-datafest-2024---save-the-date">NorCal DataFest 2024 - Save the date</a></li>
+  <li><a href="#internships" id="toc-internships" class="nav-link" data-scroll-target="#internships">Internships</a></li>
+  <li><a href="#more-in-the-works" id="toc-more-in-the-works" class="nav-link" data-scroll-target="#more-in-the-works">More in the works</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p><img src="DSI_Logo_Horizontal_Small.png" class="img-fluid"></p>
+<p><strong>It’s been a busy year (or two)!</strong></p>
+<p>Apologies for the radio silence since Spring, it’s been pretty busy over here. We have lots of updates to share with you, so what better time to do an end of the year “State of Data Science” wrap up.</p>
+<section id="undergraduate-certificate-in-data-science" class="level2">
+<h2 class="anchored" data-anchor-id="undergraduate-certificate-in-data-science">Undergraduate Certificate in Data Science</h2>
+<p><img src="ds-flowchart.jpg" class="img-fluid"></p>
+<ul>
+<li>We saw 4 more students graduate with this <a href="https://catalog.csuchico.edu/colleges-departments/college-natural-sciences/mathematics/data-science-certificate/">certificate</a> in Spring 2023, bringing our total to 19 since the start of the program in 2019.
+<ul>
+<li>See their <a href="https://github.com/DATA-490">capstone project repositories here</a>.</li>
+</ul></li>
+<li>Current enrollment is at 7 students: 2 from Business Information Systems, 1 from Statistics, 3 from Computer Science and 1 from Organizational Communication. <em>Side note: We had 2 from Statistics, but a conflict with the upper division Linear Algebra (MATH 435) class that is critical for graduate study conflicts with CSCI 211 this spring, so choices had to be made.</em></li>
+</ul>
+</section>
+<section id="community-coding-is-back-in-person" class="level2">
+<h2 class="anchored" data-anchor-id="community-coding-is-back-in-person">Community Coding is back in person!</h2>
+<p>Got data and working on analysis? Got questions on using R, Python or other programming languages? Great way to dedicate time to working on that project you’ve been meaning to get around to. Come and hang out with other coders in a welcoming and supportive environment.</p>
+<p><img src="cc-logos.png" class="img-fluid" width="631"></p>
+<blockquote class="blockquote">
+<p>While most of the <a href="https://www.csuchico.edu/datascience/community-coding.shtml">posted hours</a> are still individual faculty’s office hours, we are striving to rebuild the drop-in open working environment. Wednesdays this Fall are either in Sylvesters, or in the BSS Student Success Center. Both collaborative working spaces.</p>
+</blockquote>
+</section>
+<section id="new-courses" class="level2">
+<h2 class="anchored" data-anchor-id="new-courses">New Courses</h2>
+<ul>
+<li><p><a href="https://datascience.csuchico.edu/posts/2023-11-13-intro-python-spring-2024/index.en"><strong>Math 131: Introduction to Python</strong></a> We are excited to offer, for the first time, Introduction to Python as MATH 131 in spring 2024. Like the sister course <a href="https://norcalbiostat.github.io/MATH130/">MATH 130 (Intro to R)</a>, this will be a 1 unit, credit / no credit course that only lasts the first 5 weeks of the semester. Tu/Th 2-3:15pm.</p></li>
+<li><p><strong>Math 185: Data Science for Social Good</strong>. Students practice collecting and wrangling data into a usable form, visualizing large data sets to discover patterns, representing data in a meaningful way, exploring varying interpretations of the data and results, and discussing potentials for misuse and abuse. This course promotes critical reflection on the ethical, social, cultural, and political dimensions of data as well as providing direct hands on experience with both spreadsheets, and the programming language R. This Freshmen level class carries GE B4 credit.</p></li>
+<li><p><strong>Math 500: Data Science Seminar</strong>. This 1 unit seminar explores current and relevant applications and implementations of data science and analytical methods and tools in the field. Seminars will include external and student-led presentations and hands-on tutorials. Emphasis is placed on students sharing and getting feedback on an approved capstone or master’s project</p></li>
+<li><p><strong>CSCI 644: DevOps Engineering</strong> This course introduces students to distributed system administration skills, setting up distributed computation environments, cloud virtualization technologies, and setting up mobile, web, machine learning, artificial intelligence, and data science pipelines.</p></li>
+</ul>
+<p>The <a href="https://www.csuchico.edu/cob/">College of Business</a> has been expanding their data analytical course offerings. Primarily using SQL, Tableau and Python.</p>
+<ul>
+<li>MINS 235: Database Design. SQL is essential for everyone!</li>
+<li>BSIS 308: Decision Analysis for Business. Code-less decision making with data at the core</li>
+<li>BSIS 421: Business Analytics with Python</li>
+<li>BSIS 460: Data Analytics. SQL + Analytical algorithms = essential skills for Data Scientists</li>
+<li>Starting Fall 2024 the MBA - Enterprise Information Systems option will be reconfigured to be an option in Business Analytics.</li>
+</ul>
+</section>
+<section id="new-masters-in-data-science-and-analytics" class="level2">
+<h2 class="anchored" data-anchor-id="new-masters-in-data-science-and-analytics">New Masters in Data Science and Analytics</h2>
+<p>We have launched a new <a href="https://www.csuchico.edu/math/degrees/msdsa.shtml">Masters in Data Science and Analytics</a> 🎉and are accepting applications for Fall 2024</p>
+<p>Similar to the Undergraduate Certificate, this program blends the strengths of both the Mathematics and Computer Science departments to create a program that provides both breadth and depth.</p>
+<p>The <strong>Applied Analytics</strong> track can be thought of as an applied track, where the focus is for students to collaborate closely with researchers or companies in a domain specific field. Students in this track could be employed in positions where they are the “data person” on a team. This track may appeal more to students from a broad range of majors and domain interests such as nutrition, agriculture, medicine, bioinformatics, journalism, political science and even the digital humanities.</p>
+<p>The <strong>Machine Learning</strong> track provides deeper and more technical training on the mathematical and computational underpinnings of the statistical, machine learning and artificial intelligence models being used. This track may appeal to students with backgrounds in areas such as mathematics, statistics, or computer science. Leveraging their more technical backgrounds students in this track will learn how to develop, implement, and integrate algorithmic solutions using massive amounts of data based on artificial intelligence, machine learning, or statistical analysis methods.</p>
+<p>Students in the Undergraduate Certificate are strong candidates for acceptance and can even transfer some classes such as MATH/CSCI 485 and MATH 456 over to the Masters program, potentially reducing their time to complete the degree.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Admissions Requirements
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Calculus II</li>
+<li>Upper Division Applied Statistics (E.g. Math 314 or 315)</li>
+<li>Introductory level in both R (Math 130 or equivalent) and Python (MATH 131 or equivalent)</li>
+</ul>
+<p>Students wishing to pursue the Machine Learning track must also meet the following requirements before formally declaring the ML track.</p>
+<ul>
+<li>Calculus III-Multivariable Calculus (MATH 220 or equivalent)</li>
+<li>Linear Algebra (MATH 235 or equivalent)</li>
+<li>Programming &amp; Algorithms I (CSCI 111 or equivalent)</li>
+<li>Programming &amp; Algorithms II- Advanced Object-Oriented Programming (CSCI 211 or equivalent)</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="data-science-club" class="level2">
+<h2 class="anchored" data-anchor-id="data-science-club">Data Science Club</h2>
+<p>With it’s inaugural meeting this Fall, a <a href="https://dsclub.carrd.co/">Data Science Club</a> has finally been created at Chico State! The Data Science Club strives to help students learn, discuss, and participate in data science. Ever want to join a club at the ground level and get to be foundational in how it grows? Now is your time. You can find more information on their website, or in their channel on the Math &amp; Stats Discord Server.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="DataScienceClubLogo.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="232"></p>
+</figure>
+</div>
+</section>
+<section id="math-stats-discord-server" class="level2">
+<h2 class="anchored" data-anchor-id="math-stats-discord-server">Math &amp; Stats Discord Server</h2>
+<p>Did I mention a <a href="https://discord.gg/xCQTAgu8bE">Math &amp; Stats Discord server</a>? Sometime in 2020, or 2021 I joined the very popular student-run Discord server for the Computer Science Department. Student moderated and managed, I found their structure of having channels for each class that were permanent, students and faculty join join and leave as needed very helpful.</p>
+<p>Coming from a place of using Slack as the back channel communication platform for my classes, and feeling like I had to juggle multiple workspaces per class I joined up with a few other faculty and with the help of a student created a space for multiple Math classes that could be added or dropped as needed.</p>
+<p>It is not as chatty or robust as the CS server (not surprisingly), but we hope as more students join and use this space to work on their math and stats classes we can recruit more faculty to join, or at least announce it as a space for their students to collaborate.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+LFM - Student mod
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We’re currently looking for new student moderators to help disseminate announcements, cross post cool info from the CS discord, create new channels such as Alumni &amp; Profs and find ways to engage our community!</p>
+</div>
+</div>
+</section>
+<section id="norcal-datafest-2024---save-the-date" class="level2">
+<h2 class="anchored" data-anchor-id="norcal-datafest-2024---save-the-date">NorCal DataFest 2024 - Save the date</h2>
+<p><img src="datafest_logo_Chico_Red.png" class="img-fluid"></p>
+<p>Save the Date - April 12-14th at Chico State is the site of the next <a href="https://norcaldatafest.netlify.app/">NorCal DataFest</a></p>
+<p>The American Statistical Association’s DataFest, founded at UCLA in 2011, is a 48-hour data analysis competition in which undergraduate students from various majors get to work in teams on large, complex, and real-world data. The data is kept secret until opening of the event on Friday evening and teams present their findings to a panel of judges on Sunday afternoon. Students explore, analyze, and visualize the data to discover insights. No prior knowledge of programming or data visualization is necessary! Sometimes having a dedicated “storyteller” on the team is the key to victory.</p>
+<p>Previous years’ data sets have included crime data from the LAPD, dating data from eHarmony, and energy use data from GridPoint. This year’s data set will be revealed at the opening of the event on Friday evening.</p>
+<p>At the conclusion of the competition, each team will have 5 minutes and 2 slides to make a presentation to a panel of judges. Judges will select teams to win prizes for areas such as “Best Insight”, “Best Visualization”, and “Best use of External Data”.</p>
+<p>This event is now rotating across the North State. Last year it was held at Sacramento State, with participants from both Chico and Sac State participating. This year we hope to draw teams from Sonoma and Cal Poly Humboldt as well.</p>
+<p>Keep an eye on our <a href="https://norcaldatafest.netlify.app/">website</a> for more information and registration information.</p>
+</section>
+<section id="internships" class="level2">
+<h2 class="anchored" data-anchor-id="internships">Internships</h2>
+<p>Our partnership with the <a href="https://www.csuchico.edu/chc/">Center for Healthy Communities’</a> Research &amp; Evaluation team has been growing! Every semester we have placed 1-2 students from Statistics or other data related majors with them in paid internships, many of which have resulted in longer term paid positions. Some students even stayed on after graduation until finding a full time position or starting graduate school.</p>
+<p>Our partnership with <a href="https://www.dataanalytics4fanh.science/">Project DA-FANH</a> allowed for the expansion of this internship to other organizations on campus including the Center for Regenerative Agriculture and Resilient Systems, Institutional Research and Strategic Analytics, and the Louis Stokes Alilance for Minority Participation. You can read about these partners on the project <a href="https://www.dataanalytics4fanh.science/internship/">webpage</a>.</p>
+<p>With one more fall cohort of internships, this USDA grant funded project aiming to build pathway for students of color in the intersection of Data Science/Data Analytics within food, agriculture, natural resources and human sciences (FANH) careers. Carrying 3 units, this experience could count towards the DS Certificate, or perhaps your major while providing an authentic career experience using data to make decisions.</p>
+</section>
+<section id="more-in-the-works" class="level1">
+<h1>More in the works</h1>
+<p>DS at Chico is really ramping up. Here are some tidbits to look forward to.</p>
+<ul>
+<li>Updating the Certificate to make entry to the field easier, such as adding <strong>Math 185: Data Science for Social Good</strong> and expanding elective courses to include new BSIS classes, and upper division research methods courses in fields such as Agriculture, Political Science and Criminal Justice</li>
+<li>Reviewing the program requirements for streamlined 4+1 blended BS+MS program</li>
+<li>Seeking funding to support a <strong>Wildcat Data Hub</strong> that would provide assistance with data related tasks such as collection, wrangling/cleaning, visualization and analysis, as well as offer drop-in 1:1 consulting for students and faculty. By offering access to skilled student research assistants, this hub will not only enhance the quality and efficiency of research across disciplines but also create valuable, paid experiential learning opportunities for students.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
