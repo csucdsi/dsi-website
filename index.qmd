@@ -1,12 +1,38 @@
 ---
-title: "News and Events"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: "Home"
+about:
+  template: jolla
 ---
+
+<div style="background-color: #9D2235; padding: 30px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px;">
+
+  <!-- Left Section: Welcome Text -->
+  <div style="flex: 1; color: white; padding-right: 20px;">
+    ## Welcome,
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+
+  <!-- Right Section: Placeholder for Image/Slider -->
+  <div style="flex: 1; display: flex; justify-content: center;">
+    <img src="img/placeholder-image.png" alt="Welcome Image" style="max-width: 80%; border: 5px solid #FFFFFF;">
+  </div>
+
+</div>
+
+<!-- Highlights Section -->
+## Highlights
+
+<div style="display: flex; gap: 20px;">
+  <div style="flex: 1;">
+    **9/19/2024**  
+    [DataFest 2024 @Chico April 12-14](#)
+  </div>
+  <div style="flex: 1;">
+    **9/24/2024**  
+    Lorem ipsum event description.
+  </div>
+</div>
+
+<!-- Add additional sections like Bridging Innovation here -->
+

@@ -5,23 +5,44 @@ website:
   title: "Data Science at Chico State"
   navbar:
     logo: img/DSI_Avatar_03.ico
-
+    #Adding About page and DataHub to Navbar 
     left:
-      - text: News & Events
-        href: index.qmd
-      - text: Student Projects
+
+      - text: About
+        href: about.qmd
+        
+      - text: DataHub
+      #need to update this to another page
+        href: about.qmd
+
+      - text: Projects
         href: projects.qmd
+
+      - text: News & Events
+        href: news.qmd
+     
+      - text: Community Coding
+        href: communitycoding.qmd
+
+
       - text: NorCal DataFest!
         href: https://norcaldatafest.netlify.app/
+      
+     
+    # Add a search icon to the right side of the navbar
     right:
-      - text: Mission
-        href: https://www.csuchico.edu/datascience/mission.shtml
-      - icon: github
-        menu:
-          - text: CSUC DSI
-            url: https://github.com/csucdsi
-          - text: Math 490
-            url: https://github.com/DATA-490
+      - icon: search
+
+      # Commented out "Mission" link and GitHub menu
+      # - text: Mission
+      #   href: https://www.csuchico.edu/datascience/mission.shtml
+      # - icon: github
+      #   menu:
+      #     - text: CSUC DSI
+      #       url: https://github.com/csucdsi
+      #     - text: Math 490
+      #       url: https://github.com/DATA-490
+include-after-body: _footer.html
 
 format:
   html:

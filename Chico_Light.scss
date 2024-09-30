@@ -5,7 +5,52 @@ $body-color:            #000000 !default;
 $body-bg:       #FFFFFF !default;
 $primary:   #9D2235 !default;
 
+
 /*-- scss:rules --*/
 h1, h2, h3, h4, h5, h6 {
   text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
 }
+
+
+/* Change the background color of the navbar */
+nav.navbar {
+  background-color: #7b5858; /* Replace with your desired color */
+}
+
+nav.navbar a {
+  color: #000000 !important; /* Temporary color for visibility */
+}
+/* Change the hover color of the navbar items */
+nav.navbar a:hover {
+  
+  padding: 20px; /* Adjust padding to create space inside the border */
+  background-color:#9D2235;
+  color: #ffffff !important;
+}
+
+/* Make sure the search icon is visible */
+.navbar .navbar-right .search-icon {
+  display: inline-block; /* Ensure it is displayed */
+  color: inherit;        /* Make sure the color is correct */
+  font-size: 1.2rem;     /* Adjust the size if needed */
+  padding: 5px;
+}
+
+footer {
+  width: 100%; /* Ensure full width */
+  position: fixed; /* Fixes the footer at the bottom of the page */
+  bottom: 0;
+  left: 0;
+  background-color: #9D2235; /* Set the desired background color */
+  color: white; /* Set the text color */
+  text-align: center; /* Center the text */
+  padding: 20px; /* Adjust padding as needed */
+  z-index: 1000; /* Makes sure the footer stays on top of other elements */
+}
+
+/* Add padding to the body to prevent content from overlapping with the fixed footer */
+body {
+  padding-bottom: 60px; /* Adjust the padding to match the footer's height */
+}
+
+
