@@ -1,14 +1,70 @@
----
-title: "Bridging Innovation and Opportunity"
-image: "https://github.com/jadeynryan/orcas/blob/master/inst/img/leaflet_screenshot.png?raw=true"
-image-alt: "TODO : Check this alt image."
-listing:
-  contents: index
-  type: grid
-  grid-columns: 2
-  sort: false
-  fields: 
-    - title
-    - description
-    - image
----
+:::: {.column-layout}
+
+::: {.left-column}
+
+# Welcome to Our Website
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+:::
+
+::: {.right-column}
+![](images/hero.jpg){style="max-width: 100%; height: auto;"}
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="25%"}
+
+{{< include sidebar.qmd >}}
+:::
+
+::: {.column width="75%"}
+
+{{< include home_main.qmd >}}
+:::
+
+::::
+
+<style>
+.columns {
+  display: flex;
+}
+.column {
+  padding: 10px;
+}
+.column:first-child {
+  border-right: 1px solid #ccc; /* Add a vertical line */
+}
+.column-layout {
+  display: flex;
+  width: 100%;
+  background-color: #9D2235FF;
+  margin: 0;
+}
+.left-column {
+  width: 50%;
+  background-color: #9D2235FF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right-column {
+  width: 50%;
+  background-color: #9D2235FF;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left-column h1 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.left-column p {
+  color: white;
+}
+</style>

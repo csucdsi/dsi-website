@@ -1,0 +1,54 @@
+<style>
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.project-item {
+  border: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.project-item img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+
+## Bridging Innovation and Opportunity
+
+<div class="project-grid">
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| results: asis
+
+library(yaml)
+
+files <- list.files("index", full.names = TRUE, pattern = "\\.qmd$")
+
+read_yaml_front_matter <- function(file) {
+  lines <- readLines(file)
+  yaml_end <- which(lines == "---")[2]
+  yaml_content <- paste(lines[2:(yaml_end-1)], collapse = "\n")
+  yaml::yaml.load(yaml_content)
+}
+
+for (file in files) {
+  yaml_data <- read_yaml_front_matter(file)
+  
+  cat("<div class='project-item'>")
+  if (!is.null(yaml_data$image)) {
+    cat("<img src='", yaml_data$image, "' alt='", yaml_data$title, "'>")
+  }
+  cat("<h3>", yaml_data$title, "</h3>")
+  cat("<p>", yaml_data$description, "</p>")
+  if (!is.null(yaml_data$categories)) {
+    cat("<p><strong>Categories:</strong> ", paste(yaml_data$categories, collapse = ", "), "</p>")
+  }
+  cat("</div>")
+}
+```
+</div>

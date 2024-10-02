@@ -30,9 +30,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Bridging Innovation and Opportunity",
+    "title": "Welcome to Our Website",
     "section": "",
-    "text": "WildCat DataHub\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDA-FANH\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\n\n\n\n\n\n\n\n\nCommunity Coding\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\n\n\n\n\n\n\n\n\nProjects\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   },
   {
     "objectID": "posts/2017-03-24-DSI-kickoff.html",
@@ -1090,5 +1090,47 @@
     "title": "DSI Kick Off Meeting (& quick intro to R)",
     "section": "",
     "text": "Logistics\n\nDate: Friday March 24, 2017\nTime: 3-4:30 pm\nLocation: MLIB 045\n\nIn this kick off session we’ll discuss what Data Science is, how the Data Science Initiative at Chico State is rising to meet the challenge of preparing and training a much needed computational science workforce, and how you can be a part of it. Then we’ll explore who our Data Science community is using R.\nWorkshop Details & Materials"
+  },
+  {
+    "objectID": "home_main.html",
+    "href": "home_main.html",
+    "title": "Data Science at Chico State",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "objectID": "home_main.html#bridging-innovation-and-opportunity",
+    "href": "home_main.html#bridging-innovation-and-opportunity",
+    "title": "Data Science at Chico State",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "objectID": "index.html#highlights",
+    "href": "index.html#highlights",
+    "title": "Welcome to Our Website",
+    "section": "HIGHLIGHTS",
+    "text": "HIGHLIGHTS\n\n\n\n 2024-03-15  DataFest 2024 @Chico April 12-14 \n\n\n 2023-11-15  State of Data Science at Chico State - Fall 23 \n\n\n 2023-11-13  Announcing Introduction to Python MATH 131 in Spring 2024 \n\n\n 2023-03-09  Health Equity Datathon \n\n\n 2023-03-03  DataFest 2023 April 14-16- Registration now open! \n\n\n 2022-11-27  Exploring Tech Justice: The Just Data Lab \n\n\n 2022-11-27  Research Statistician vacancies at the Bureau of Labor Statistics \n\n\n 2022-08-01  August Student post: Underlying geometry of data \n\n\n 2022-07-17  Fall 22 Guest post series \n\n\n 2022-04-04  Chico State Data Fest 2022 Recap"
+  },
+  {
+    "objectID": "index.html#bridging-innovation-and-opportunity",
+    "href": "index.html#bridging-innovation-and-opportunity",
+    "title": "Welcome to Our Website",
+    "section": "Bridging Innovation and Opportunity",
+    "text": "Bridging Innovation and Opportunity\n\n\n\n\nWildCat DataHub\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\nDA-FANH\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\nCommunity Coding\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\nProjects\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "objectID": "index.html#highlights-1",
+    "href": "index.html#highlights-1",
+    "title": "Data Science at Chico State",
+    "section": "HIGHLIGHTS",
+    "text": "HIGHLIGHTS\n\n\n\n 2024-03-15  DataFest 2024 @Chico April 12-14 \n\n\n 2023-11-15  State of Data Science at Chico State - Fall 23 \n\n\n 2023-11-13  Announcing Introduction to Python MATH 131 in Spring 2024 \n\n\n 2023-03-09  Health Equity Datathon \n\n\n 2023-03-03  DataFest 2023 April 14-16- Registration now open! \n\n\n 2022-11-27  Exploring Tech Justice: The Just Data Lab \n\n\n 2022-11-27  Research Statistician vacancies at the Bureau of Labor Statistics \n\n\n 2022-08-01  August Student post: Underlying geometry of data \n\n\n 2022-07-17  Fall 22 Guest post series \n\n\n 2022-04-04  Chico State Data Fest 2022 Recap"
+  },
+  {
+    "objectID": "index.html#bridging-innovation-and-opportunity-1",
+    "href": "index.html#bridging-innovation-and-opportunity-1",
+    "title": "Data Science at Chico State",
+    "section": "Bridging Innovation and Opportunity",
+    "text": "Bridging Innovation and Opportunity\n\n\n\n\nWildCat DataHub\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\nDA-FANH\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\nCommunity Coding\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n\n\n\n\nProjects\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   }
 ]

@@ -1,0 +1,14 @@
+{
+  "hash": "e8a9c86f3f91041d97f2c9622e228eae",
+  "result": {
+    "markdown": "<style>\n.project-grid {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 20px;\n}\n.project-item {\n  border: none;\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n}\n.project-item img {\n  max-width: 100%;\n  height: auto;\n}\n</style>\n\n## Bridging Innovation and Opportunity\n\n<div class=\"project-grid\">\n\n<div class='project-item'><img src=' https://github.com/jadeynryan/orcas/blob/master/inst/img/leaflet_screenshot.png?raw=true ' alt=' WildCat DataHub '><h3> WildCat DataHub </h3><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div><div class='project-item'><img src=' https://github.com/jadeynryan/orcas/blob/master/inst/img/leaflet_screenshot.png?raw=true ' alt=' DA-FANH '><h3> DA-FANH </h3><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div><div class='project-item'><img src=' https://github.com/jadeynryan/orcas/blob/master/inst/img/leaflet_screenshot.png?raw=true ' alt=' Community Coding '><h3> Community Coding </h3><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div><div class='project-item'><img src=' https://github.com/jadeynryan/orcas/blob/master/inst/img/leaflet_screenshot.png?raw=true ' alt=' Projects '><h3> Projects </h3><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div>\n\n</div>",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

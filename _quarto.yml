@@ -22,13 +22,7 @@ website:
             url: https://github.com/csucdsi
           - text: Math 490
             url: https://github.com/DATA-490
-  sidebar:
-    style: "docked"
-    search: true
-    contents:
-      - text: "HIGHLIGHTS"
-        contents: "tests/*.qmd"
-
+        
 format:
   html:
     highlight-style: a11y
