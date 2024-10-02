@@ -10,4 +10,4 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
-#this is a test
+Welcome to the Chico State Data Science Initiative Project Showcase! This page highlights the innovative work of our talented data science students and interns. Explore a collection of diverse projects spanning academic research, community collaborations, and real-world applications, demonstrating the impact and creativity of our budding data professionals.
