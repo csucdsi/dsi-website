@@ -1,4 +1,4 @@
-## HIGHLIGHTS
+<h2 style="color: #9d2235;">HIGHLIGHTS</h2>
 
 <div class="highlights-container">
 <ul>
@@ -37,6 +37,7 @@ read_yaml_front_matter <- function(file) {
   })
 }
 
+# Function to create list items for highlights
 print_yaml_as_html <- function(file) {
   yaml_data <- read_yaml_front_matter(file)
   if (!is.null(yaml_data) && !is.null(yaml_data$date) && !is.null(yaml_data$title)) {
@@ -53,6 +54,7 @@ print_yaml_as_html <- function(file) {
   return(FALSE)
 }
 
+# Selecting only top 10 elements
 count <- 0
 for (item in all_items) {
   if (count >= 10) break
@@ -113,16 +115,17 @@ for (item in all_items) {
       line-height: 1.4;
     }
 
+    /* Remove bottom border for the last item */
     .highlights-container li:last-child {
-      border-bottom: none; /* Remove bottom border for the last item */
+      border-bottom: none; 
     }
 
     .text {
-      text-decoration: none; /* Removes the underline */
-      color: #006BA6FF !important; /* Changes the color to light blue */
+      text-decoration: none;
+      color: #006BA6FF !important;
     }
 
     .text:hover {
-      color: blue !important; /* Optional: Changes the color on hover */
+      color: blue !important;
     }
   </style>

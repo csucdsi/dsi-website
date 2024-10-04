@@ -1,6 +1,7 @@
 ---
 title: "Projects"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-image: "https://github.com/jadeynryan/orcas/blob/master/inst/img/leaflet_screenshot.png?raw=true"
-image-alt: "TODO : Check this alt image"
+description: "Showcasing the variety of innovative projects led by students and faculty, this section highlights the power of creativity and technical expertise. Whether it's app development, research, or sustainability initiatives, these projects drive progress and provide real-world impact."
+image: "images/projects.jpg"
+image-alt: "Data Hub Projects"
+link: "/projects.html"
 ---

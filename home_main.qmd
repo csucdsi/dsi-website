@@ -14,6 +14,9 @@
   max-width: 100%;
   height: auto;
 }
+.no-decoration-link {
+    text-decoration: none;
+}
 </style>
 
 ## Bridging Innovation and Opportunity
@@ -43,11 +46,23 @@ for (file in files) {
   if (!is.null(yaml_data$image)) {
     cat("<img src='", yaml_data$image, "' alt='", yaml_data$title, "'>")
   }
-  cat("<h3>", yaml_data$title, "</h3>")
+  
+  cat("<h3><a href=", 
+    shQuote(yaml_data$link, type="cmd"), 
+    "class=\"no-decoration-link\">", 
+    gsub("&", "&amp;", 
+         gsub("<", "&lt;", 
+              gsub(">", "&gt;", 
+                   gsub("'", "&#39;", 
+                        gsub("\"", "&quot;", 
+                             yaml_data$title
+                        )
+                   )
+              )
+         )
+    ), 
+    "</a></h3>")
   cat("<p>", yaml_data$description, "</p>")
-  if (!is.null(yaml_data$categories)) {
-    cat("<p><strong>Categories:</strong> ", paste(yaml_data$categories, collapse = ", "), "</p>")
-  }
   cat("</div>")
 }
 ```
