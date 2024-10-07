@@ -15,12 +15,12 @@ The Data Science Initiative at Chico State aims to be a hub of Data Science info
 
 :::: {.columns}
 
-::: {.column width="25%"}
+::: {.column}
 
 {{< include sidebar.qmd >}}
 :::
 
-::: {.column width="75%"}
+::: {.column}
 
 {{< include home_main.qmd >}}
 :::
@@ -35,7 +35,11 @@ The Data Science Initiative at Chico State aims to be a hub of Data Science info
   padding: 10px;
 }
 .column:first-child {
-  border-right: 1px solid #ccc; /* Add a vertical line */
+    width: 25%;
+    border-right: 1px solid #ccc;
+}
+.column:last-child {
+    width: 75%;
 }
 .column-layout {
   display: flex;
@@ -66,5 +70,23 @@ The Data Science Initiative at Chico State aims to be a hub of Data Science info
 }
 .left-column p {
   color: white;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    .column-layout {
+        flex-direction: column;
+    }
+    .left-column, .right-column {
+        width: 100%;
+    }
+      .columns {
+          display: flex !important;
+          flex-direction: column-reverse;
+      }
+    .column:first-child, .column:last-child {
+        width: 100%;
+        border-right: none;
+    }
 }
 </style>

@@ -149,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="columns">
-<div class="column" style="width:25%;">
+<div class="column">
 <h2 style="color: #9d2235;" class="anchored">
 HIGHLIGHTS
 </h2>
@@ -227,8 +227,41 @@ HIGHLIGHTS
     .text:hover {
       color: blue !important;
     }
+
+    /* Responsive styles */
+  @media (max-width: 768px) {
+    .highlights-container .date {
+      font-size: 12px; /* Slightly smaller font on mobile */
+    }
+    
+    .highlights-container .text {
+      font-size: 14px; /* Adjust font size for readability on mobile */
+    }
+    
+    .highlights-container li {
+      padding-bottom: 8px; /* Less padding for mobile */
+    }
+  }
+
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 20px; /* Adjust HIGHLIGHTS title size on smaller screens */
+    }
+    
+    .highlights-container .date {
+      font-size: 11px; /* Further reduce font size for very small screens */
+    }
+    
+    .highlights-container .text {
+      font-size: 13px; /* Further adjust font size for very small screens */
+    }
+    
+    .highlights-container li {
+      padding-bottom: 6px; /* Even less padding for very small screens */
+    }
+  }
   </style>
-</div><div class="column" style="width:75%;">
+</div><div class="column">
 <style>
 .project-grid {
   display: grid;
@@ -247,6 +280,35 @@ HIGHLIGHTS
 }
 .no-decoration-link {
     text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    gap: 15px; /* Slightly smaller gap on mobile */
+  }
+  .project-item {
+    padding: 8px; /* Less padding on mobile */
+  }
+  .project-item h3 {
+    font-size: 18px; /* Adjust heading size for mobile */
+  }
+  .project-item p {
+    font-size: 14px; /* Adjust paragraph text size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-grid {
+    gap: 10px; /* Even smaller gap on very small screens */
+  }
+  .project-item h3 {
+    font-size: 16px; /* Further reduce heading size */
+  }
+  .project-item p {
+    font-size: 13px; /* Further reduce paragraph text size */
+  }
 }
 </style>
 <section id="bridging-innovation-and-opportunity" class="level2">
@@ -300,7 +362,11 @@ Showcasing the variety of innovative projects led by students and faculty, this 
   padding: 10px;
 }
 .column:first-child {
-  border-right: 1px solid #ccc; /* Add a vertical line */
+    width: 25%;
+    border-right: 1px solid #ccc;
+}
+.column:last-child {
+    width: 75%;
 }
 .column-layout {
   display: flex;
@@ -331,6 +397,24 @@ Showcasing the variety of innovative projects led by students and faculty, this 
 }
 .left-column p {
   color: white;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    .column-layout {
+        flex-direction: column;
+    }
+    .left-column, .right-column {
+        width: 100%;
+    }
+      .columns {
+          display: flex !important;
+          flex-direction: column-reverse;
+      }
+    .column:first-child, .column:last-child {
+        width: 100%;
+        border-right: none;
+    }
 }
 </style>
 

@@ -164,6 +164,35 @@ ul.task-list li input[type="checkbox"] {
 .no-decoration-link {
     text-decoration: none;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    gap: 15px; /* Slightly smaller gap on mobile */
+  }
+  .project-item {
+    padding: 8px; /* Less padding on mobile */
+  }
+  .project-item h3 {
+    font-size: 18px; /* Adjust heading size for mobile */
+  }
+  .project-item p {
+    font-size: 14px; /* Adjust paragraph text size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-grid {
+    gap: 10px; /* Even smaller gap on very small screens */
+  }
+  .project-item h3 {
+    font-size: 16px; /* Further reduce heading size */
+  }
+  .project-item p {
+    font-size: 13px; /* Further reduce paragraph text size */
+  }
+}
 </style>
 <section id="bridging-innovation-and-opportunity" class="level2">
 <h2 class="anchored" data-anchor-id="bridging-innovation-and-opportunity">Bridging Innovation and Opportunity</h2>

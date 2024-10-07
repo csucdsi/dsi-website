@@ -216,6 +216,39 @@ HIGHLIGHTS
     .text:hover {
       color: blue !important;
     }
+
+    /* Responsive styles */
+  @media (max-width: 768px) {
+    .highlights-container .date {
+      font-size: 12px; /* Slightly smaller font on mobile */
+    }
+    
+    .highlights-container .text {
+      font-size: 14px; /* Adjust font size for readability on mobile */
+    }
+    
+    .highlights-container li {
+      padding-bottom: 8px; /* Less padding for mobile */
+    }
+  }
+
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 20px; /* Adjust HIGHLIGHTS title size on smaller screens */
+    }
+    
+    .highlights-container .date {
+      font-size: 11px; /* Further reduce font size for very small screens */
+    }
+    
+    .highlights-container .text {
+      font-size: 13px; /* Further adjust font size for very small screens */
+    }
+    
+    .highlights-container li {
+      padding-bottom: 6px; /* Even less padding for very small screens */
+    }
+  }
   </style>
 
 
