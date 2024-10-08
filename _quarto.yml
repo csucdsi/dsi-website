@@ -11,6 +11,8 @@ website:
         href: news.qmd
       - text: Student Projects
         href: projects.qmd
+      - text: Community Coding
+        href: communitycoding/communitycoding.qmd
       - text: NorCal DataFest!
         href: https://norcaldatafest.netlify.app/
     right:

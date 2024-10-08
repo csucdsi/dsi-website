@@ -72,9 +72,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -124,6 +124,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link active" href="./projects.html" rel="" target="" aria-current="page">
  <span class="menu-text">Student Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./communitycoding/communitycoding.html" rel="" target="">
+ <span class="menu-text">Community Coding</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://norcaldatafest.netlify.app/" rel="" target="">
@@ -182,20 +186,40 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
+<p>Welcome to the Chico State Data Science Initiative Project Showcase! This page highlights the innovative work of our talented data science students and interns. Explore a collection of diverse projects spanning academic research, community collaborations, and real-world applications, demonstrating the impact and creativity of our budding data professionals.</p>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1727884147704" data-listing-reading-time-sort="4">
+<a href="./projects/2024-09-29Sauls_Post/chcRne_blog.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="projects/2024-09-29Sauls_Post/chcRne package hex diagram.png" alt="chcRne logo" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Saul’s 2024 DS Capstone
+</h5>
+<div class="card-text listing-description">
+<br>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Saul Mooradian
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
