@@ -1,92 +1,35 @@
-:::: {.column-layout}
+---
+title: "Welcome to the Data Science Initiative"
+format: 
+  html:
+    css: styles.css
+---
 
-::: {.left-column}
+:::: {.layout-container}
+
+::: {.welcome-section}
 
 # Welcome,
 
 The Data Science Initiative at Chico State aims to be a hub of Data Science information and resources for campus and community. Our vision is to foster a data-empowered society working within a culture of open science.
+
 :::
 
-::: {.right-column}
+::: {.image-section}
 ![](images/hero.jpg){style="max-width: 100%; height: auto;"}
 :::
 
 ::::
 
-:::: {.columns}
+:::: {.main-content}
 
-::: {.column}
-
+::: {.sidebar-content}
 {{< include sidebar.qmd >}}
 :::
 
-::: {.column}
-
+::: {.home-content}
 {{< include home_main.qmd >}}
 :::
 
 ::::
 
-<style>
-.columns {
-  display: flex;
-}
-.column {
-  padding: 10px;
-}
-.column:first-child {
-    width: 25%;
-    border-right: 1px solid #ccc;
-}
-.column:last-child {
-    width: 75%;
-}
-.column-layout {
-  display: flex;
-  width: 100%;
-  background-color: #9D2235FF;
-  margin: 0;
-}
-.left-column {
-  width: 50%;
-  background-color: #9D2235FF;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.right-column {
-  width: 50%;
-  background-color: #9D2235FF;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.left-column h1 {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 16px;
-}
-.left-column p {
-  color: white;
-}
-
-/* Responsive layout for mobile */
-@media (max-width: 768px) {
-    .column-layout {
-        flex-direction: column;
-    }
-    .left-column, .right-column {
-        width: 100%;
-    }
-      .columns {
-          display: flex !important;
-          flex-direction: column-reverse;
-      }
-    .column:first-child, .column:last-child {
-        width: 100%;
-        border-right: none;
-    }
-}
-</style>

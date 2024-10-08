@@ -1,56 +1,6 @@
-<style>
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-.project-item {
-  border: none;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-}
-.project-item img {
-  max-width: 100%;
-  height: auto;
-}
-.no-decoration-link {
-    text-decoration: none;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .project-grid {
-    grid-template-columns: 1fr; /* Single column on smaller screens */
-    gap: 15px; /* Slightly smaller gap on mobile */
-  }
-  .project-item {
-    padding: 8px; /* Less padding on mobile */
-  }
-  .project-item h3 {
-    font-size: 18px; /* Adjust heading size for mobile */
-  }
-  .project-item p {
-    font-size: 14px; /* Adjust paragraph text size for mobile */
-  }
-}
-
-@media (max-width: 480px) {
-  .project-grid {
-    gap: 10px; /* Even smaller gap on very small screens */
-  }
-  .project-item h3 {
-    font-size: 16px; /* Further reduce heading size */
-  }
-  .project-item p {
-    font-size: 13px; /* Further reduce paragraph text size */
-  }
-}
-</style>
-
 ## Bridging Innovation and Opportunity
 
-<div class="project-grid">
+<div class="section-grid">
 ```{r}
 #| echo: false
 #| warning: false
@@ -71,7 +21,7 @@ read_yaml_front_matter <- function(file) {
 for (file in files) {
   yaml_data <- read_yaml_front_matter(file)
   
-  cat("<div class='project-item'>")
+  cat("<div class='section-card'>")
   if (!is.null(yaml_data$image)) {
     cat("<img src='", yaml_data$image, "' alt='", yaml_data$title, "'>")
   }
