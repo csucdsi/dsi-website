@@ -2,9 +2,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About Us",
+    "title": "About the DSI",
     "section": "",
-    "text": "The Data Science Initiative (DSI) at Chico State is a fledgling grassroots program, initiated in 2015 to develop the Data Science capabilities of our campus and community. By levering expertise across a wealth of disciplines including Statistics, Computer Science, Business, Biology, Nutrition, Mathematics and Political Science, Chico State is well poised to become an educational and workforce training leader in the North State.\nOur vision is to foster a data-empowered society working within a culture of open science."
+    "text": "The Data Science Initiative (DSI) at Chico State is a fledgling grassroots program, initiated in 2015 to develop the Data Science capabilities of our campus and community. By levering expertise across a wealth of disciplines including Statistics, Computer Science, Business, Biology, Nutrition, Mathematics and Political Science, Chico State is well poised to become an educational and workforce training leader in the North State."
   },
   {
     "objectID": "about.html#about-the-dsi",
@@ -16,16 +16,16 @@
   {
     "objectID": "about.html#our-mission-is-to",
     "href": "about.html#our-mission-is-to",
-    "title": "About Us",
+    "title": "About the DSI",
     "section": "Our mission is to",
-    "text": "Our mission is to\nFoster a supportive, inclusive and diverse community for data science researchers, practitioners, learners and enthusiasts.\nProvide high quality data science education to learners from all backgrounds and domains.\nDevelop and support interdisciplinary teaching and research opportunities\nEmphasize the use of data in an accountable and transparent manner for the benefit of all persons.\nFurthering the advancement of the algorithms and scientific methods to make decisions and extract insights from data."
+    "text": "Our mission is to\n\nFoster a supportive, inclusive and diverse community for data science researchers, practitioners, learners and enthusiasts.\nProvide high-quality data science education to learners from all backgrounds and domains.\nDevelop and support interdisciplinary teaching and research opportunities.\nEmphasize the use of data in an accountable and transparent manner for the benefit of all persons.\nFurther the advancement of algorithms and scientific methods to make decisions and extract insights from data."
   },
   {
     "objectID": "about.html#we-work-to-achieve-this-mission-by",
     "href": "about.html#we-work-to-achieve-this-mission-by",
-    "title": "About Us",
+    "title": "About the DSI",
     "section": "We work to achieve this mission by",
-    "text": "We work to achieve this mission by\nBuilding relationships with community partners to build data enabled solutions and provide high impact real world learning experiences for students.\nProvide training on data privacy and security, responsible and ethical research, responsible, transparent and ethical uses of data and algorithms.\nProvide learners with the skills and knowledge, and build and confidence to develop and implement data-driven solutions in an ethically and socially responsible manner.\nUsing multiple methods of training including\nTraditional classroom and online curriculum\nWorkshops & specialized trainings\nInterdisciplinary projects that engage learners from diverse sectors\nBeing a campus wide resource through Community Coding - an open work and support session."
+    "text": "We work to achieve this mission by\n\nBuilding relationships with community partners to build data-enabled solutions and provide high impact real-world learning experiences for students.\nProviding training on data privacy and security, responsible and ethical research, responsible, transparent, and ethical uses of data and algorithms.\nProviding learners with the skills and knowledge, and building confidence to develop and implement data-driven solutions in an ethically and socially responsible manner.\nUsing multiple methods of training including:\nTraditional classroom and online curriculum\nWorkshops & specialized trainings\nInterdisciplinary projects that engage learners from diverse sectors\nBeing a campus-wide resource through Community Coding – an open work and support session."
   },
   {
     "objectID": "communityCoding.html",
@@ -1090,5 +1090,12 @@
     "title": "Data Science at Chico State",
     "section": "",
     "text": "HIGHLIGHTS\n\n\n\n\n 2024-03-15  DataFest 2024 @Chico April 12-14 \n\n\n 2023-11-15  State of Data Science at Chico State - Fall 23 \n\n\n 2023-11-13  Announcing Introduction to Python MATH 131 in Spring 2024 \n\n\n 2023-03-09  Health Equity Datathon \n\n\n 2023-03-03  DataFest 2023 April 14-16- Registration now open! \n\n\n 2022-11-27  Exploring Tech Justice: The Just Data Lab \n\n\n 2022-11-27  Research Statistician vacancies at the Bureau of Labor Statistics \n\n\n 2022-08-01  August Student post: Underlying geometry of data \n\n\n 2022-07-17  Fall 22 Guest post series \n\n\n 2022-04-04  Chico State Data Fest 2022 Recap"
+  },
+  {
+    "objectID": "about.html#about-the-dsi-1",
+    "href": "about.html#about-the-dsi-1",
+    "title": "About the DSI",
+    "section": "About the DSI",
+    "text": "About the DSI\nThe Data Science Initiative (DSI) at Chico State is a fledgling grassroots program, initiated in 2015 to develop the Data Science capabilities of our campus and community. By levering expertise across a wealth of disciplines including Statistics, Computer Science, Business, Biology, Nutrition, Mathematics and Political Science, Chico State is well poised to become an educational and workforce training leader in the North State.\nOur vision is to foster a data-empowered society working within a culture of open science."
   }
 ]
