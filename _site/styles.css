@@ -17,6 +17,7 @@
   
   .image-section {
     width: 50%;
+    height: auto;
     background-color: #9D2235FF;
     padding: 15px;
     display: flex;
@@ -108,6 +109,68 @@
   }
   .no-decoration-link {
     text-decoration: none;
+  }
+
+
+  /* Community Coding */
+  /* Carousel Container */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Carousel Inner */
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Carousel Items */
+  .carousel-item {
+    display: none;
+    width: 100%;
+  }
+  
+  /* Active Carousel Item */
+  .carousel-item.active {
+    display: block;
+  }
+  
+  /* Images */
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Navigation Buttons */
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carousel-control.prev {
+    left: 10px;
+  }
+  
+  .carousel-control.next {
+    right: 10px;
+  }
+
+  .calendar {
+    padding: 20px;
+    background-color: #f9f9f9;
   }
   
   /* Responsive layout for mobile */

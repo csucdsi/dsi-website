@@ -1,5 +1,4 @@
 ---
-title: "Welcome to the Data Science Initiative"
 format: 
   html:
     css: styles.css
