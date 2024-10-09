@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Saul Mooradian">
 
-<title>Data Science at Chico State - Student Projects</title>
+<title>Data Science at Chico State – index</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +21,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,38 +93,7 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -102,10 +104,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./img/DSI_Avatar_03.ico" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/DSI_Avatar_03.ico" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Data Science at Chico State</span>
     </a>
   </div>
@@ -116,15 +118,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./news.html" rel="" target="">
+    <a class="nav-link" href="../../news.html" rel="" target="">
  <span class="menu-text">News &amp; Events</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../../projects.html" rel="" target="">
  <span class="menu-text">Student Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./communityCoding.html" rel="" target="">
+    <a class="nav-link" href="../../communityCoding.html" rel="" target="">
  <span class="menu-text">Community Coding</span></a>
   </li>  
   <li class="nav-item">
@@ -162,71 +164,110 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Student Projects</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sauls-2024-ds-capstone" id="toc-sauls-2024-ds-capstone" class="nav-link active" data-scroll-target="#sauls-2024-ds-capstone">Saul’s 2024 DS Capstone</a>
+  <ul class="collapse">
+  <li><a href="#my-project" id="toc-my-project" class="nav-link" data-scroll-target="#my-project">My project</a></li>
+  <li><a href="#a-couple-of-examples" id="toc-a-couple-of-examples" class="nav-link" data-scroll-target="#a-couple-of-examples">A couple of examples</a></li>
+  <li><a href="#lessons-learned" id="toc-lessons-learned" class="nav-link" data-scroll-target="#lessons-learned">Lessons learned</a></li>
+  <li><a href="#resources-for-package-creation" id="toc-resources-for-package-creation" class="nav-link" data-scroll-target="#resources-for-package-creation">Resources for package creation</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 
 
+<p><img src="chcRne package hex diagram.png" alt="chcRne logo" style="width: 18%; float: left;"></p>
+<hr style="height:40px; visibility:hidden;">
+<section id="sauls-2024-ds-capstone" class="level1">
+<h1>Saul’s 2024 DS Capstone</h1>
+<p><br></p>
+<section id="my-project" class="level2">
+<h2 class="anchored" data-anchor-id="my-project">My project</h2>
+<p>My capstone project centered around streamlining common data analysis processes for Chico State’s <a href="https://chcchicostate.org/">Center for Healthy Communities</a> - a non-profit organization promoting food security, nutrition education, and much more. These processes included re-coding variables, creating tables, and generating dynamic inline code, allowing for faster data processing and report building.</p>
+<p>To do this, I developed an R package <a href="https://smoorad99.github.io/chcRnePackage/index.html">(chcRne)</a> designed for the Research and Evaluation team at CHC. R packages provide a mechanism to get all your functions in a single, easily accessible location accompanied by documentation and examples.</p>
+</section>
+<section id="a-couple-of-examples" class="level2">
+<h2 class="anchored" data-anchor-id="a-couple-of-examples">A couple of examples</h2>
+<p>Currently there are 10 functions with documentation in the <a href="https://smoorad99.github.io/chcRnePackage/index.html">(chcRne)</a> package. Here are the installation instructions along with an introduction to a couple chcRne functions.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Install chcRne</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">to_binary</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">count_and_percent</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the following two lines of code to install chcRne</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"devtools"</span>) </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"Smoorad99/chcRnePackage"</span>, <span class="at">dependencies =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><code>to_binary()</code> converts all “String”/“NA” or “Yes/”No” responses in the selected columns to binary (1/0) where the strings are replaced by 1s and the NAs are replaced by 0s.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df_converted <span class="ot">&lt;-</span> <span class="fu">to_binary</span>(<span class="at">data =</span> bns2_pkg_data, </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>                          <span class="at">these.cols =</span> <span class="fu">c</span>(q14_1, q14_4), </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>                          <span class="at">prefix =</span> <span class="cn">FALSE</span>, <span class="at">yesno =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># View the converted dataframe side-by-side to check if the function worked</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>old <span class="ot">&lt;-</span> bns2_pkg_data <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(q14_1, q14_4)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>new <span class="ot">&lt;-</span> df_converted <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(q14_1, q14_4)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">cbind</span>(old, new) <span class="sc">|&gt;</span> <span class="fu">head</span>(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   q14_1 q14_4 q14_1 q14_4
+1    Yes   Yes     1     1
+2     No   Yes     0     1
+3    Yes   Yes     1     1
+4    Yes   Yes     1     1
+5     No   Yes     0     1
+6     No   Yes     0     1
+7   &lt;NA&gt;  &lt;NA&gt;    NA    NA
+8     No   Yes     0     1
+9     No   Yes     0     1
+10    No   Yes     0     1</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p><code>count_and_percent()</code> returns a string that includes the total count and percent of respondents that selected a category specified in the function. If you include one category, the function will return the count and percent of respondents that selected that category relative to all non-NA responses.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "12 (24.5%)"</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "(n=32, 65.3%)"</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="lessons-learned" class="level2">
+<h2 class="anchored" data-anchor-id="lessons-learned">Lessons learned</h2>
+<p>Here are a couple of lessons/things I wish I had put more thought into during the early stages of this project.</p>
+<ul>
+<li><p>Function names are PAINFUL to change after a version of your package has been released and is being used by others. I would recommend spending some extra time when naming your functions and asking others for their opinion before a first release. If your second opinion grimaces when seeing the name of your function, you should probably change it. For example, <code>nperc_tbl_MATA</code> is not a good name for a function 😬</p></li>
+<li><p>If you are including functions that already exist within your organization or that you use. Think about how you can improve these functions sooner rather than later. If you are like me, you many not have had the developer knowledge to do this immediately, but this may help you limit the breaking changes you make down the road.</p></li>
+</ul>
+</section>
+<section id="resources-for-package-creation" class="level2">
+<h2 class="anchored" data-anchor-id="resources-for-package-creation">Resources for package creation</h2>
+<p>It is easy to be intimidated by scary phrases like “package development”, but R makes building packages relatively simple, with the option to add complexity. You can <a href="https://www.youtube.com/watch?v=EpTkT6Rkgbs&amp;t=2224s">learn about and create a basic package</a> in less than two hours. Also, Hadley Wickham and Jennifer Bryan have a wonderful book called <a href="https://r-pkgs.org/">R Packages</a> that offers a more detailed introduction to package building - a book I relied heavily on during this project.</p>
+<p><strong><em>Thank you Robin Donatello, the Chico State Statistics Department, and the CHC team! This project would not have been possible without your guidance/mentoring over the last few years.</em></strong></p>
 
-<p>Welcome to the Chico State Data Science Initiative Project Showcase! This page highlights the innovative work of our talented data science students and interns. Explore a collection of diverse projects spanning academic research, community collaborations, and real-world applications, demonstrating the impact and creativity of our budding data professionals.</p>
 
+</section>
+</section>
 
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<<<<<<< Updated upstream
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1728458405665" data-listing-reading-time-sort="4">
-<a href="./projects/2024-09-29Sauls_Post/chcRne_blog.html" class="quarto-grid-link">
-=======
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1728492264810" data-listing-reading-time-sort="4">
-<a href="./projects/2024-09-29-Sauls-Post/index.html" class="quarto-grid-link">
->>>>>>> Stashed changes
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="projects/2024-09-29-Sauls-Post/Sauls-image.png" alt="chcRne logo" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Saul’s 2024 DS Capstone
-</h5>
-<div class="card-text listing-description">
-<br>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Saul Mooradian
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

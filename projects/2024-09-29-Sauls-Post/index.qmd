@@ -6,7 +6,7 @@ editor: source
 author: Saul Mooradian
 ---
 
-<img src="chcRne package hex diagram.png" alt="chcRne logo" style="width: 18%; float: left;"/>
+<img src="Sauls-image.png" alt="chcRne logo" style="width: 18%; float: left;"/>
 
 <hr style="height:40px; visibility:hidden;" />
 
