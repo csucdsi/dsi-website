@@ -9,9 +9,13 @@ about:
       href: https://github.com/csucdsi
 ---
 
+
+
 ## About the DSI
 
 The Data Science Initiative (DSI) at Chico State is a fledgling grassroots program, initiated in 2015 to develop the Data Science capabilities of our campus and community. By levering expertise across a wealth of disciplines including Statistics, Computer Science, Business, Biology, Nutrition, Mathematics and Political Science, Chico State is well poised to become an educational and workforce training leader in the North State.
+
+
 
 Our **vision** is to foster a data-empowered society working within a culture of open science.
 
