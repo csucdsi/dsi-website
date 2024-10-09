@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../img/DSI_Avatar_03.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -62,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -85,6 +86,10 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../datahub/datahub.html" rel="" target="">
+ <span class="menu-text">Wildcat Data Hub</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">News &amp; Events</span></a>
@@ -162,45 +167,51 @@ ul.task-list li input[type="checkbox"] {
 
 
 <!-- Banner Section -->
-<div class="header">
-    <!-- Left Side: Text Description -->
-  <div class="left">
-     <h1>Coding is a social activity!</h1>
-      <p>Got data and working on analysis? Got questions on using R or other programming languages? Come and hang out with other coders in a welcoming and supportive environment.
+<div class="banner-container"> 
+  <div class="banner">
+      <!-- Left Side: Text Description -->
+    <div class="left">
+      <h1>Coding is a social activity!</h1>
+        <p>Got data and working on analysis? Got questions on using R or other programming languages? Come and hang out with other coders in a welcoming and supportive environment.
 
-      Students, staff, faculty, and the public are invited to join our Community Coding sessions. Bring your computer, coding projects, and questions to this open working environment. </p>
-  </div>
+        Students, staff, faculty, and the public are invited to join our Community Coding sessions. Bring your computer, coding projects, and questions to this open working environment. </p>
+    </div>
 
-    <!-- Right Side: Image Slider -->
-  <div class="right">
-        <!-- Swiper -->
-      <div class="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active"><img src="comcoding_images/cc-logos.png" alt="Image"></div>
-<div class="carousel-item"><img src="comcoding_images/IMG_8408 Large.jpeg" alt="Image"></div>
-        </div>
-        <!-- Carousel Controls -->
-        <button class="carousel-control prev" onclick="prevSlide()">❮</button>
-        <button class="carousel-control next" onclick="nextSlide()">❯</button>
+      <!-- Right Side: Image Slider -->
+    <div class="right">
+          <!-- Swiper -->
+        <div class="carousel">
+          <div class="carousel-inner" style="max-height: 290px; width: auto;">
+              <div class="carousel-item active"><img src="comcoding_images/20240327-CommunityCoding-JH-009.JPG" alt="Image"></div>
+<div class="carousel-item"><img src="comcoding_images/20240327-CommunityCoding-JH-020.JPG" alt="Image"></div>
+<div class="carousel-item"><img src="comcoding_images/20240327-CommunityCoding-JH-027.JPG" alt="Image"></div>
+<div class="carousel-item"><img src="comcoding_images/cc-logos.png" alt="Image"></div>
+          </div>
+          <!-- Carousel Controls -->
+          <button class="carousel-control prev" onclick="prevSlide()">❮</button>
+          <button class="carousel-control next" onclick="nextSlide()">❯</button>
+        </div> 
       </div> 
-     </div> 
+  </div>
 </div>
-
 <!-- text above CC schedule -->
 <div class="text-section">
     <h2 class="anchored">Schedule &amp; Locations for Fall 2024</h2>
     <p>Community Coding is regularly held at The Innovation Lab on the second floor of the Meriam Library next to the print center. Some community members host totoring sessions in alternate buildings. Click your desired time to view more information about locations and language support. </p>
+    
 </div>
 
-<!-- Outlook calendar embed -->
+
+
 <div class="calendar">
     <!-- If you ever need to change where the calendar source is simply get the imbedded link and paste it after the 'src=' -->
-    <iframe src="https://outlook.office365.com/calendar/published/39dd299543804eed90cf06869866fc76@csuchico.edu/311a6bd5e6c04edabb14d218c48a5a7f12565647235556191009/calendar.html" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    <iframe src="https://outlook.office365.com/calendar/published/39dd299543804eed90cf06869866fc76@csuchico.edu/311a6bd5e6c04edabb14d218c48a5a7f12565647235556191009/calendar.html" style="border: 0" width="100%" height="600" frameborder="0" scrolling="yes"> Loading...</iframe>
 </div>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     var currentIndex = 0;
     var slides = document.getElementsByClassName('carousel-item');
+    var carousel = document.querySelector('.carousel');
 
     function showSlide(index) {
         // Ensure index is within bounds
@@ -223,8 +234,22 @@ document.addEventListener("DOMContentLoaded", function() {
     window.nextSlide = function() {
         showSlide(currentIndex + 1);
     }
+
+    // Automatic scrolling
+    var autoScrollInterval = setInterval(nextSlide, 5000); // Change slides every 5 seconds
+
+    // Pause auto-scroll on mouse over
+    carousel.addEventListener('mouseover', function() {
+        clearInterval(autoScrollInterval);
+    });
+
+    // Resume auto-scroll on mouse out
+    carousel.addEventListener('mouseout', function() {
+        autoScrollInterval = setInterval(nextSlide, 5000);
+    });
 });
 </script>
+
 
 
 

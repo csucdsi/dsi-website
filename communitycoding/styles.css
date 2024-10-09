@@ -1,5 +1,17 @@
 /* styles.css */
-
+.banner-container {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px 20px;
+  color: #fff;
+  background-color: #9d2235; /* Default background color */
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;

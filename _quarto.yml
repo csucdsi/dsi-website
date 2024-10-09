@@ -2,11 +2,14 @@ project:
   type: website
 
 website:
+  favicon: img/DSI_Avatar_03.ico
   title: "Data Science at Chico State"
   navbar:
     logo: img/DSI_Avatar_03.ico
 
     left:
+      - text: Wildcat Data Hub
+        href: datahub/datahub.qmd
       - text: News & Events
         href: index.qmd
       - text: Student Projects
