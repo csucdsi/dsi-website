@@ -185,7 +185,8 @@
     align-items: center;
     position: relative;
     bottom: 0;
-    left: -55%;
+    left: -33%;
+    z-index: 5;
   }
 
   .footer-header {
@@ -395,7 +396,7 @@
     }
   }
 
-
+/* 
   /* This is for both community coding and data hub page */
 
 * {
@@ -570,4 +571,4 @@ body {
   .banner .right {
     padding: 10px;
   }
-}
+} */
