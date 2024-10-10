@@ -1,0 +1,7 @@
+---
+title: "Community Coding"
+description: "The Coding Community is a platform for students and tech enthusiasts to come together and improve their coding skills through collaboration and project development. Offering study sessions, hackathons, and mentorship opportunities, it’s a hub for peer learning, networking, and innovation in data science"
+image: "images/communityCoding.jpg"
+image-alt: "Community Coding"
+link: "/communitycoding.html"
+---

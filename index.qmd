@@ -1,12 +1,34 @@
 ---
-title: "News and Events"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+format: 
+  html:
+    css: styles.css
 ---
+
+:::: {.layout-container}
+
+::: {.welcome-section}
+
+# Welcome,
+
+The Data Science Initiative at Chico State aims to be a hub of Data Science information and resources for campus and community. Our vision is to foster a data-empowered society working within a culture of open science.
+
+:::
+
+::: {.image-section}
+![](images/hero.jpg){style="max-width: 100%; height: auto;"}
+:::
+
+::::
+
+:::: {.main-content}
+
+::: {.sidebar-content}
+{{< include sidebar.qmd >}}
+:::
+
+::: {.home-content}
+{{< include home_main.qmd >}}
+:::
+
+::::
+
