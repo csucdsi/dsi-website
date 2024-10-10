@@ -229,12 +229,13 @@
     background-color: #9D2235FF;
     color: white;
     padding: 20px;
-    width: 100%;
+    width: 95vw;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     bottom: 0;
+    left: -55%;
   }
 
   .footer-header {
@@ -267,6 +268,10 @@
 
   .footer-left {
     text-align: left;
+  }
+  
+  .footer-right {
+    text-align: center;
   }
 
   .footer-right a {
