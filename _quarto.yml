@@ -5,12 +5,15 @@ website:
   title: "Data Science at Chico State"
   navbar:
     logo: img/DSI_Avatar_03.ico
-
     left:
+      - text: About
+        href: about.qmd
+      - text: DataHub
+        href: about.qmd
+      - text: Projects
+        href: projects.qmd
       - text: News & Events
         href: news.qmd
-      - text: Student Projects
-        href: projects.qmd
       - text: Community Coding
         href: communityCoding.qmd
       - text: NorCal DataFest!
@@ -24,7 +27,9 @@ website:
             url: https://github.com/csucdsi
           - text: Math 490
             url: https://github.com/DATA-490
-        
+      - icon: search
+
+
 format:
   html:
     highlight-style: a11y
@@ -36,6 +41,8 @@ format:
     code-overflow: scroll
     callout-icon: false
     page-layout: full
+    include-after-body: _footer.html
+    css: styles.css
 
 execute:
   freeze: true
