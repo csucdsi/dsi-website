@@ -9,7 +9,7 @@ include-in-header: script.js
 ---
 ``` {r, echo=FALSE, results='asis'}
 # List image files in the folder
-image_files <- list.files("images/communityCodingImages", pattern = "\\.(jpg|jpeg|png|gif)$", full.names = TRUE)
+image_files <- list.files("images/communityCodingImages", pattern = "\\.(jpg|jpeg|png|gif)$", ignore.case = TRUE, full.names = TRUE)
 
 image_tags <- paste(
   sapply(seq_along(image_files), function(i) {
@@ -27,7 +27,7 @@ image_tags <- paste(
 
 # Community Coding
 
-Got data and working on analysis? Got questions on using R or other programming languages? Come and hang out with other coders in a welcoming and supportive environment.
+Got data and working on analysis? Got questions on using R, Python or other programming languages? Come and hang out with other coders in a welcoming and supportive environment.
 
 Students, staff, faculty, and the public are invited to join our Community Coding sessions. Bring your computer, coding projects, and questions to this open working environment.
 
@@ -48,7 +48,7 @@ Students, staff, faculty, and the public are invited to join our Community Codin
 :::{.text-section}
 ## Schedule & Locations for Fall 2024
 
-Community Coding is regularly held at The Innovation Lab on the second floor of the Meriam Library next to the print center. Some community members host tutoring sessions in alternate buildings. Click your desired time to view more information about locations and language support.
+Community Coding is regularly held at The Innovation Lab on the second floor of the Meriam Library next to the print center. Additional drop in help sessions are available by individual faculty in their office or over Zoom. Click your desired time to view more information about locations and language support.
 :::
 
 <!-- Outlook calendar embed -->

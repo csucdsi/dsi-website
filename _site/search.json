@@ -1029,29 +1029,29 @@
     "text": "What is the ASA DataFest?\nASA DataFest is a data hackathon for undergraduate students, sponsored by the American Statistical Association and founded at UCLA, in 2011. A data analysis problem is presented in the form of a dataset and an associated challenge. Teams of students get a dataset on Friday afternoon and work on the problem until Sunday afternoon where they present their findings. After two days of intense data wrangling, analysis, and presentation design, each team is allowed a few minutes and no more than two slides to impress a panel of judges. Prizes are given for Best in Show, Best Visualization, and Best Use of External Data.\nUndergraduates from all majors are welcome. Some of the most diverse teams have been the most successful.\nThis event is open to ALL undergraduates in the North State!\nLearn more about this national event at the event website: https://norcaldatafest.netlify.app/\n\nRegistration closes March 29th"
   },
   {
-    "objectID": "projects/2024-09-29Sauls_Post/chcRne_blog.html#my-project",
-    "href": "projects/2024-09-29Sauls_Post/chcRne_blog.html#my-project",
+    "objectID": "projects/2024-09-29-Sauls-Post/index.html#my-project",
+    "href": "projects/2024-09-29-Sauls-Post/index.html#my-project",
     "title": "Saul’s 2024 DS Capstone",
     "section": "My project",
     "text": "My project\nMy capstone project centered around streamlining common data analysis processes for Chico State’s Center for Healthy Communities - a non-profit organization promoting food security, nutrition education, and much more. These processes included re-coding variables, creating tables, and generating dynamic inline code, allowing for faster data processing and report building.\nTo do this, I developed an R package (chcRne) designed for the Research and Evaluation team at CHC. R packages provide a mechanism to get all your functions in a single, easily accessible location accompanied by documentation and examples."
   },
   {
-    "objectID": "projects/2024-09-29Sauls_Post/chcRne_blog.html#a-couple-of-examples",
-    "href": "projects/2024-09-29Sauls_Post/chcRne_blog.html#a-couple-of-examples",
+    "objectID": "projects/2024-09-29-Sauls-Post/index.html#a-couple-of-examples",
+    "href": "projects/2024-09-29-Sauls-Post/index.html#a-couple-of-examples",
     "title": "Saul’s 2024 DS Capstone",
     "section": "A couple of examples",
     "text": "A couple of examples\nCurrently there are 10 functions with documentation in the (chcRne) package. Here are the installation instructions along with an introduction to a couple chcRne functions.\n\nInstall chcRneto_binarycount_and_percent\n\n\n\n# Run the following two lines of code to install chcRne\ninstall.packages(\"devtools\") \ndevtools::install_github(\"Smoorad99/chcRnePackage\", dependencies = TRUE)\n\n\n\nto_binary() converts all “String”/“NA” or “Yes/”No” responses in the selected columns to binary (1/0) where the strings are replaced by 1s and the NAs are replaced by 0s.\n\ndf_converted &lt;- to_binary(data = bns2_pkg_data, \n                          these.cols = c(q14_1, q14_4), \n                          prefix = FALSE, yesno = TRUE)\n\n# View the converted dataframe side-by-side to check if the function worked\nold &lt;- bns2_pkg_data |&gt; dplyr::select(q14_1, q14_4)\nnew &lt;- df_converted |&gt; dplyr::select(q14_1, q14_4)\ncbind(old, new) |&gt; head(10)\n\n   q14_1 q14_4 q14_1 q14_4\n1    Yes   Yes     1     1\n2     No   Yes     0     1\n3    Yes   Yes     1     1\n4    Yes   Yes     1     1\n5     No   Yes     0     1\n6     No   Yes     0     1\n7   &lt;NA&gt;  &lt;NA&gt;    NA    NA\n8     No   Yes     0     1\n9     No   Yes     0     1\n10    No   Yes     0     1\n\n\n\n\ncount_and_percent() returns a string that includes the total count and percent of respondents that selected a category specified in the function. If you include one category, the function will return the count and percent of respondents that selected that category relative to all non-NA responses.\n\n\n[1] \"12 (24.5%)\"\n\n\n[1] \"(n=32, 65.3%)\""
   },
   {
-    "objectID": "projects/2024-09-29Sauls_Post/chcRne_blog.html#lessons-learned",
-    "href": "projects/2024-09-29Sauls_Post/chcRne_blog.html#lessons-learned",
+    "objectID": "projects/2024-09-29-Sauls-Post/index.html#lessons-learned",
+    "href": "projects/2024-09-29-Sauls-Post/index.html#lessons-learned",
     "title": "Saul’s 2024 DS Capstone",
     "section": "Lessons learned",
     "text": "Lessons learned\nHere are a couple of lessons/things I wish I had put more thought into during the early stages of this project.\n\nFunction names are PAINFUL to change after a version of your package has been released and is being used by others. I would recommend spending some extra time when naming your functions and asking others for their opinion before a first release. If your second opinion grimaces when seeing the name of your function, you should probably change it. For example, nperc_tbl_MATA is not a good name for a function 😬\nIf you are including functions that already exist within your organization or that you use. Think about how you can improve these functions sooner rather than later. If you are like me, you many not have had the developer knowledge to do this immediately, but this may help you limit the breaking changes you make down the road."
   },
   {
-    "objectID": "projects/2024-09-29Sauls_Post/chcRne_blog.html#resources-for-package-creation",
-    "href": "projects/2024-09-29Sauls_Post/chcRne_blog.html#resources-for-package-creation",
+    "objectID": "projects/2024-09-29-Sauls-Post/index.html#resources-for-package-creation",
+    "href": "projects/2024-09-29-Sauls-Post/index.html#resources-for-package-creation",
     "title": "Saul’s 2024 DS Capstone",
     "section": "Resources for package creation",
     "text": "Resources for package creation\nIt is easy to be intimidated by scary phrases like “package development”, but R makes building packages relatively simple, with the option to add complexity. You can learn about and create a basic package in less than two hours. Also, Hadley Wickham and Jennifer Bryan have a wonderful book called R Packages that offers a more detailed introduction to package building - a book I relied heavily on during this project.\nThank you Robin Donatello, the Chico State Statistics Department, and the CHC team! This project would not have been possible without your guidance/mentoring over the last few years."
@@ -1061,7 +1061,7 @@
     "href": "projects.html",
     "title": "Student Projects",
     "section": "",
-    "text": "Welcome to the Chico State Data Science Initiative Project Showcase! This page highlights the innovative work of our talented data science students and interns. Explore a collection of diverse projects spanning academic research, community collaborations, and real-world applications, demonstrating the impact and creativity of our budding data professionals.\n\n\n\n\n\n\n\n\n\n\n\n\nSaul’s 2024 DS Capstone\n\n\n\n\n\n\nSaul Mooradian\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome to the Chico State Data Science Certificate Capstone Project Showcase! This page highlights the innovative work of our talented students in the Data Science Certificate program. Projects span a diverse range from academic research, community collaborations, and real-world applications, demonstrating the impact and creativity of our budding data professionals. Each project is linked directly to a Github repository with more details about the project, including if the project has good next steps that can be built on by another person.\n\n\n\n\n\n\n\n\n\n\n\n\nSaul’s 2024 DS Capstone\n\n\n\n\n\n\nSaul Mooradian\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "readme.html",
