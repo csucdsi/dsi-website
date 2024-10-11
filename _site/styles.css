@@ -5,10 +5,18 @@
     background-color: #9D2235FF;
     margin: 0;
   }
+
+  .banner--light {
+    color: #000;
+    background-color: #D0D1C9;
+  }
+
+  .banner--blue {
+    background-color: #043546;
+  }
   
   .welcome-section {
     width: 50%;
-    background-color: #9D2235FF;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -18,7 +26,6 @@
   .image-section {
     width: 50%;
     height: auto;
-    background-color: #9D2235FF;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -294,6 +301,28 @@
     fill:  #000000;
   }
 
+  #JotFormIFrame-241545296222152 {
+    min-width: 100%;
+    max-width: 100%;
+    height: 2099px;
+    border: none;
+    margin-bottom: 50px;
+  }
+
+  .banner {
+    width: 99vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 20px;
+    color: #fff;
+    background-color: #9d2235; /* Default background color */
+  }
+
 
   /* Responsive layout for mobile */
   @media (max-width: 768px) {
@@ -394,181 +423,12 @@
       height: 25px;
       margin-left: 15px;
     }
+
+    #JotFormIFrame-241545296222152 {
+      min-width: 100%;
+      max-width: 100%;
+      height: 2695px !important;
+      border: none;
+      margin-bottom: 50px;
+    }
   }
-
-/* 
-  /* This is for both community coding and data hub page */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-}
-
-/* Full-Width Banner */
-.banner {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  margin-left: -50vw;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 40px 20px;
-  color: #fff;
-  background-color: #9d2235; /* Default background color */
-}
-
-/* Modifier Classes */
-.banner--blue {
-  background-color: #043546;
-}
-
-.banner--light {
-  color: #000;
-  background-color: #fff;
-}
-
-.banner--light .left,
-.banner--light .right {
-  color: #000;
-}
-
-.banner--reverse {
-  flex-direction: column-reverse;
-}
-
-/* Left and Right Sections */
-.banner .left,
-.banner .right {
-  flex: 1;
-  min-width: 300px;
-  padding: 20px;
-}
-
-.banner .left h1,
-.banner .right h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.banner .left p,
-.banner .right p,
-.banner .left ul,
-.banner .right ul {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-/* Image Styling */
-.banner .image,
-.banner .carousel {
-  max-width: 70%;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
-.banner .image img,
-.carousel-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Carousel Styles */
-.carousel {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.carousel-item {
-  display: none;
-  width: 100%;
-}
-
-.carousel-item.active {
-  display: block;
-}
-
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.carousel-control.prev {
-  left: 10px;
-}
-
-.carousel-control.next {
-  right: 10px;
-}
-
-/* Additional Sections */
-.text-section {
-  padding: 20px;
-  background-color: #ffffff;
-}
-
-.calendar {
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .banner {
-    flex-direction: column;
-    text-align: left;
-  }
-  .banner--reverse {
-    flex-direction: column;
-  }
-  .banner .left,
-  .banner .right {
-    width: 100%;
-  }
-
-  /* Adjust font sizes on mobile */
-  .banner .left h1,
-  .banner .right h1 {
-    font-size: 1.5em; /* Reduced from 2.5em */
-  }
-
-  .banner .left p,
-  .banner .right p,
-  .banner .left ul,
-  .banner .right ul {
-    font-size: 1em; /* Reduced from 1.1em */
-  }
-
-  /* Optional: Reduce padding on mobile */
-  .banner {
-    padding: 20px 10px;
-  }
-  .banner .left,
-  .banner .right {
-    padding: 10px;
-  }
-} */

@@ -10,7 +10,7 @@ website:
       - text: About
         href: about.qmd
       - text: Wildcat Data Hub
-        href: datahub/datahub.qmd
+        href: datahub.qmd
       - text: Projects
         href: projects.qmd
       - text: News & Events
