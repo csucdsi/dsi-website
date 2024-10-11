@@ -1,0 +1,14 @@
+{
+  "hash": "a846a375f57e3432735a94c1f1def03e",
+  "result": {
+    "markdown": "---\nformat: \n  html:\n    css: styles.css\ntitle-block-banner: true\npage-layout: full \n---\n\n\n\n\n::::  {.layout-container}\n::: {.welcome-section}\n\n# Wildcat Data Hub\n\nWildcat Data Hub aims to empower our campus and community with data science expertise and statistical consulting, assisting people and organizations in achieving excellence in science and business.\n\n:::\n\n::: {.image-section}\n![](images/datahub_images/20240327-CommunityCoding-JH-025 Large.jpeg){style=\"max-width: 100%; height: auto;\"}\n:::\n::::\n\n::::  {.layout-container .banner--light}\n::: {.image-section}\n![](images/datahub_images/20240413-DataFest-JH-002 Large.jpeg){style=\"max-width: 100%; height: auto;\"}\n:::\n::: {.welcome-section}\n\n# Data Services {style=\"color:black;\"}\n* No fee research/services\n* Data analysis via statistical Modeling / machine learning\n* Cleaning and transforming data\n* Developing research questions and Grant proposals\n* Data collection\n* Quantitative and qualitative data analysis\n* Data Visualization and reporting\n* Consulting\n* Research contributions and data wrangling\n:::\n\n::::\n\n::::  {.layout-container .banner--blue}\n::: {.welcome-section}\n\n# Previous Work {style=\"color:white;\"}\n* Creating blog posts for student work\n* Assisting IRSA with data Visualization\n:::\n::: {.image-section}\n![](images/datahub_images/20240413-DataFest-JH-023 Large.jpeg){style=\"max-width: 100%; height: auto;\"}\n:::\n\n::::\n\n\n```{=html}\n<iframe\n  id=\"JotFormIFrame-241545296222152\"\n  title=\"Wildcat Data Hub Client Intake Form\"\n  onload=\"window.parent.scrollTo(0,0)\"\n  allowtransparency=\"true\"\n  src=\"https://form.jotform.com/241545296222152\"\n  frameborder=\"0\"\n  scrolling=\"no\"\n>\n</iframe>\n```",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

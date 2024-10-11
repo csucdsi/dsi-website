@@ -1,0 +1,113 @@
+---
+format: 
+  html:
+    css: styles.css
+title-block-banner: true
+page-layout: full 
+---
+
+```{r}
+#| echo: false
+#| include: false
+
+# Directory containing images
+image_dir <- "images/datahub_images"
+
+# List of valid image extensions (without leading dots)
+valid_extensions <- c("jpg", "jpeg", "png", "gif")
+
+# Get list of files in the directory with full paths
+image_paths <- list.files(path = image_dir, full.names = TRUE)
+
+# Function to check if a file has a valid image extension
+is_valid_image <- function(filename) {
+  ext <- tolower(tools::file_ext(filename))
+  ext %in% valid_extensions
+}
+
+# Filter to valid image files
+image_paths <- image_paths[sapply(image_paths, is_valid_image)]
+
+# Get file info
+file_info <- file.info(image_paths)
+
+# Sort images by modification time, so newer files come first
+image_paths <- image_paths[order(file_info$mtime, decreasing = FALSE)]
+
+# Get the filenames (without full paths)
+image_files <- basename(image_paths)
+
+# Number of banners you have
+num_banners <- 4  # Adjust this if you have more or fewer banners
+
+# Ensure we have enough images by filling missing ones with NA
+if (length(image_files) < num_banners) {
+  image_files <- c(image_files, rep(NA, num_banners - length(image_files)))
+}
+
+# Assign images to variables
+image1 <- image_files[1]
+image2 <- image_files[2]
+image3 <- image_files[3]
+image4 <- image_files[4]
+```
+
+::::  {.layout-container}
+::: {.welcome-section}
+
+# Wildcat Data Hub
+
+Wildcat Data Hub aims to empower our campus and community with data science expertise and statistical consulting, assisting people and organizations in achieving excellence in science and business.
+
+:::
+
+::: {.image-section}
+![](`r if (!is.na(image1)) sprintf('%s/%s', image_dir, image1)`){style="max-width: 100%; height: auto;"}
+:::
+::::
+
+::::  {.layout-container .banner--light}
+::: {.image-section}
+![](`r if (!is.na(image2)) sprintf('%s/%s', image_dir, image2)`){style="max-width: 100%; height: auto;"}
+:::
+::: {.welcome-section}
+
+# Data Services {style="color:black;"}
+* No fee research/services
+* Data analysis via statistical Modeling / machine learning
+* Cleaning and transforming data
+* Developing research questions and Grant proposals
+* Data collection
+* Quantitative and qualitative data analysis
+* Data Visualization and reporting
+* Consulting
+* Research contributions and data wrangling
+:::
+
+::::
+
+::::  {.layout-container .banner--blue}
+::: {.welcome-section}
+
+# Previous Work {style="color:white;"}
+* Creating blog posts for student work
+* Assisting IRSA with data Visualization
+:::
+::: {.image-section}
+![](`r if (!is.na(image3)) sprintf('%s/%s', image_dir, image3)`){style="max-width: 100%; height: auto;"}
+:::
+
+::::
+
+```{=html}
+<iframe
+  id="JotFormIFrame-241545296222152"
+  title="Wildcat Data Hub Client Intake Form"
+  onload="window.parent.scrollTo(0,0)"
+  allowtransparency="true"
+  src="https://form.jotform.com/241545296222152"
+  frameborder="0"
+  scrolling="no"
+>
+</iframe>
+```

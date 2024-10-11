@@ -1,0 +1,14 @@
+{
+  "hash": "b8098116c2b7b31ff431f7ad63aa480f",
+  "result": {
+    "markdown": "---\ntitle: \"Wildcat Data Hub\"\nformat: \n  html:\n    css: styles.css\ntitle-block-banner: true\npage-layout: full \n---\n\n\n\n\n::: {.banner}\n\n:::: {.columns}\n\n::: {.column width=\"60%\"}\n\n# Wildcat Data Hub\n\nWildcat Data Hub aims to empower our campus and community with data science expertise and statistical consulting, assisting people and organizations in achieving excellence in science and business.\n\n:::\n\n::: {.column width=\"40%\"}\n\n![](datahub_images/20240327-CommunityCoding-JH-025 Large.jpeg){alt=\"Wildcat Data Hub Image\"}\n\n:::\n\n::::\n\n:::\n\n\n::: {.banner .banner--blue}\n\n:::: {.columns}\n\n::: {.column width=\"60%\"}\n\n# Bridging Innovation and Opportunity\n### Data Services\n\n* No fee research/services\n* Data Analysis\n    + Data analysis via statistical modeling/machine learning\n    + Quantitative and qualitative data analysis\n* Data Management\n    + Cleaning and transforming data\n    + Data collection\n    + Data visualization and reporting\n    + Research contributions and data wrangling\n* Developing research questions and grant proposals\n* Consulting\n:::\n\n::: {.column width=\"40%\"}\n\n![](datahub_images/20240413-DataFest-JH-002 Large.jpeg){alt=\"Wildcat Data Hub Image\"}\n\n\n:::\n\n::::\n\n:::\n\n\n::: {.banner .banner--reverse .banner--light}\n\n:::: {.columns}\n\n::: {.column width=\"40%\"}\n\n![](datahub_images/20240413-DataFest-JH-023 Large.jpeg){alt=\"Wildcat Data Hub Image\"}\n\n:::\n\n::: {.column width=\"60%\"}\n\n# Previous Work\n* Creating [blog posts](../projects.qmd) for student work\n* Assisting [IRSA](https://www.csuchico.edu/ir/) with data visualization\n:::\n\n::::\n\n:::\n\n\n::: {.banner .banner--light}\n\n\n<iframe id=\"JotFormIFrame-241545296222152\" title=\"Wildcat Data Hub Client Intake Form\" onload=\"window.parent.scrollTo(0,0)\" allowtransparency=\"true\" allow=\"geolocation; microphone; camera; fullscreen\" src=\"https://form.jotform.com/241545296222152\" frameborder=\"0\" style=\"min-width:100%;max-width:25%;height:539px;border:none;\" scrolling=\"no\"> </iframe>\n\n\n:::\n\n\n```{=html}\n<script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>\n    <script>window.jotformEmbedHandler(\"iframe[id='JotFormIFrame-241545296222152']\", \"https://form.jotform.com/\")</script>\n```",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
