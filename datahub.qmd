@@ -57,7 +57,9 @@ image4 <- image_files[4]
 
 # Wildcat Data Hub
 
-Wildcat Data Hub aims to empower our campus and community with data science expertise and statistical consulting, assisting people and organizations in achieving excellence in science and business.
+The Wildcat Data Hub (WDH) is a new consulting and support service at Chico State designed to support both campus and community researchers with all aspects of research relating to data. This includes undergraduate and graduate students, staff, faculty and our community members.
+
+Through a mix of pro-bono and fee-based services, the WDH is dedicated to providing high-quality support for research projects while creating paid, hands-on learning opportunities for students. 
 
 :::
 
@@ -70,18 +72,20 @@ Wildcat Data Hub aims to empower our campus and community with data science expe
 ::: {.image-section}
 ![](`r if (!is.na(image2)) sprintf('%s/%s', image_dir, image2)`){style="max-width: 100%; height: auto;"}
 :::
-::: {.welcome-section}
+::: {.welcome-section--light"}
 
-# Data Services {style="color:black;"}
-* No fee research/services
-* Data analysis via statistical Modeling / machine learning
+# Services {style="color:black;"}
+
+* Programming languages such as R, Python and SQL
 * Cleaning and transforming data
-* Developing research questions and Grant proposals
-* Data collection
-* Quantitative and qualitative data analysis
-* Data Visualization and reporting
-* Consulting
-* Research contributions and data wrangling
+* Data collection tools and techniques
+* Data Visualization and reports
+* Reproducible research techniques
+* Data analysis via statistical modeling / machine learning
+* Developing measurable outcomes for research and grant proposals
+
+The hub offers free drop in consultation and coding support. Short and long-term project assistance by qualified students under faculty mentorship available on a fee-based system. 
+
 :::
 
 ::::
@@ -90,8 +94,9 @@ Wildcat Data Hub aims to empower our campus and community with data science expe
 ::: {.welcome-section}
 
 # Previous Work {style="color:white;"}
-* Creating blog posts for student work
-* Assisting IRSA with data Visualization
+* Supporting student authors in contributing [blog posts](projects.html)
+* Writing scripts import large quantities of data files into R for wrangling and analysis. 
+* Assisting graduate student thesis work with importing and cleaning time series data from sensors.  
 :::
 ::: {.image-section}
 ![](`r if (!is.na(image3)) sprintf('%s/%s', image_dir, image3)`){style="max-width: 100%; height: auto;"}
