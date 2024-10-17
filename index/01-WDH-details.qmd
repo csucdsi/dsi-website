@@ -1,5 +1,5 @@
 ---
-title: "WildCat Data Hub"
+title: "Wildcat Data Hub"
 description: "The WildCat Data Hub serves as a collaborative space for students, researchers, and professionals to access, analyze, and share vast datasets. It's designed to foster innovation by providing the tools and resources necessary to drive data-driven decision-making across various domains, including technology, healthcare, and environmental science."
 image: "images/wildcatDatahub.jpg"
 image-alt: "wildcat data hub"
