@@ -1,39 +1,52 @@
 project:
   type: website
+  output-dir: _site
+  resources:
+    - "img/**"
 
 website:
+  favicon: img/DSI_Avatar_03.ico
   title: "Data Science at Chico State"
   navbar:
     logo: img/DSI_Avatar_03.ico
-
     left:
+      - text: About
+        href: about.qmd
       - text: News & Events
-        href: index.qmd
+        href: news.qmd
+      - text: Wildcat Data Hub
+        href: datahub.qmd
+      - text: Community Coding
+        href: communityCoding.qmd
       - text: Student Projects
         href: projects.qmd
-      - text: NorCal DataFest!
-        href: https://norcaldatafest.netlify.app/
+
+
     right:
-      - text: Mission
-        href: https://www.csuchico.edu/datascience/mission.shtml
+      - text: Campus Homepage
+        href: https://www.csuchico.edu/datascience/index.shtml
       - icon: github
         menu:
-          - text: CSUC DSI
+          - text: Chico State Data Science
             url: https://github.com/csucdsi
-          - text: Math 490
+          - text: Student Projects
             url: https://github.com/DATA-490
+      - icon: search
+
 
 format:
   html:
     highlight-style: a11y
     theme:
       light: Chico_Light.scss
-      dark: Chico_Dark.scss
     highlight: pygments
     toc: true
     code-copy: true
     code-overflow: scroll
     callout-icon: false
+    page-layout: full
+    include-after-body: _footer.html
+    css: styles.css
 
 execute:
   freeze: true
