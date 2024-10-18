@@ -1,6 +1,6 @@
 ---
 title: "Wildcat Data Hub"
-description: "The Wildcat Data Hub aims to empower our campus and community with data science expertise and statistical consulting, assisting people and organizations in achieving excellence in science and business."
+description: "The Wildcat Data Hub (WDH) empowers the campus and local community with expert data science and statistical consulting, helping researchers and organizations achieve excellence in science and business. The WDH offers a range of services, including data collection, cleaning, visualization, and analysis, as well as personalized short and long term project assistance for students, faculty, and staff."
 image: "img/wildcatDatahub.jpg"
 image-alt: "wildcat data hub"
 link: "/datahub.html"
