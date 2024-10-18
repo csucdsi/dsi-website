@@ -17,16 +17,14 @@ website:
         href: news.qmd
       - text: Community Coding
         href: communityCoding.qmd
-      - text: NorCal DataFest!
-        href: https://norcaldatafest.netlify.app/
     right:
       - text: Mission
         href: https://www.csuchico.edu/datascience/mission.shtml
       - icon: github
         menu:
-          - text: CSUC DSI
+          - text: The Chico State DSI Organization
             url: https://github.com/csucdsi
-          - text: Math 490
+          - text: DS Capstone Projects
             url: https://github.com/DATA-490
       - icon: search
 

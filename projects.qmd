@@ -1,5 +1,5 @@
 ---
-title: "Student Projects"
+title: "Student Project Showcase"
 listing:
   contents: projects
   sort: "date desc"
@@ -10,4 +10,4 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
-Welcome to the Chico State Data Science Certificate Capstone Project Showcase! This page highlights the innovative work of our talented students in the Data Science Certificate program. Projects span a diverse range from academic research, community collaborations, and real-world applications,  demonstrating the impact and creativity of our budding data professionals. Each project is linked directly to a Github repository with more details about the project, including if the project has good next steps that can be built on by another person. 
+This page highlights the innovative work of our talented students from the [Data Science Certificate program](https://catalog.csuchico.edu/colleges-departments/college-natural-sciences/mathematics/data-science-certificate) or the [Masters in Data Science and Analytics](https://www.csuchico.edu/math/degrees/msdsa.shtml). Projects span a diverse range from academic research, community collaborations, and real-world applications,  demonstrating the impact and creativity of our upcoming data professionals. Each project is linked directly to a Github repository with more details about the project, including if the project has good next steps that can be built on by another person. 
