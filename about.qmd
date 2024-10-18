@@ -16,7 +16,7 @@ The Data Science Initiative (DSI) at Chico State is a fledgling grassroots progr
 :::
 
 ::: {.image-section}
-![](images/aboutDSI.jpg){style="max-width: 100%; height: auto;"}
+![](img/aboutDSI.jpg){style="max-width: 100%; height: auto;"}
 :::
 
 ::::

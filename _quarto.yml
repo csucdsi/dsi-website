@@ -1,5 +1,8 @@
 project:
   type: website
+  output-dir: _site
+  resources:
+    - "img/**"
 
 website:
   favicon: img/DSI_Avatar_03.ico

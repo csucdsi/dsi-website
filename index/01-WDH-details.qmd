@@ -1,7 +1,7 @@
 ---
 title: "Wildcat Data Hub"
 description: "The Wildcat Data Hub aims to empower our campus and community with data science expertise and statistical consulting, assisting people and organizations in achieving excellence in science and business."
-image: "images/wildcatDatahub.jpg"
+image: "img/wildcatDatahub.jpg"
 image-alt: "wildcat data hub"
 link: "/datahub.html"
 ---

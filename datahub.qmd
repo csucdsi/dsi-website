@@ -11,7 +11,7 @@ page-layout: full
 #| include: false
 
 # Directory containing images
-image_dir <- "images/datahub_images"
+image_dir <- "img/datahub_images"
 
 # List of valid image extensions (without leading dots)
 valid_extensions <- c("jpg", "jpeg", "png", "gif")
@@ -72,7 +72,7 @@ Through a mix of pro-bono and fee-based services, the WDH is dedicated to provid
 ::: {.image-section}
 ![](`r if (!is.na(image2)) sprintf('%s/%s', image_dir, image2)`){style="max-width: 100%; height: auto;"}
 :::
-::: {.welcome-section--light"}
+::: {.welcome-section--light}
 
 # Services {style="color:black;"}
 
