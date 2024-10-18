@@ -1,7 +1,0 @@
----
-title: "DA-FANH"
-description: "The Data Analytics for Food, Agriculture, Natural Resources, and Human Sciences (DA-FANH) initiative focuses on leveraging data analytics and AI to address challenges within these fields. It brings together interdisciplinary teams to analyze trends, predict outcomes, and provide sustainable solutions that enhance food security, agricultural practices, and overall human well-being."
-image: "img/dafanh.jpg"
-image-alt: "DA-FANH details"
-link: "https://norcaldatafest.netlify.app/"
----
