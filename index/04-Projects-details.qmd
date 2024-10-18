@@ -1,7 +1,7 @@
 ---
 title: "Student Projects"
 description: "Check out the variety of innovative projects students have created as part of the Data Science Certificate Capstone, or the Masters in Data Science and Analytics. These projects highlight the power of creativity and technical expertise. Whether it's app development, research, or sustainability initiatives, these projects drive progress and provide real-world impact."
-image: "img/projects.jpg"
+image: "img/projects_cover.jpg"
 image-alt: "Student Projects"
 link: "/projects.html"
 ---

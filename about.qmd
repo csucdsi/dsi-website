@@ -12,11 +12,11 @@ page-layout: full
 
 # About the DSI
 
-The Data Science Initiative (DSI) at Chico State is a fledgling grassroots program, initiated in 2015 to develop the Data Science capabilities of our campus and community. By levering expertise across a wealth of disciplines including Statistics, Computer Science, Business, Biology, Nutrition, Mathematics and Political Science, Chico State is well poised to become an educational and workforce training leader in the North State.
+The Data Science Initiative (DSI) at Chico State is a collective of interested faculty, students and staff working to develop the Data Science capabilities of our campus and community. By levering expertise across a wealth of disciplines including Statistics, Computer Science, Business, Biology, Nutrition, Mathematics and Political Science, Chico State is well poised to become an educational and workforce training leader in the North State.
 :::
 
 ::: {.image-section}
-![](img/aboutDSI.jpg){style="max-width: 100%; height: auto;"}
+![](img/DSI_cover.jpeg){style="max-width: 100%; height: auto;"}
 :::
 
 ::::
@@ -37,10 +37,5 @@ Our vision is to foster a data-empowered society working within a culture of ope
 ## We work to achieve this mission by
 
 - Building relationships with community partners to build data-enabled solutions and provide high impact real-world learning experiences for students.
-- Providing training on data privacy and security, responsible and ethical research, responsible, transparent, and ethical uses of data and algorithms.
-- Providing learners with the skills and knowledge, and building confidence to develop and implement data-driven solutions in an ethically and socially responsible manner.
-- Using multiple methods of training including:
-- Traditional classroom and online curriculum
-- Workshops & specialized trainings
-- Interdisciplinary projects that engage learners from diverse sectors
-- Being a campus-wide resource through Community Coding – an open work and support session.
+- Providing training on data collection, handling, visualization, statistical analysis and machine learning modeling, and reproducible research. 
+- Offer curriculum for multiple audiences including traditional in person and online courses, short term workshops and specialized trainings. 

@@ -1,7 +1,7 @@
 ---
 title: "NorCal ASA DataFest"
 description: "A 48-hour data analysis competition where undergraduate students from various majors work in teams on large, real-world data. The data is revealed at the event's start on Friday evening, and teams present their findings to a panel of judges on Sunday afternoon. No prior programming experience is required!"
-image: "img/datafest_logo_Chico_Red.png"
+image: "img/datafest_cover.jpg"
 image-alt: "DataFest details"
 link: "https://norcaldatafest.netlify.app/"
 ---

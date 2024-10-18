@@ -11,7 +11,7 @@
     "href": "about.html",
     "title": "About the DSI",
     "section": "",
-    "text": "The Data Science Initiative (DSI) at Chico State is a fledgling grassroots program, initiated in 2015 to develop the Data Science capabilities of our campus and community. By levering expertise across a wealth of disciplines including Statistics, Computer Science, Business, Biology, Nutrition, Mathematics and Political Science, Chico State is well poised to become an educational and workforce training leader in the North State."
+    "text": "The Data Science Initiative (DSI) at Chico State is a collective of interested faculty, students and staff working to develop the Data Science capabilities of our campus and community. By levering expertise across a wealth of disciplines including Statistics, Computer Science, Business, Biology, Nutrition, Mathematics and Political Science, Chico State is well poised to become an educational and workforce training leader in the North State."
   },
   {
     "objectID": "about.html#our-mission-is-to",
@@ -25,14 +25,14 @@
     "href": "about.html#we-work-to-achieve-this-mission-by",
     "title": "About the DSI",
     "section": "We work to achieve this mission by",
-    "text": "We work to achieve this mission by\n\nBuilding relationships with community partners to build data-enabled solutions and provide high impact real-world learning experiences for students.\nProviding training on data privacy and security, responsible and ethical research, responsible, transparent, and ethical uses of data and algorithms.\nProviding learners with the skills and knowledge, and building confidence to develop and implement data-driven solutions in an ethically and socially responsible manner.\nUsing multiple methods of training including:\nTraditional classroom and online curriculum\nWorkshops & specialized trainings\nInterdisciplinary projects that engage learners from diverse sectors\nBeing a campus-wide resource through Community Coding – an open work and support session."
+    "text": "We work to achieve this mission by\n\nBuilding relationships with community partners to build data-enabled solutions and provide high impact real-world learning experiences for students.\nProviding training on data collection, handling, visualization, statistical analysis and machine learning modeling, and reproducible research.\nOffer curriculum for multiple audiences including traditional in person and online courses, short term workshops and specialized trainings."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome,",
     "section": "",
-    "text": "The Data Science Initiative at Chico State aims to be a hub of Data Science information and resources for campus and community. Our vision is to foster a data-empowered society working within a culture of open science."
+    "text": "The Data Science Initiative at Chico State is a resource of information and support for our campus and community.\nBy providing data science education, research, and collaboration across disciplines we equip students with the skills needed to analyze and interpret complex data, while also providing faculty and community members with data-driven solutions through partnerships and consulting services.\nThis work fosters interdisciplinary learning, research opportunities, data analysis competitions, and real-world applications in fields like business, health, and regenerative agriculture. We are committed to helping to address the growing demand for data expertise in today’s job market."
   },
   {
     "objectID": "index.html#bridging-innovation-and-opportunity",
@@ -494,7 +494,7 @@
     "href": "communityCoding.html",
     "title": "Community Coding",
     "section": "",
-    "text": "Got data and working on analysis? Got questions on using R, Python or other programming languages? Come and hang out with other coders in a welcoming and supportive environment.\nStudents, staff, faculty, and the public are invited to join our Community Coding sessions. Bring your computer, coding projects, and questions to this open working environment.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n❮\n\n\n❯"
+    "text": "Got data and working on analysis? Got questions on using R, Python or other programming languages? Come and hang out with other coders in a welcoming and supportive environment.\nStudents, staff, faculty, and the public are invited to join our Community Coding sessions. Bring your computer, coding projects, and questions to this open working environment.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n❮\n\n\n❯"
   },
   {
     "objectID": "communityCoding.html#schedule-locations-for-fall-2024",

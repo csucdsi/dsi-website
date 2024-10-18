@@ -12,18 +12,19 @@ website:
     left:
       - text: About
         href: about.qmd
-      - text: Wildcat Data Hub
-        href: datahub.qmd
-      - text: Projects
-        href: projects.qmd
       - text: News & Events
         href: news.qmd
+      - text: Wildcat Data Hub
+        href: datahub.qmd
       - text: Community Coding
         href: communityCoding.qmd
+      - text: Student Projects
+        href: projects.qmd
+
 
     right:
-      - text: Mission
-        href: https://www.csuchico.edu/datascience/mission.shtml
+      - text: Campus Homepage
+        href: https://www.csuchico.edu/datascience/index.shtml
       - icon: github
         menu:
           - text: Chico State Data Science

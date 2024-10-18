@@ -1,7 +1,7 @@
 ---
 title: "Community Coding"
 description: "Coding is a social activity! Whether you're working on a data analysis project, exploring R or Python, or need a collaborative space to focus, this is the place for you. Bring your questions, challenges, and curiosity. Faculty and WDH staff are available to guide you through data science topics like data collection and analysis. Join a supportive environment where students, staff, and faculty can code, learn, and work together!"
-image: "img/communityCoding.jpg"
+image: "img/cc_cover.jpg"
 image-alt: "Community Coding"
 link: "/communityCoding.html"
 ---

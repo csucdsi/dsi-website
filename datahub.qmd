@@ -28,17 +28,11 @@ is_valid_image <- function(filename) {
 # Filter to valid image files
 image_paths <- image_paths[sapply(image_paths, is_valid_image)]
 
-# Get file info
-file_info <- file.info(image_paths)
-
-# Sort images by modification time, so newer files come first
-image_paths <- image_paths[order(file_info$mtime, decreasing = FALSE)]
-
 # Get the filenames (without full paths)
 image_files <- basename(image_paths)
 
 # Number of banners you have
-num_banners <- 4  # Adjust this if you have more or fewer banners
+num_banners <- 3  # Adjust this if you have more or fewer banners
 
 # Ensure we have enough images by filling missing ones with NA
 if (length(image_files) < num_banners) {
@@ -49,7 +43,7 @@ if (length(image_files) < num_banners) {
 image1 <- image_files[1]
 image2 <- image_files[2]
 image3 <- image_files[3]
-image4 <- image_files[4]
+#image4 <- image_files[4]
 ```
 
 ::::  {.layout-container}

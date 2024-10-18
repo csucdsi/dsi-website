@@ -10,7 +10,11 @@ format:
 
 # Welcome,
 
-The Data Science Initiative at Chico State aims to be a hub of Data Science information and resources for campus and community. Our vision is to foster a data-empowered society working within a culture of open science.
+The Data Science Initiative at Chico State is a resource of information and support for our campus and community.
+
+By providing data science education, research, and collaboration across disciplines we equip students with the skills needed to analyze and interpret complex data, while also providing faculty and community members with data-driven solutions through partnerships and consulting services.
+
+This work fosters interdisciplinary learning, research opportunities, data analysis competitions, and real-world applications in fields like business, health, and regenerative agriculture. We are committed to helping to address the growing demand for data expertise in today’s job market.
 
 :::
 
