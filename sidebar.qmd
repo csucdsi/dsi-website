@@ -1,0 +1,89 @@
+<h2 style="color: #9d2235;">HIGHLIGHTS</h2>
+
+<div class="highlights-container">
+<ul>
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| results: asis
+
+library(yaml)
+
+# Get all .md, .qmd files and directories in the 'posts' folder
+files <- list.files("posts", full.names = TRUE, pattern = "\\.md$|\\.qmd$", include.dirs = TRUE)
+folders <- list.dirs("posts", recursive = FALSE)
+
+# Combine files and folders into one list
+all_items <- c(files, folders)
+
+# Sort by name
+all_items <- all_items[order(basename(all_items), decreasing = TRUE)]
+
+# Function to read YAML front matter
+read_yaml_front_matter <- function(file) {
+  tryCatch({
+    lines <- readLines(file)
+    yaml_start <- which(lines == "---")[1]
+    yaml_end <- which(lines == "---")[2]
+    if (is.na(yaml_start) || is.na(yaml_end) || yaml_end <= yaml_start) {
+      return(NULL)
+    }
+    yaml_content <- paste(lines[(yaml_start+1):(yaml_end-1)], collapse = "\n")
+    yaml::yaml.load(yaml_content)
+  }, error = function(e) {
+    warning(paste("Error reading YAML front matter from", file, ":", e$message))
+    return(NULL)
+  })
+}
+
+# Function to create list items for highlights
+print_yaml_as_html <- function(file) {
+  yaml_data <- read_yaml_front_matter(file)
+  if (!is.null(yaml_data) && !is.null(yaml_data$date) && !is.null(yaml_data$title)) {
+
+    relative_path <- sub("^posts/", "", file)
+    link <- paste0("/posts/", gsub("\\.qmd$|\\.md$", ".html", relative_path))
+
+    cat("<li>")
+    cat("<span class='date'>", yaml_data$date, "</span>")
+    cat("<a href='", link, "' class='text'>", yaml_data$title, "</a>")
+    cat("</li>\n")
+    return(TRUE)
+  }
+  return(FALSE)
+}
+
+# Selecting only top 10 elements
+count <- 0
+for (item in all_items) {
+  if (count >= 10) break
+  file_info <- file.info(item)
+  
+  if (is.na(file_info$isdir)) {
+    # Skip invalid items with missing file info
+    next
+  }
+  
+  if (file_info$isdir) {
+    index_file <- NULL
+    possible_files <- c("index.md", "index.qmd", "index.en.md", "index.en.qmd")
+    for (f in possible_files) {
+      current_file <- file.path(item, f)
+      if (file.exists(current_file)) {
+        index_file <- current_file
+        break
+      }
+    }
+    if (!is.null(index_file) && print_yaml_as_html(index_file)) {
+      count <- count + 1
+    }
+  } else {
+    if (print_yaml_as_html(item)) {
+      count <- count + 1
+    }
+  }
+}
+```
+</ul>
+</div>

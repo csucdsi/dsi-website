@@ -1,12 +1,38 @@
 ---
-title: "News and Events"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+format: 
+  html:
+    css: styles.css
 ---
+
+:::: {.layout-container}
+
+::: {.welcome-section}
+
+# Welcome,
+
+The Data Science Initiative at Chico State is a resource of information and support for our campus and community.
+
+By providing data science education, research, and collaboration across disciplines we equip students with the skills needed to analyze and interpret complex data, while also providing faculty and community members with data-driven solutions through partnerships and consulting services.
+
+This work fosters interdisciplinary learning, research opportunities, data analysis competitions, and real-world applications in fields like business, health, and regenerative agriculture. We are committed to helping to address the growing demand for data expertise in today’s job market.
+
+:::
+
+::: {.image-section}
+![_2024 NorCal DataFest participants, organizers, judges and President Steve Perez after a fun weekend of data wrangling, snacking and socializing._](img/hero.jpg){style="max-width: 100%; height: auto;"}
+:::
+
+::::
+
+:::: {.main-content}
+
+::: {.sidebar-content}
+{{< include sidebar.qmd >}}
+:::
+
+::: {.home-content}
+{{< include home_main.qmd >}}
+:::
+
+::::
+

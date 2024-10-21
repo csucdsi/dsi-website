@@ -1,0 +1,48 @@
+## Bridging Innovation and Opportunity
+
+<div class="section-grid">
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| results: asis
+
+library(yaml)
+
+files <- list.files("index", full.names = TRUE, pattern = "\\.qmd$")
+
+read_yaml_front_matter <- function(file) {
+  lines <- readLines(file)
+  yaml_end <- which(lines == "---")[2]
+  yaml_content <- paste(lines[2:(yaml_end-1)], collapse = "\n")
+  yaml::yaml.load(yaml_content)
+}
+
+for (file in files) {
+  yaml_data <- read_yaml_front_matter(file)
+  
+  cat("<div class='section-card'>")
+  if (!is.null(yaml_data$image)) {
+    cat("<img src='", yaml_data$image, "' alt='", yaml_data$title, "'>")
+  }
+  
+  cat("<h3><a href=", 
+    shQuote(yaml_data$link, type="cmd"), 
+    "class=\"no-decoration-link\">", 
+    gsub("&", "&amp;", 
+         gsub("<", "&lt;", 
+              gsub(">", "&gt;", 
+                   gsub("'", "&#39;", 
+                        gsub("\"", "&quot;", 
+                             yaml_data$title
+                        )
+                   )
+              )
+         )
+    ), 
+    "</a></h3>")
+  cat("<p>", yaml_data$description, "</p>")
+  cat("</div>")
+}
+```
+</div>

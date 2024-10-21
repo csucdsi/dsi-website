@@ -1,0 +1,112 @@
+---
+format: 
+  html:
+    css: styles.css
+title-block-banner: true
+page-layout: full 
+---
+
+```{r}
+#| echo: false
+#| include: false
+
+# Directory containing images
+image_dir <- "img/datahub_images"
+
+# List of valid image extensions (without leading dots)
+valid_extensions <- c("jpg", "jpeg", "png", "gif")
+
+# Get list of files in the directory with full paths
+image_paths <- list.files(path = image_dir, full.names = TRUE)
+
+# Function to check if a file has a valid image extension
+is_valid_image <- function(filename) {
+  ext <- tolower(tools::file_ext(filename))
+  ext %in% valid_extensions
+}
+
+# Filter to valid image files
+image_paths <- image_paths[sapply(image_paths, is_valid_image)]
+
+# Get the filenames (without full paths)
+image_files <- basename(image_paths)
+
+# Number of banners you have
+num_banners <- 3  # Adjust this if you have more or fewer banners
+
+# Ensure we have enough images by filling missing ones with NA
+if (length(image_files) < num_banners) {
+  image_files <- c(image_files, rep(NA, num_banners - length(image_files)))
+}
+
+# Assign images to variables
+image1 <- image_files[1]
+image2 <- image_files[2]
+image3 <- image_files[3]
+#image4 <- image_files[4]
+```
+
+::::  {.layout-container}
+::: {.welcome-section}
+
+# Wildcat Data Hub
+
+The Wildcat Data Hub (WDH) is a new consulting and support service at Chico State designed to support both campus and community researchers with all aspects of research relating to data. This includes undergraduate and graduate students, staff, faculty and our community members.
+
+Through a mix of pro-bono and fee-based services, the WDH is dedicated to providing high-quality support for research projects while creating paid, hands-on learning opportunities for students. 
+
+:::
+
+::: {.image-section}
+![](`r if (!is.na(image1)) sprintf('%s/%s', image_dir, image1)`){style="max-width: 100%; height: auto;"}
+:::
+::::
+
+::::  {.layout-container .banner--light}
+::: {.image-section}
+![](`r if (!is.na(image2)) sprintf('%s/%s', image_dir, image2)`){style="max-width: 100%; height: auto;"}
+:::
+::: {.welcome-section--light}
+
+# Services {style="color:black;"}
+
+* Programming languages such as R, Python and SQL
+* Cleaning and transforming data
+* Data collection tools and techniques
+* Data Visualization and reports
+* Reproducible research techniques
+* Data analysis via statistical modeling / machine learning
+* Developing measurable outcomes for research and grant proposals
+
+The hub offers free drop in consultation and coding support. Short and long-term project assistance by qualified students under faculty mentorship available on a fee-based system. 
+
+:::
+
+::::
+
+::::  {.layout-container .banner--blue}
+::: {.welcome-section}
+
+# Previous Work {style="color:white;"}
+* Supporting student authors in contributing [blog posts](projects.html)
+* Writing scripts import large quantities of data files into R for wrangling and analysis. 
+* Assisting graduate student thesis work with importing and cleaning time series data from sensors.  
+:::
+::: {.image-section}
+![](`r if (!is.na(image3)) sprintf('%s/%s', image_dir, image3)`){style="max-width: 100%; height: auto;"}
+:::
+
+::::
+
+```{=html}
+<iframe
+  id="JotFormIFrame-241545296222152"
+  title="Wildcat Data Hub Client Intake Form"
+  onload="window.parent.scrollTo(0,0)"
+  allowtransparency="true"
+  src="https://form.jotform.com/241545296222152"
+  frameborder="0"
+  scrolling="no"
+>
+</iframe>
+```
