@@ -19,7 +19,7 @@ This work fosters interdisciplinary learning, research opportunities, data analy
 :::
 
 ::: {.image-section}
-![](img/hero.jpg){style="max-width: 100%; height: auto;"}
+![_2024 NorCal DataFest participants, organizers, judges and President Steve Perez after a fun weekend of data wrangling, snacking and socializing._](img/hero.jpg){style="max-width: 100%; height: auto;"}
 :::
 
 ::::
