@@ -1,10 +1,9 @@
 ---
-format: html
+author: Saul Mooradian
 execute:
   warning: false
-editor: source
-author: Saul Mooradian
-eval: false
+  keep-md: true
+format: html
 ---
 
 <img src="Sauls-image.png" alt="chcRne logo" style="width: 18%; float: left;"/>
