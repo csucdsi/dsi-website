@@ -10,7 +10,7 @@ categories:
 ![](swc-hex-logo.png)
 
 
-On January 13-15, 2025, the CSU Carpentry Collective is offering a low-cost, three half-day Software Carpentry workshop on programming in R for anyone affiliated with the CSU system. 
+The CSU Carpentry Collective is offering a low-cost, three half-day Software Carpentry workshop on  programming in R for anyone affiliated with the CSU system on January 13-15, 2025.   
  
 [The Carpentries](https://carpentries.org/) is a fiscally sponsored project of Community Initiatives. They teach skills that are immediately useful for researchers, using lessons and datasets that allow researchers to quickly apply what they have learned to their own work.
  
