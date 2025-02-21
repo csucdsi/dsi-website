@@ -1,0 +1,110 @@
+---
+format: html
+editor: source
+author: Juan Cortes
+title: The CFO Office Sign-in Dashboard App
+
+---
+
+<img src="img/cf-logo.png" alt="CalFresh logo" style="float: center;" width="0%"/>
+
+<img src="img/cf-logo2.jpg" alt="CalFresh logo" style="float: center;" width="100%"/>
+
+
+# Juan's 2024 DS Capstone
+
+# The CFO Office Sign-in Dashboard App
+
+This project is a web application developed using Shiny, an R package for building interactive web applications, enabling dynamic data presentation and user interaction.
+
+My capstone project centered around streamlining common data analysis processes for Chico State's Student Services Center (SSC) [CalFresh](https://chicostatecalfresh.org/get-calfresh/) Outreach (CFO) office - a federally funded program (formerly known as food stamps) that helps students buy groceries. At Chico State, CalFresh Outreach assists students in checking eligibility, applying, and maintaining benefits.
+
+## Goal
+The CFO Office Sign-in Sheet recorded information about walk-in student visits to Chico State's Student Services Center (SSC) CalFresh Outreach (CFO) office.
+
+The goal was to create a Dynamic Report using the Shiny app, data analyses, and final reports to keep track of visits to the office. These includes:
+
+-   Daily visits
+-   Weekly visits
+-   Monthly visits
+-   Visits by Term
+-   Types of Assistance
+-   Repeated Assistance
+-   How they heard about CalFresh
+
+## Interactive Dashboard
+:::{.callout-tip appearance="default"}
+Click the 'Get new data' button to load the data. 
+:::
+
+<iframe src="https://rwrgfj-juan-cortes.shinyapps.io/CFOChico-Office-Visit-Tracker/" width="100%" height="600px"></iframe>
+
+## Impact
+
+::: {.callout-note appearance="default"}
+## Question
+**How does this project make a difference? (e.g., improve decision-making, provide insights)**
+:::
+
+::: {.callout-tip appearance="default"}
+## Answer
+**CFO Team:** Saves time by reducing manual data entry. Improves record keeping and organization. Enhances workflow to better serve students.
+
+**Chico State Students:** Provides access to information about campus resources. Supports basic needs, benefiting low-income, first-generation, and underrepresented students.
+
+**Stakeholders** Delivers insights regarding their Federal support. Facilitates dissemination tracking for short-term CFO outcomes.
+:::
+
+## Platforms used
+
+-   R Studio: Used for coding, data analysis, and visualization.
+-   Shiny: R package for building interactive web applications, enabling dynamic data presentation and user interaction.
+-   Google Sheets: A cloud-based spreadsheet tool for real-time data collection, storage, and collaborative work.
+-   Box: A cloud storage platform used for file sharing and collaborative document management.
+-   GitHub: Version control and code collaboration platform for managing code and tracking changes.
+
+## Variables
+
+To create a Dynamic Report using the Shiny app, data analyses, and final reports to keep track of visits to the office. This includes:
+
+-   Daily, weekly, & monthly visits
+-   Visits by Term
+-   Types of Assistance
+-   Repeated Assistance
+-   How they heard about CalFresh
+
+## Data Collection & Wrangling
+
+Data was collected through a Google Form, which gathers:
+
+-   History of visits
+-   Source of awareness about the SSC CFO office
+-   Type of services sought
+-   Name of the assistor
+
+
+```{=html}
+<div style="display: flex; align-items: flex-start; margin-bottom: 1em;">
+  <!-- Left column: image -->
+  <img src="img/Juan.png" alt="Juan Cortes" width="30%" style="margin-right: 1em;"/>
+
+  <!-- Right column: text -->
+  <div>
+  
+  <p><strong>Juan Cortes</strong></p>
+    <p><strong>Project Assistant</strong></p>
+    <p><strong>Contact:</strong> jccortes-aguiar@csuchico.edu</p>
+
+    <p>
+      Juan is from the Central Coast of California. He graduated from CSU Chico
+      with a BS in Mathematics (Statistics). He initially joined the DAFANH
+      team as a Research and Evaluation intern and later transitioned to a
+      staff role as a Program Assistant and Peer Mentor for the DAFANH 2024
+      Cohort. Juan enjoys the art of statistics, particularly in applying
+      analytical skills to real-world problems. Outside of his academic and
+      professional pursuits, he enjoys reading, playing the guitar, and
+      weightlifting.
+
+  </div>
+</div>
+```
