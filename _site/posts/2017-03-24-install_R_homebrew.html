@@ -237,24 +237,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li>Install <em>Homebrew</em>.</li>
 </ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">usr/bin/ruby</span> <span class="at">-e</span> <span class="st">"</span><span class="va">$(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/install<span class="va">)</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">usr/bin/ruby</span> <span class="at">-e</span> <span class="st">"</span><span class="va">$(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/install<span class="va">)</span><span class="st">"</span></span></code></pre></div>
 <p>This command will download, install, and set up <em>Homebrew</em>. The first time a <code>brew</code> command runs it will ask for a password.</p>
 <ol start="2" type="1">
 <li>Install <em>R</em> with the following commands:</li>
 </ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> tap homebrew/science <span class="co"># adds another source for applications.</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install r            <span class="co"># runs installer of r</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> tap homebrew/science <span class="co"># adds another source for applications.</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install r            <span class="co"># runs installer of r</span></span></code></pre></div>
 <p>The first command is necessary if you want to add science/math type applications. The second command handles all the installation of <em>R</em> itself. As of 3.25.2017 this installs version . This can take a while because <em>Homebrew</em> downloads then builds the tools though it tends to be faster an easier than manual installation.</p>
 <ol start="3" type="1">
 <li>Install <em>RStudio</em> with the following command:</li>
 </ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> cask install rstudio</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> cask install rstudio</span></code></pre></div>
 <p>Try navigating to <em>RStudio</em> to verify installation.</p>
 <ol start="4" type="1">
 <li><em>Optional</em> Set up <em>RStudio</em> to work from the command line.</li>
 </ol>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"alias rstudio='open -a RStudio'"</span> <span class="op">&gt;&gt;</span> ~/.bash_profile</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> ~/.bash_profile</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"alias rstudio='open -a RStudio'"</span> <span class="op">&gt;&gt;</span> ~/.bash_profile</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> ~/.bash_profile</span></code></pre></div>
 <p>This sets up your bash profile to run <em>RStudio</em> when <code>rstudio</code> is entered into the command line (i.e.&nbsp;<code>rstudio example.rmd</code>). It adds and <code>alias</code> to your <code>~/.bash_profile</code> so you can remove it if you want.</p>
 <p>This concludes the installation of <em>RStudio</em>. The rest of this documentation is more on Homebrew.</p>
 </section>
@@ -269,10 +269,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><em>Be careful with these because they do alter/remove applications.</em></p>
 <ol type="1">
 <li><p>Update and Upgrade your packages.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> brew update   <span class="co"># update the formula</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> brew upgrade  <span class="co"># Upgrade outdated, unpinned brews.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> brew update   <span class="co"># update the formula</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> brew upgrade  <span class="co"># Upgrade outdated, unpinned brews.</span></span></code></pre></div></li>
 <li><p>List your installed packages.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> brew list     <span class="co"># lists all installed brews</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> brew list     <span class="co"># lists all installed brews</span></span></code></pre></div></li>
 <li><p>Remove an Application <code>bash     $ brew uninstall &lt;formula&gt;</code></p></li>
 </ol>
 <p>For more information on <em>Homebrew</em> navigate to <a href="https://brew.sh">brew.sh</a>.</p>
@@ -288,7 +288,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <!-- Left Section -->
     <div class="footer-left">
       <div class="footer-header">
-        <img src="img/ChicoState_DSI_primary" alt="Logo" class="footer-logo">
+        <img src="img/ChicoState_DSI_primary.png" alt="Logo" class="footer-logo">
     </div>
       <div class="footer-text">
         <p>California State University, Chico<br>
@@ -336,58 +336,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');

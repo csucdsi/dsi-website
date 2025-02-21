@@ -270,7 +270,7 @@ window.Quarto = {
 <section id="team-resps" class="level1">
 <h1>Team Re(sps)</h1>
 <p>The physics team asked me about transforming multiple, specific columns within a Python <span class="math inline">\(\texttt{pandas.DataFrame.groupby}\)</span> operation. It took me a minute, but here’s what I came up with. Three specific variables are standardized and then checked to ensure that the correct thing happened.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># setup</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"~/data/finches.csv"</span>)</span>
@@ -281,7 +281,7 @@ window.Quarto = {
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>df[zvars] <span class="op">=</span> df.groupby(<span class="st">'island'</span>)[<span class="bu">vars</span>].transform(<span class="kw">lambda</span> x: (x <span class="op">-</span> x.mean())<span class="op">/</span>x.std())</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># check</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">'island'</span>)[zvars].agg({<span class="st">'mean'</span>, <span class="st">'std'</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">'island'</span>)[zvars].agg({<span class="st">'mean'</span>, <span class="st">'std'</span>})</span></code></pre></div>
 <pre><code>##                zwinglength        ztaillength      zmiddletoelength     
 ##                       mean  std          mean  std             mean  std
 ## island                                                                  
@@ -291,15 +291,15 @@ window.Quarto = {
 <section id="team-data-strikes-back" class="level2">
 <h2 class="anchored" data-anchor-id="team-data-strikes-back">Team Data Strikes Back</h2>
 <p>Team Data Strikes Back wanted to number the levels of a categorical variable. Here’s some made up data to represent the idea. Our goal is to index the levels of <span class="math inline">\(f\)</span>.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressMessages</span>(<span class="fu">library</span>(dplyr))</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">f =</span> <span class="fu">sample</span>(letters, <span class="dv">20</span>, <span class="at">replace=</span><span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressMessages</span>(<span class="fu">library</span>(dplyr))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">f =</span> <span class="fu">sample</span>(letters, <span class="dv">20</span>, <span class="at">replace=</span><span class="cn">TRUE</span>))</span></code></pre></div>
 <p>The solution I came up with relies on sorting the data, so let’s do that first.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>o <span class="ot">&lt;-</span> <span class="fu">order</span>(df<span class="sc">$</span>f)</span>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>o <span class="ot">&lt;-</span> <span class="fu">order</span>(df<span class="sc">$</span>f)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df[o,,drop<span class="ot">=</span><span class="cn">FALSE</span>]</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>nf <span class="ot">&lt;-</span> <span class="fu">match</span>(df<span class="sc">$</span>f, <span class="fu">unique</span>(df<span class="sc">$</span>f))</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># check</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df)</span></code></pre></div>
 <pre><code>## # A tibble: 6 x 2
 ##   f        nf
 ##   &lt;chr&gt; &lt;int&gt;
@@ -310,7 +310,7 @@ window.Quarto = {
 ## 5 g         3
 ## 6 i         4</code></pre>
 <p>Surely there’s other ways to do this; R <del>probably</del> has a function for it. But I <del>don’t</del> didn’t know which function. Moreover, this solution is general enough to be used within a broader grouping variable <span class="math inline">\(g\)</span> and does not require any variable to be a factor.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>number_levels <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>number_levels <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">sort</span>(x)</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">match</span>(x, <span class="fu">unique</span>(x))</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>}</span>
@@ -318,9 +318,9 @@ window.Quarto = {
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(g) <span class="sc">%&gt;%</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">gf =</span> <span class="fu">number_levels</span>(f))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">gf =</span> <span class="fu">number_levels</span>(f))</span></code></pre></div>
 <p>It requires some extra work if you want the numbered levels to be increasing across the levels of some grouping variable <span class="math inline">\(g\)</span>, but we can manage with some help from a rarely used assignment operator.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>index_grouped_levels <span class="ot">&lt;-</span> <span class="cf">function</span>() {</span>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>index_grouped_levels <span class="ot">&lt;-</span> <span class="cf">function</span>() {</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  idx <span class="ot">&lt;-</span> <span class="dv">0</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  nl <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    levels <span class="ot">&lt;-</span> <span class="fu">number_levels</span>(x) <span class="sc">+</span> idx</span>
@@ -334,11 +334,11 @@ window.Quarto = {
 <span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
 <span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(g, f) <span class="sc">%&gt;%</span></span>
 <span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(g) <span class="sc">%&gt;%</span></span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ngf =</span> <span class="fu">igrp_levels</span>(f))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ngf =</span> <span class="fu">igrp_levels</span>(f))</span></code></pre></div>
 <section id="a-simpler-solution" class="level3">
 <h3 class="anchored" data-anchor-id="a-simpler-solution">A Simpler Solution</h3>
 <p>On the Tuesday after DataFest, I show off my work to Dr.&nbsp;Donatello, and she looks at me like I’m crazy. She says, “What about <span class="math inline">\(\texttt{as.numeric(f)}\)</span> called on a factor?” I respond, “Ffa, sha, wha?” Then she shows me, and we worked out this gem.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">f =</span> <span class="fu">sample</span>(letters, <span class="dv">20</span>, <span class="at">replace=</span><span class="cn">TRUE</span>))</span>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">f =</span> <span class="fu">sample</span>(letters, <span class="dv">20</span>, <span class="at">replace=</span><span class="cn">TRUE</span>))</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>g <span class="ot">&lt;-</span> <span class="fu">as.character</span>(<span class="fu">gl</span>(<span class="dv">4</span>, <span class="dv">5</span>, <span class="at">labels=</span><span class="fu">sample</span>(LETTERS, <span class="dv">4</span>)))</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># as.numeric() on a concatenated factor</span></span>
@@ -353,7 +353,7 @@ window.Quarto = {
 <span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(g) <span class="sc">%&gt;%</span></span>
 <span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ngf =</span> <span class="fu">igrp_levels</span>(f))</span>
 <span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(df<span class="sc">$</span>mgf <span class="sc">==</span> df<span class="sc">$</span>ngf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(df<span class="sc">$</span>mgf <span class="sc">==</span> df<span class="sc">$</span>ngf)</span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
 </section>
 </section>
@@ -372,7 +372,7 @@ window.Quarto = {
     <!-- Left Section -->
     <div class="footer-left">
       <div class="footer-header">
-        <img src="img/ChicoState_DSI_primary" alt="Logo" class="footer-logo">
+        <img src="img/ChicoState_DSI_primary.png" alt="Logo" class="footer-logo">
     </div>
       <div class="footer-text">
         <p>California State University, Chico<br>
@@ -420,58 +420,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
