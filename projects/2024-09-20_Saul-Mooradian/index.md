@@ -1,10 +1,7 @@
 ---
 format: html
-execute:
-  warning: false
-editor: source
 author: Saul Mooradian
-eval: false
+title: Building an R package
 ---
 
 
@@ -13,7 +10,7 @@ eval: false
 
 <hr style="height:40px; visibility:hidden;" />
 
-# Saul's 2024 DS Capstone
+# Building an R package
 
 
 ::: {.cell}
@@ -23,7 +20,7 @@ eval: false
 
 <br/>
 
-## My project
+## Saul's 2024 DS Capstone project
 
 My capstone project centered around streamlining common data analysis processes for Chico State’s [Center for Healthy Communities](https://chcchicostate.org/) - a non-profit organization promoting food security, nutrition education, and much more. These processes included re-coding variables, creating tables, and generating dynamic inline code, allowing for faster data processing and report building.
 

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.319">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -24,7 +24,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -82,7 +82,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -91,8 +97,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -103,10 +111,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../../img/DSI_Avatar_03.ico" alt="" class="navbar-logo">
     </a>
@@ -121,52 +129,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../news.html" rel="" target="">
- <span class="menu-text">News &amp; Events</span></a>
+    <a class="nav-link" href="../../news.html"> 
+<span class="menu-text">News &amp; Events</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../datahub.html" rel="" target="">
- <span class="menu-text">Wildcat Data Hub</span></a>
+    <a class="nav-link" href="../../datahub.html"> 
+<span class="menu-text">Wildcat Data Hub</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../communityCoding.html" rel="" target="">
- <span class="menu-text">Community Coding</span></a>
+    <a class="nav-link" href="../../communityCoding.html"> 
+<span class="menu-text">Community Coding</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects.html" rel="" target="">
- <span class="menu-text">Student Projects</span></a>
+    <a class="nav-link" href="../../projects.html"> 
+<span class="menu-text">Student Projects</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://www.csuchico.edu/datascience/index.shtml" rel="" target="">
- <span class="menu-text">Campus Homepage</span></a>
+    <a class="nav-link" href="https://www.csuchico.edu/datascience/index.shtml"> 
+<span class="menu-text">Campus Homepage</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-github" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-github">    
         <li>
-    <a class="dropdown-item" href="https://github.com/csucdsi" rel="" target="">
+    <a class="dropdown-item" href="https://github.com/csucdsi">
  <span class="dropdown-text">Chico State Data Science</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/DATA-490" rel="" target="">
+    <a class="dropdown-item" href="https://github.com/DATA-490">
  <span class="dropdown-text">Student Projects</span></a>
   </li>  
     </ul>
   </li>
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -182,7 +190,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       <div>
       <div class="quarto-title-meta-heading">Author</div>
@@ -223,6 +231,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
+
 <p>This is a quick-and-dirty introduction that will explain what SQL is, how it is used, and what some SQL queries look like in R using the <a href="https://cran.r-project.org/web/packages/dplyr/index.html">dplyr</a> package. SQL (sometimes pronounced “sequel”) stands for <strong>Structured Query Language</strong>. It is a programming language used to manipulate data in Relational Database Management Systems and it “is one of the most common languages for interacting with data” <a href="https://www.sqltutorial.org/">(source sqltutorial.org)</a>. SQL consists of three main languages under the same umbrella:</p>
 <ul>
 <li><strong>data definition language</strong> - deals with database creation and modification</li>
@@ -240,7 +249,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="data-definition-language" class="level2">
 <h2 class="anchored" data-anchor-id="data-definition-language">Data Definition Language</h2>
 <p>In the industry, these commands are often restricted to be used by only the Database Management group. This is so that no random person in the company can edit the database and potentially destroy sensitive information. To show examples of database creation using SQL, I will create the <code>jobs</code> table. The following code chunk contains comments with more details:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- The notation at the start of this line denotes a comment, everything after "--" will be ignored</span></span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- The notation at the start of this line denotes a comment, everything after "--" will be ignored</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">-- All SQL commands must end in a semicolon ";"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">-- Most SQL command words are in all caps, but this can depend on the system</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">-- First we have to create the database, this one will be called "HR"</span></span>
@@ -260,7 +269,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    job_title <span class="dt">VARCHAR</span> (<span class="dv">35</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    min_salary <span class="dt">DECIMAL</span> (<span class="dv">8</span>, <span class="dv">2</span>) <span class="kw">DEFAULT</span> <span class="kw">NULL</span>,</span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    max_salary <span class="dt">DECIMAL</span> (<span class="dv">8</span>, <span class="dv">2</span>) <span class="kw">DEFAULT</span> <span class="kw">NULL</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>);</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>);</span></code></pre></div>
 <p>In the above code chunk, there were some new commands that may not look familiar. I’ll explain each column line-by-line.</p>
 <ul>
 <li>The <code>job_id</code> column will be integer data. The number in parentheses tells the database the maximum number of digits that a <code>job_id</code> can have, in this case it is 11. The <code>AUTO_INCREMENT</code> command is an automatic function that runs whenever a new job is added to the table. Finally, <code>PRIMARY KEY</code> tells us this is the primary key.</li>
@@ -268,15 +277,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>The last two columns, <code>min_salary</code> and <code>max_salary</code>, are very similar. They both have decimal data type, with 8 digits before the decimal and 2 digits after. Also, they both have <code>DEFAULT NULL</code> commands meaning that they are not required values when adding a new job. Adding a new job without specifying salaries will make those attributes empty.</li>
 </ul>
 <p>To denote a <strong>foreign key</strong>, the structure looks like this:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> table_name (</span>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> table_name (</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  column1 datatype,</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  column2 datatype,</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">..</span>.</span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">-- column3 is a primary key in another table</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">FOREIGN</span> <span class="kw">KEY</span> (column2) <span class="kw">REFERENCES</span> another_table_name (column3)</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>);</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>);</span></code></pre></div>
 <p>Additional commands are necessary to add to <code>CREATE TABLE</code> for when a table or record is deleted, but those are beyond the scope of this introduction. Other commands in the Data Definition language are shown below:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- See how these commands are not enclosed in parentheses?</span></span>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- See how these commands are not enclosed in parentheses?</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">-- Little syntax differences like these can depend on the specific software being used</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">-- However, all SQL commands end with a semicolon ;</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -287,31 +296,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="kw">DROP</span> <span class="kw">TABLE</span> table_name;</span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">-- The ALTER TABLE command can also change column names and data definitions with RENAME and MODIFY</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">-- The ALTER TABLE command can also change column names and data definitions with RENAME and MODIFY</span></span></code></pre></div>
 </section>
 <section id="data-control-language" class="level2">
 <h2 class="anchored" data-anchor-id="data-control-language">Data Control Language</h2>
 <p>There are only two main commands in this language. They are <code>GRANT</code> and <code>REVOKE</code>. Only Database Administrator’s or owner’s of the database object can provide/remove privileges on a database object. The details of these commands are beyond the scope of this introduction, but their skeleton will be shown.</p>
 <p>The syntax for the <code>GRANT</code> command is:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">GRANT</span> privilege_name </span>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">GRANT</span> privilege_name </span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">ON</span> database_name </span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">TO</span> {user_name |<span class="kw">PUBLIC</span> |role_name} <span class="co">-- username or all users or users with role_name</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>[<span class="kw">WITH</span> <span class="kw">GRANT</span> <span class="kw">OPTION</span>]; <span class="co">-- optional</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>[<span class="kw">WITH</span> <span class="kw">GRANT</span> <span class="kw">OPTION</span>]; <span class="co">-- optional</span></span></code></pre></div>
 <p>The syntax for the <code>REVOKE</code> command is:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">REVOKE</span> privilege_name </span>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">REVOKE</span> privilege_name </span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="kw">ON</span> database_name </span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> {user_name |<span class="kw">PUBLIC</span> |role_name}; <span class="co">-- username or all users or users with role_name</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> {user_name |<span class="kw">PUBLIC</span> |role_name}; <span class="co">-- username or all users or users with role_name</span></span></code></pre></div>
 </section>
 <section id="data-manipulation-language" class="level2">
 <h2 class="anchored" data-anchor-id="data-manipulation-language">Data Manipulation Language</h2>
 <p>To demonstrate examples, I will create a couple of toy datasets: one for employees and one for jobs. In these examples, I did not include a primary key for employees so we can assume the first and last name together are the primary key. The primary key of the jobs table is <code>job_id</code> and the employees table has a foreign key with the same name.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>employees <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>employees <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">first_name =</span> <span class="fu">c</span>(<span class="st">"Curly"</span>, <span class="st">"Larry"</span>, <span class="st">"Moe"</span>, <span class="st">"Joe"</span>),</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">last_name =</span> <span class="fu">c</span>(<span class="st">"Morris"</span>, <span class="st">"Cambridge"</span>, <span class="st">"Wallace"</span>, <span class="st">"Frasier"</span>),</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">salary =</span> <span class="fu">c</span>(<span class="fl">10000.00</span>, <span class="fl">10000.00</span>, <span class="fl">12500.00</span>, <span class="fl">13333.33</span>),</span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">job_id =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>)</span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(employees)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(employees)</span></code></pre></div>
 <pre><code>## # A tibble: 4 × 4
 ##   first_name last_name salary job_id
 ##   &lt;chr&gt;      &lt;chr&gt;      &lt;dbl&gt;  &lt;dbl&gt;
@@ -319,11 +328,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ## 2 Larry      Cambridge 10000       2
 ## 3 Moe        Wallace   12500       3
 ## 4 Joe        Frasier   13333.      4</code></pre>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>jobs <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>jobs <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">job_title =</span> <span class="fu">c</span>(<span class="st">"Janitor"</span>, <span class="st">"Maintenenace"</span>, <span class="st">"Electrical"</span>, <span class="st">"Manager"</span>),</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">job_id =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>)</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(jobs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(jobs)</span></code></pre></div>
 <pre><code>## # A tibble: 4 × 2
 ##   job_title    job_id
 ##   &lt;chr&gt;         &lt;dbl&gt;
@@ -332,15 +341,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ## 3 Electrical        3
 ## 4 Manager           4</code></pre>
 <p>For this introduction, I’ll focus on the <code>SELECT</code> command to make queries to the database. However, there are other commands in the language such as <code>INSERT</code>, <code>UPDATE</code>, and <code>DELETE</code>. The basic format of a SQL query looks like this:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> select_list</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> table_name;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> select_list</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> table_name;</span></code></pre></div>
 <p>Using R, this command would look like:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">select</span>(<span class="at">data =</span> table_name, column1, column2, ...)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">select</span>(<span class="at">data =</span> table_name, column1, column2, ...)</span></code></pre></div>
 <p>The select list can be any number of comma-separated column names or an asterisk <code>*</code> to denote all columns in the table. When evaluating the <code>SELECT</code> statement, the database system evaluates the <code>FROM</code> clause first and then the <code>SELECT</code> clause. You can also do arithmetic in the <code>SELECT</code> clause, a couple of examples are below with their R translation and output:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> first_name, last_name, salary, salary <span class="op">*</span> <span class="fl">1.25</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> employees;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>employees <span class="sc">%&gt;%</span> <span class="fu">select</span>(first_name, last_name, salary) <span class="sc">%&gt;%</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">raise =</span> salary <span class="sc">*</span> <span class="fl">1.25</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> first_name, last_name, salary, salary <span class="op">*</span> <span class="fl">1.25</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> employees;</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>employees <span class="sc">%&gt;%</span> <span class="fu">select</span>(first_name, last_name, salary) <span class="sc">%&gt;%</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">raise =</span> salary <span class="sc">*</span> <span class="fl">1.25</span>)</span></code></pre></div>
 <pre><code>## # A tibble: 4 × 4
 ##   first_name last_name salary  raise
 ##   &lt;chr&gt;      &lt;chr&gt;      &lt;dbl&gt;  &lt;dbl&gt;
@@ -348,10 +357,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ## 2 Larry      Cambridge 10000  12500 
 ## 3 Moe        Wallace   12500  15625 
 ## 4 Joe        Frasier   13333. 16667.</code></pre>
-<div class="sourceCode" id="cb15"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="fu">AVG</span>(salary), <span class="fu">COUNT</span>(<span class="kw">DISTINCT</span>(salary)), <span class="fu">ROUND</span>(salary, <span class="dv">0</span>) <span class="co">-- round to 0 decimal places</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> employees;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>employees <span class="sc">%&gt;%</span> <span class="fu">transmute</span>(<span class="at">avg_salary =</span> <span class="fu">mean</span>(salary),</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">count_distinct =</span> <span class="fu">n_distinct</span>(salary), <span class="at">trunc_salary =</span> <span class="fu">floor</span>(salary))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="fu">AVG</span>(salary), <span class="fu">COUNT</span>(<span class="kw">DISTINCT</span>(salary)), <span class="fu">ROUND</span>(salary, <span class="dv">0</span>) <span class="co">-- round to 0 decimal places</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> employees;</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>employees <span class="sc">%&gt;%</span> <span class="fu">transmute</span>(<span class="at">avg_salary =</span> <span class="fu">mean</span>(salary),</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">count_distinct =</span> <span class="fu">n_distinct</span>(salary), <span class="at">trunc_salary =</span> <span class="fu">floor</span>(salary))</span></code></pre></div>
 <pre><code>## # A tibble: 4 × 3
 ##   avg_salary count_distinct trunc_salary
 ##        &lt;dbl&gt;          &lt;int&gt;        &lt;dbl&gt;
@@ -359,9 +368,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ## 2     11458.              3        10000
 ## 3     11458.              3        12500
 ## 4     11458.              3        13333</code></pre>
-<div class="sourceCode" id="cb18"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="fu">MAX</span>(salary), <span class="fu">MIN</span>(salary)</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> employees;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>employees <span class="sc">%&gt;%</span> <span class="fu">transmute</span>(<span class="at">max_sal =</span> <span class="fu">max</span>(salary), <span class="at">min_sal =</span> <span class="fu">min</span>(salary))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="fu">MAX</span>(salary), <span class="fu">MIN</span>(salary)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> employees;</span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>employees <span class="sc">%&gt;%</span> <span class="fu">transmute</span>(<span class="at">max_sal =</span> <span class="fu">max</span>(salary), <span class="at">min_sal =</span> <span class="fu">min</span>(salary))</span></code></pre></div>
 <pre><code>## # A tibble: 4 × 2
 ##   max_sal min_sal
 ##     &lt;dbl&gt;   &lt;dbl&gt;
@@ -370,13 +379,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ## 3  13333.   10000
 ## 4  13333.   10000</code></pre>
 <p>To get data from other tables and join it to this one, we use a JOIN clause. Using <code>INNER JOIN</code>, we can select the rows that have a record in both tables. SQL also supports <code>LEFT JOIN</code> and <code>RIGHT JOIN</code>. The format looks like this:</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> first_name, last_name, job_title</span>
+<div class="sourceCode" id="cb21"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> first_name, last_name, job_title</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> employees</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="kw">INNER</span> <span class="kw">JOIN</span> jobs <span class="kw">ON</span> job_id <span class="op">=</span> job_id;</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co">-- the name before the equals sign is the primary key in the employees table</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co">-- the name before the equals sign is the primary key in the employees table</span></span></code></pre></div>
 <p>In R, it might look like this:</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>employees <span class="sc">%&gt;%</span> <span class="fu">select</span>(first_name, last_name, job_id) <span class="sc">%&gt;%</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(jobs, <span class="at">by=</span><span class="fu">c</span>(<span class="st">"job_id"</span><span class="ot">=</span><span class="st">"job_id"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>employees <span class="sc">%&gt;%</span> <span class="fu">select</span>(first_name, last_name, job_id) <span class="sc">%&gt;%</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(jobs, <span class="at">by=</span><span class="fu">c</span>(<span class="st">"job_id"</span><span class="ot">=</span><span class="st">"job_id"</span>))</span></code></pre></div>
 <pre><code>## # A tibble: 4 × 4
 ##   first_name last_name job_id job_title   
 ##   &lt;chr&gt;      &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;       
@@ -398,8 +407,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <!-- Left Section -->
     <div class="footer-left">
       <div class="footer-header">
-        <img src="img/DSI_Avatar_03.ico" alt="Logo" class="footer-logo">
-        <h4 class="footer-title">Data Science Initiative</h4>
+        <img src="img/ChicoState_DSI_primary.png" alt="Logo" class="footer-logo">
     </div>
       <div class="footer-text">
         <p>California State University, Chico<br>
@@ -410,12 +418,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     <!-- Right Section -->
     <div class="footer-right">
-      <a href="https://securelb.imodules.com/s/1751/wide.aspx?sid=1751&amp;gid=2&amp;pgid=405&amp;cid=1058&amp;dids=9.96.97.98.99.100.101.102.104.105.103.156.106.107.108.10.110.109.114.113.115.111.1.154&amp;bledit=1&amp;sort=1" target="_blank" class="gift-button">Give a gift</a>
+      <a href="https://securelb.imodules.com/s/1751/wide.aspx?sid=1751&amp;gid=2&amp;pgid=405&amp;cid=1058&amp;dids=9.96.97.98.99.100.101.102.104.105.103.156.106.107.108.10.110.109.114.113.115.111.1.154&amp;bledit=1&amp;sort=1" target="_blank" class="gift-button">Support our students</a>
       <a href="#" class="contact-link">Contact Us</a>
       <div class="social-icons">
         <a href="mailto:datascience@csuchico.edu" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"></a>
         <a href="https://github.com/csucdsi" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub"></a>
-        <a href="https://discord.gg/MjHhAVyJ" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord"></a>
+        <a href="https://discord.gg/tZTfBjXPjb" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord"></a>
       </div>
     </div>
   </div>
@@ -447,62 +455,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
         }
       }
-      return codeEl.innerText;
     }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -512,8 +485,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -525,7 +507,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -569,6 +674,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -594,6 +700,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -654,6 +786,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
