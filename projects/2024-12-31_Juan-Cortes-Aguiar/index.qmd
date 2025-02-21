@@ -81,28 +81,15 @@ Data was collected through a Google Form, which gathers:
 -   Name of the assistor
 
 
-```{=html}
-<div style="display: flex; align-items: flex-start; margin-bottom: 1em;">
-  <!-- Left column: image -->
-  <img src="img/Juan.png" alt="Juan Cortes" width="30%" style="margin-right: 1em;"/>
+:::: {.columns}
 
-  <!-- Right column: text -->
-  <div>
-  
-  <p><strong>Juan Cortes</strong></p>
-    <p><strong>Project Assistant</strong></p>
-    <p><strong>Contact:</strong> jccortes-aguiar@csuchico.edu</p>
+::: {.column width="40%"}
+![](img/Juan.png)
+:::
 
-    <p>
-      Juan is from the Central Coast of California. He graduated from CSU Chico
-      with a BS in Mathematics (Statistics). He initially joined the DAFANH
-      team as a Research and Evaluation intern and later transitioned to a
-      staff role as a Program Assistant and Peer Mentor for the DAFANH 2024
-      Cohort. Juan enjoys the art of statistics, particularly in applying
-      analytical skills to real-world problems. Outside of his academic and
-      professional pursuits, he enjoys reading, playing the guitar, and
-      weightlifting.
+::: {.column width="60%"}
+Juan is from the Central Coast of California. He graduated from CSU Chico with a BS in Mathematics (Statistics). He initially joined the DAFANH team as a Research and Evaluation intern and later transitioned to a staff role as a Program Assistant and Peer Mentor for the DAFANH 2024 Cohort. Juan enjoys the art of statistics, particularly in applying analytical skills to real-world problems. Outside of his academic and professional pursuits, he enjoys reading, playing the guitar, and weightlifting.
+:::
 
-  </div>
-</div>
-```
+::::
+

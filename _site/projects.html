@@ -135,7 +135,7 @@ window.Quarto = {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -203,33 +203,32 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Student Projects</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Student Projects</h1>
+</div>
 
 
 
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <p>This page highlights the innovative work of our talented students from the <a href="https://catalog.csuchico.edu/colleges-departments/college-natural-sciences/mathematics/data-science-certificate">Data Science Certificate program</a> or the <a href="https://www.csuchico.edu/math/degrees/msdsa.shtml">Masters in Data Science and Analytics</a>. Projects span a diverse range from academic research, community collaborations, and real-world applications, demonstrating the impact and creativity of our upcoming data professionals. Each project is linked directly to a Github repository with more details about the project, including if the project has good next steps that can be built on by another person.</p>
@@ -239,7 +238,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1740097747679" data-listing-reading-time-sort="3" data-listing-word-count-sort="570">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1740101488838" data-listing-reading-time-sort="3" data-listing-word-count-sort="570">
 <a href="./projects/2024-09-20_Saul-Mooradian/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="projects/2024-09-20_Saul-Mooradian/Sauls-image.png" alt="chcRne logo" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -259,7 +258,7 @@ Saul Mooradian
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1740097734439" data-listing-reading-time-sort="3" data-listing-word-count-sort="591">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1740103255267" data-listing-reading-time-sort="3" data-listing-word-count-sort="506">
 <a href="./projects/2024-12-31_Juan-Cortes-Aguiar/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="projects/2024-12-31_Juan-Cortes-Aguiar/img/cf-logo.png" alt="CalFresh logo" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -290,7 +289,7 @@ No matching items
     <!-- Left Section -->
     <div class="footer-left">
       <div class="footer-header">
-        <img src="img/ChicoState_DSI_primary" alt="Logo" class="footer-logo">
+        <img src="img/ChicoState_DSI_primary.png" alt="Logo" class="footer-logo">
     </div>
       <div class="footer-text">
         <p>California State University, Chico<br>
@@ -338,58 +337,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
