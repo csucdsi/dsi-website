@@ -1,9 +1,7 @@
 ---
 format: html
-editor: source
 author: Juan Cortes
 title: The CFO Office Sign-in Dashboard App
-
 ---
 
 <img src="img/cf-logo.png" alt="CalFresh logo" style="float: center;" width="0%"/>
