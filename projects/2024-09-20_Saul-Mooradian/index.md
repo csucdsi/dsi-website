@@ -1,10 +1,7 @@
 ---
 format: html
-execute:
-  warning: false
-editor: source
 author: Saul Mooradian
-eval: false
+title: Building an R package
 ---
 
 
