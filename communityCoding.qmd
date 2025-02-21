@@ -51,8 +51,10 @@ Students, staff, faculty, and the public are invited to join our Community Codin
 Community Coding is regularly held at The Innovation Lab on the second floor of the Meriam Library next to the print center. Additional drop in help sessions are available by individual faculty in their office or over Zoom. Click your desired time to view more information about locations and language support.
 :::
 
-<!-- Outlook calendar embed -->
 :::{.calendar}
 <!-- If you ever need to change where the calendar source is, simply get the embedded link and paste it after 'src=' -->
-<iframe src="https://outlook.office365.com/calendar/published/39dd299543804eed90cf06869866fc76@csuchico.edu/311a6bd5e6c04edabb14d218c48a5a7f12565647235556191009/calendar.html" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRFeor7G0FO4mDM3EYZkO4-_F3fov_Z6si2ZT2Wwyxf87dJY3x0YqA14eY6X6q90Vcud637PF22G2ry/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 :::
+
+
+
