@@ -80,6 +80,9 @@ Through a mix of pro-bono and fee-based services, the WDH is dedicated to provid
 
 The hub offers free drop in consultation and coding support. Short and long-term project assistance by qualified students under faculty mentorship available on a fee-based system. 
 
+
+<a href="https://form.jotform.com/241545296222152" class="btn btn-primary" target="_blank" style="padding:10px 20px; text-decoration:none; background-color:9D2235#; color:#ffff; border-radius:5px;"> Request Support
+</a>
 :::
 
 ::::
@@ -97,16 +100,79 @@ The hub offers free drop in consultation and coding support. Short and long-term
 :::
 
 ::::
+::: {.faculty-affiliates-section}
+## Faculty Affiliates
 
-```{=html}
-<iframe
-  id="JotFormIFrame-241545296222152"
-  title="Wildcat Data Hub Client Intake Form"
-  onload="window.parent.scrollTo(0,0)"
-  allowtransparency="true"
-  src="https://form.jotform.com/241545296222152"
-  frameborder="0"
-  scrolling="no"
->
-</iframe>
-```
+:::: {.affiliate-profile}
+<a href="https://www.csuchico.edu/math/people/faculty/donatello-robin.shtml" target="_blank">
+  <img src="img/datahub_images/donatello.jpg" alt="Robin Donatello" class="affiliate-image">
+</a>
+<div class="affiliate-info">
+  <h3>Robin Donatello</h3>
+  <p>Department: Data Science</p>
+  <p><a href="rdonatello@csuchico.edu">rdonatello@csuchico.edu</a></p>
+</div>
+::::
+
+:::: {.affiliate-profile}
+<a href="https://www.csuchico.edu/math/people/faculty/lytal-nicholas.shtml" target="_blank">
+  <img src="img/datahub_images/lytal.jpg" alt="Nick Lytal" class="affiliate-image">
+</a>
+<div class="affiliate-info">
+  <h3>Nick Lytal</h3>
+  <p>Department: STAT</p>
+  <p><a href="nlytal@csuchico.edu">nlytal@csuchico.edu</a></p>
+</div>
+::::
+
+:::: {.affiliate-profile}
+<a href="https://www.csuchico.edu/pols/people/tenure-line-faculty/alonso-ginger.shtml" target="_blank">
+  <img src="img/datahub_images/alonso.jpg" alt="Ginger Alonso" class="affiliate-image">
+</a>
+<div class="affiliate-info">
+  <h3>Ginger Alonso</h3>
+  <p>Department: POLS</p>
+  <p><a href="galonso2@csuchico.edu">galonso2@csuchico.edu</a></p>
+</div>
+::::
+
+:::: {.affiliate-profile}
+<a href="https://www.csuchico.edu/math/people/faculty/gray-kathy.shtml" target="_blank">
+  <img src="img/datahub_images/gray.jpg" alt="Kathy Gray" class="affiliate-image">
+</a>
+<div class="affiliate-info">
+  <h3>Kathy Gray</h3>
+  <p>Department: STAT</p>
+  <p><a href="klgray@csuchico.edu">klgray@csuchico.edu</a></p>
+</div>
+::::
+
+:::: {.affiliate-profile}
+<a href="https://www.csuchico.edu/math/people/faculty/roualdes-edward.shtml" target="_blank">
+  <img src="img/datahub_images/roualdes.jpg" alt="Edward Roualdes" class="affiliate-image">
+</a>
+<div class="affiliate-info">
+  <h3>Edward Roualdes</h3>
+  <p>Department: STAT</p>
+  <p><a href="eroualdes@csuchico.edu">eroualdes@csuchico.edu</a></p>
+</div>
+::::
+
+:::: {.affiliate-profile}
+<a href="https://www.csuchico.edu/phha/people/faculty/boakye.shtml" target="_blank">
+  <img src="img/datahub_images/boakye.jpg" alt="Kwadwo Boakye" class="affiliate-image">
+</a>
+<div class="affiliate-info">
+  <h3>Kwadwo Boakye</h3>
+  <p>Department: PHHSA </p>
+  <p><a href="kaboakye@csuchico.edu">kaboakye@csuchico.edu</a></p>
+</div>
+::::
+
+
+
+:::
+
+
+:::
+
