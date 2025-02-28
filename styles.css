@@ -64,43 +64,30 @@
 /* faculty affiliates under WDH */
 
 .faculty-affiliates-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em; /* Adjust gap as needed */
+  margin: 1em 0;
 }
 
+/* Use Flexbox to align the image and text side by side. */
 .affiliate-profile {
-  flex: 0 0 calc(50% - 0.5em); /* Two per row with some gap */
   display: flex;
   align-items: center;
-  margin-bottom: 1em;
-  padding: 1em;
+  gap: 1em;
   background-color: #f7f7f7;
   border-radius: 5px;
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
 .affiliate-image {
-  width: 80px;
-  height: 80px;
+  /* The width/height in the Quarto markup is 80x80;
+     these additional rules ensure a circular crop. */
   object-fit: cover;
-  margin-right: 1em;
   border-radius: 50%;
   border: 2px solid #ccc;
 }
 
-.affiliate-info {
-  display: flex;
-  flex-direction: column;
-}
 
-.affiliate-info h3 {
-  margin: 0 0 0.5em;
-  font-size: 1.2em;
-}
-
-.affiliate-info p {
-  margin: 0.2em 0;
-}
+/* end faculty affiliates */
 
   .main-content {
     display: flex;

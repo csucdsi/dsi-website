@@ -100,79 +100,74 @@ The hub offers free drop in consultation and coding support. Short and long-term
 :::
 
 ::::
-::: {.faculty-affiliates-section}
 ## Faculty Affiliates
 
-:::: {.affiliate-profile}
-<a href="https://www.csuchico.edu/math/people/faculty/donatello-robin.shtml" target="_blank">
-  <img src="img/datahub_images/donatello.jpg" alt="Robin Donatello" class="affiliate-image">
-</a>
-<div class="affiliate-info">
-  <h3>Robin Donatello</h3>
-  <p>Department: Data Science</p>
-  <p><a href="rdonatello@csuchico.edu">rdonatello@csuchico.edu</a></p>
-</div>
-::::
+::: {.faculty-affiliates-section}
 
-:::: {.affiliate-profile}
-<a href="https://www.csuchico.edu/math/people/faculty/lytal-nicholas.shtml" target="_blank">
-  <img src="img/datahub_images/lytal.jpg" alt="Nick Lytal" class="affiliate-image">
-</a>
-<div class="affiliate-info">
-  <h3>Nick Lytal</h3>
-  <p>Department: STAT</p>
-  <p><a href="nlytal@csuchico.edu">nlytal@csuchico.edu</a></p>
-</div>
-::::
+<!-- Row 1 -->
+::: columns
+::: {.column width="50%"}
+:::{.affiliate-profile}
+[![](img/datahub_images/donatello.jpg){.affiliate-image width=80 height=80}](https://www.csuchico.edu/math/people/faculty/donatello-robin.shtml){target="_blank"}
 
-:::: {.affiliate-profile}
-<a href="https://www.csuchico.edu/pols/people/tenure-line-faculty/alonso-ginger.shtml" target="_blank">
-  <img src="img/datahub_images/alonso.jpg" alt="Ginger Alonso" class="affiliate-image">
-</a>
-<div class="affiliate-info">
-  <h3>Ginger Alonso</h3>
-  <p>Department: POLS</p>
-  <p><a href="galonso2@csuchico.edu">galonso2@csuchico.edu</a></p>
-</div>
-::::
+**Robin Donatello**  
+Department: Data Science  
+[rdonatello@csuchico.edu](mailto:rdonatello@csuchico.edu)
+:::
+:::
+::: {.column width="50%"}
+:::{.affiliate-profile}
+[![](img/datahub_images/lytal.jpg){.affiliate-image width=80 height=80}](https://www.csuchico.edu/math/people/faculty/lytal-nicholas.shtml){target="_blank"}
 
-:::: {.affiliate-profile}
-<a href="https://www.csuchico.edu/math/people/faculty/gray-kathy.shtml" target="_blank">
-  <img src="img/datahub_images/gray.jpg" alt="Kathy Gray" class="affiliate-image">
-</a>
-<div class="affiliate-info">
-  <h3>Kathy Gray</h3>
-  <p>Department: STAT</p>
-  <p><a href="klgray@csuchico.edu">klgray@csuchico.edu</a></p>
-</div>
-::::
-
-:::: {.affiliate-profile}
-<a href="https://www.csuchico.edu/math/people/faculty/roualdes-edward.shtml" target="_blank">
-  <img src="img/datahub_images/roualdes.jpg" alt="Edward Roualdes" class="affiliate-image">
-</a>
-<div class="affiliate-info">
-  <h3>Edward Roualdes</h3>
-  <p>Department: STAT</p>
-  <p><a href="eroualdes@csuchico.edu">eroualdes@csuchico.edu</a></p>
-</div>
-::::
-
-:::: {.affiliate-profile}
-<a href="https://www.csuchico.edu/phha/people/faculty/boakye.shtml" target="_blank">
-  <img src="img/datahub_images/boakye.jpg" alt="Kwadwo Boakye" class="affiliate-image">
-</a>
-<div class="affiliate-info">
-  <h3>Kwadwo Boakye</h3>
-  <p>Department: PHHSA </p>
-  <p><a href="kaboakye@csuchico.edu">kaboakye@csuchico.edu</a></p>
-</div>
-::::
-
-
-
+**Nick Lytal**  
+Department: STAT  
+[nlytal@csuchico.edu](mailto:nlytal@csuchico.edu)
+:::
+:::
 :::
 
+<!-- Row 2 -->
+::: columns
+::: {.column width="50%"}
+:::{.affiliate-profile}
+[![](img/datahub_images/alonso.jpg){.affiliate-image height=80 width=80 }](https://www.csuchico.edu/pols/people/tenure-line-faculty/alonso-ginger.shtml){target="_blank"}
 
+**Ginger Alonso**  
+Department: POLS  
+[galonso2@csuchico.edu](mailto:galonso2@csuchico.edu)
+:::
+:::
+::: {.column width="50%"}
+:::{.affiliate-profile}
+[![](img/datahub_images/gray.jpg){.affiliate-image width=80 height=80}](https://www.csuchico.edu/math/people/faculty/gray-kathy.shtml){target="_blank"}
+
+**Kathy Gray**  
+Department: STAT  
+[klgray@csuchico.edu](mailto:klgray@csuchico.edu)
+:::
+:::
 :::
 
+<!-- Row 3 -->
+::: columns
+::: {.column width="50%"}
+:::{.affiliate-profile}
+[![](img/datahub_images/roualdes.jpg){.affiliate-image width=80 height=80}](https://www.csuchico.edu/math/people/faculty/roualdes-edward.shtml){target="_blank"}
+
+**Edward Roualdes**  
+Department: STAT  
+[eroualdes@csuchico.edu](mailto:eroualdes@csuchico.edu)
+:::
+:::
+::: {.column width="50%"}
+:::{.affiliate-profile}
+[![](img/datahub_images/boakye.jpg){.affiliate-image width=80 height=80}](https://www.csuchico.edu/phha/people/faculty/boakye.shtml){target="_blank"}
+
+**Kwadwo Boakye**  
+Department: PHHSA  
+[kaboakye@csuchico.edu](mailto:kaboakye@csuchico.edu)
+:::
+:::
+:::
+
+:::
