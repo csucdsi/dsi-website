@@ -5,13 +5,13 @@
 To create a blogpost that will be featured under the Projects tab, follow these steps:
 
 1. **Create a Service Request**  
-   Submit a [service request](https://cdn.jotfor.ms/241545296222152){target="\_false"} so we can help you with the process.
+   Submit a [service request](https://cdn.jotfor.ms/241545296222152){target="\_blank"} so we can help you with the process.
 
 2. **Review Documentation**  
-   Check out the [Quarto Documentation](https://quarto.org/docs/guide/){target="\_false"} page—pay particular attention to the section on Markdown basics.
+   Check out the [Quarto Documentation](https://quarto.org/docs/guide/){target="\_blank"} page—pay particular attention to the section on Markdown basics.
 
 3. **Download the Template**  
-   Download the [blogTemplate](https://github.com/csucdsi/dsi-website/tree/instructions/_blogTemplate){target="\_false"} folder from above and customize it to suit your content.
+   Download the [blogTemplate](https://github.com/csucdsi/dsi-website/tree/instructions/_blogTemplate){target="\_blank"} folder from above and customize it to suit your content.
 
 4. **Coordinate with the WDH Team**  
    Communicate with your assigned WDH team member for guidance on how to get your post featured on the website.
