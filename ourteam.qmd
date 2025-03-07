@@ -1,0 +1,117 @@
+---
+format: 
+  html:
+    toc: false
+    css: styles.css
+title-block-banner: true
+page-layout: full 
+---
+
+::::  {.layout-container}
+::: {.welcome-section}
+
+# Our Team
+The Wildcat Datahub partners with faculty and staff across campus to provide support for research projects. Our team includes faculty affiliates from the Statistics, Mathematics, Political Science departments, and more. Additionally, we have interns from various departments who provide support for research projects. check out our team below.
+
+:::
+
+::: {.image-section}
+![](img/ourTeam_images/temp.jpg){style="max-width: 100%; height: auto;"}
+:::
+
+:::: 
+
+::: {.director-section}
+## Director
+::: {.column width="100%"}
+:::{.affiliate-profile}
+[![](img/ourTeam_images/donatello.jpg){.director-image}](https://www.csuchico.edu/math/people/faculty/donatello-robin.shtml){target="_blank"}
+ **Robin Donatello**  
+Department: Data Science  
+[rdonatello@csuchico.edu](mailto:rdonatello@csuchico.edu)   
+Read more: [Robin's Website](https://www.norcalbiostat.com){target="_blank}
+:::
+:::
+:::
+
+::: {.faculty-affiliates-section}
+## Faculty Affiliates
+
+::: columns
+
+::: {.column width="50%"}
+:::{.affiliate-profile}
+[![](img/ourTeam_images/lytal.jpg){.affiliate-image}](https://www.csuchico.edu/math/people/faculty/lytal-nicholas.shtml){target="_blank"}
+**Nick Lytal**  
+Department: Statistics  
+[nlytal@csuchico.edu](mailto:nlytal@csuchico.edu)
+:::
+:::
+
+::: {.column width="50%"}
+:::{.affiliate-profile}
+[![](img/ourTeam_images/alonso.jpg){.affiliate-image}](https://www.csuchico.edu/pols/people/tenure-line-faculty/alonso-ginger.shtml){target="_blank"}
+**Ginger Alonso**  
+Department: Political Science   
+[galonso2@csuchico.edu](mailto:galonso2@csuchico.edu)
+:::
+:::
+
+
+::: {.column width="50%"}
+:::{.affiliate-profile}
+[![](img/ourTeam_images/gray.jpg){.affiliate-image}](https://www.csuchico.edu/math/people/faculty/gray-kathy.shtml){target="_blank"}
+**Kathy Gray**  
+Department: Statistics   
+[klgray@csuchico.edu](mailto:klgray@csuchico.edu)
+:::
+:::
+
+::: {.column width="50%"}
+:::{.affiliate-profile}
+[![](img/ourTeam_images/roualdes.jpg){.affiliate-image}](https://www.csuchico.edu/math/people/faculty/roualdes-edward.shtml){target="_blank"}
+**Edward Roualdes**  
+Department: Statistics    
+[eroualdes@csuchico.edu](mailto:eroualdes@csuchico.edu)
+:::
+:::
+
+
+::: {.column width="50%"}
+:::{.affiliate-profile}
+[![](img/ourTeam_images/boakye.jpg){.affiliate-image}](https://www.csuchico.edu/phha/people/faculty/boakye.shtml){target="_blank"}
+**Kwadwo Boakye**  
+Department: Public Health & Health Services Administration  
+[kaboakye@csuchico.edu](mailto:kaboakye@csuchico.edu)
+:::
+:::
+:::
+:::
+
+::: {.interns-section}
+## Interns
+::: columns
+::: {.column width="50%"}
+:::{.affiliate-profile}
+[![](img/ourTeam_images/rowan.jpeg){.affiliate-image}](https://github.com/rowanmorkner){target="_blank"}
+**Rowan Morkner**  
+Major: Economics and Data Science   
+[rdmorknerbrown@csuchico.edu](mailto:rdmorknerbrown@csuchico.edu)   
+[Github](https://github.com/rowanmorkner){target="_blank"}   
+Portfolio: [rowanmorkner.com](https://rowanmorkner.com){target="_blank"}   
+:::
+:::
+::: {.column width="50%"}
+:::{.affiliate-profile}
+[![](img/ourTeam_images/khushi.jpeg){.affiliate-image}](https://www.linkedin.com/in/khushichoudhary27/){target="_blank"}
+**Khushi Choudhary**  
+Major: Masters in Data Science    
+[k-choudhary@csuchico.edu](mailto:k-choudhary@csuchico.edu)   
+[Github](https://github.com/KhushiiChoudhary){target="_blank"}      
+[Linkedin](https://www.linkedin.com/in/khushichoudhary27){target="_blank"}
+:::
+:::
+:::
+
+:::
+
