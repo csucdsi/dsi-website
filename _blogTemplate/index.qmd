@@ -1,0 +1,85 @@
+---
+format: html
+editor: source
+author: Your Name
+title: Blogpost Title
+---
+
+<!-- If you want a different image to show for the thumbnail set the width to 0% -->
+<img src="img/example.jpg" alt="Image desctiption" style="float: center;" width="0%"/>
+
+<!-- Header Image -->
+<img src="img/example2.jpg" alt="Logo desctipiton" style="float: center;" width="50%"/>
+
+# Main Heading: Blogpost Title
+
+Introduction: Write a brief introduction about your project or topic here.
+
+## Platforms used
+  - [Platform 1]
+  - [Platform 2]
+
+## This blogpost is very flexible and can be adjusted to fit your project however you see fit. 
+
+Here are some basic markdown elements you can use to customize your blogpost:
+
+::: {.callout-tip appearance="default"}
+Add a callout banner to highlight important information. 
+Callout types: note, warning, important, tip, caution
+:::
+
+<!-- Optional: Add an iFrame for interactive dashboard or webpage you created-->
+## Add an interactive dashboard or webpage by using an iFrame
+<iframe src="https://en.wikipedia.org/wiki/Data_science" width="600" height="200"></iframe>
+
+
+**Add a [link](https://www.example.com){target="_false"} to an external website.**
+
+
+
+::: {.panel-tabset}
+
+### Display your code snippets in tabs
+
+Quarto allows you to showcase your code in a structured format using tabs. This is useful when demonstrating multiple functions, workflows, or comparisons. Below is a simple example demonstrating how to display R code within a tableset.
+
+```{r}
+#| echo: true
+#| eval: false
+add_numbers <- function(x, y) {
+  return(x + y)
+}
+
+# Example usage
+add_numbers(5, 3)
+
+```
+
+### Add exicutible code to your blogpost
+If you have code you would like to exicute in line and have it output in the blogpost, you will need to add the following execute settings to your yaml header:
+Talk to your assigned Data Science Consultant if you need help with this.
+
+```{r}
+#| echo: true
+#| eval: false
+  execute:
+    warning: false
+    keep-md: true
+```
+
+
+:::
+## Add a profile and bio so readers can learn more about you
+::: columns
+::: {.column width="40%"}
+![](img/example.jpg){width="388"}
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="50%\""}
+lorium ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+:::
+:::
+
