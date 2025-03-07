@@ -1,17 +1,17 @@
+# Blogpost Instructions
 
-# Blogpost Instructions  
 #### A Step by Step Guide
 
 To create a blogpost that will be featured under the Projects tab, follow these steps:
 
 1. **Create a Service Request**  
-   Submit a [service request](https://cdn.jotfor.ms/241545296222152) so we can help you with the process.
+   Submit a [service request](https://cdn.jotfor.ms/241545296222152){target="\_false"} so we can help you with the process.
 
 2. **Review Documentation**  
-   Check out the [Quarto Documentation](https://quarto.org/docs/guide/) page—pay particular attention to the section on Markdown basics.
+   Check out the [Quarto Documentation](https://quarto.org/docs/guide/){target="\_false"} page—pay particular attention to the section on Markdown basics.
 
 3. **Download the Template**  
-   Download the blogTemplate folder from above and customize it to suit your content.
+   Download the [blogTemplate](https://github.com/csucdsi/dsi-website/tree/instructions/_blogTemplate){target="\_false"} folder from above and customize it to suit your content.
 
 4. **Coordinate with the WDH Team**  
    Communicate with your assigned WDH team member for guidance on how to get your post featured on the website.
@@ -27,6 +27,7 @@ Our website has some constraints regarding inline code execution and interactive
 
 - **Interactive Content:**  
   Interactive elements (such as dashboards or widgets) may not render as expected. Consider:
+
   - Converting interactive content into static images.
   - Hosting interactive elements externally and linking to them.
 
@@ -71,6 +72,3 @@ Once your blogpost is ready:
   For any questions or additional support, do not hesitate to contact your WDH team member.
 
 Happy blogging!
-
-
-
