@@ -16,7 +16,7 @@ The Wildcat Datahub partners with faculty and staff across campus to provide sup
 :::
 
 ::: {.image-section}
-![](img/ourTeam_images/temp.jpg){style="max-width: 100%; height: auto;"}
+![](img/ourTeam_images/ourteam.jpg){style="max-width: 100%; height: auto;"}
 :::
 
 :::: 
