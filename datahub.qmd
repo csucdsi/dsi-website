@@ -60,7 +60,8 @@ Through a mix of pro-bono and fee-based services, the WDH is dedicated to provid
 ::: {.image-section}
 ![](`r if (!is.na(image1)) sprintf('%s/%s', image_dir, image1)`){style="max-width: 100%; height: auto;"}
 :::
-::::
+
+:::: 
 
 ::::  {.layout-container .banner--light}
 ::: {.image-section}
@@ -80,6 +81,9 @@ Through a mix of pro-bono and fee-based services, the WDH is dedicated to provid
 
 The hub offers free drop in consultation and coding support. Short and long-term project assistance by qualified students under faculty mentorship available on a fee-based system. 
 
+
+<a href="https://form.jotform.com/241545296222152" class="btn btn-primary" target="_blank" style="padding:10px 20px; text-decoration:none; background-color:9D2235#; color:#ffff; border-radius:5px;"> Request Support
+</a>
 :::
 
 ::::
@@ -95,18 +99,21 @@ The hub offers free drop in consultation and coding support. Short and long-term
 ::: {.image-section}
 ![](`r if (!is.na(image3)) sprintf('%s/%s', image_dir, image3)`){style="max-width: 100%; height: auto;"}
 :::
-
 ::::
 
-```{=html}
-<iframe
-  id="JotFormIFrame-241545296222152"
-  title="Wildcat Data Hub Client Intake Form"
-  onload="window.parent.scrollTo(0,0)"
-  allowtransparency="true"
-  src="https://form.jotform.com/241545296222152"
-  frameborder="0"
-  scrolling="no"
->
-</iframe>
-```
+::::  {.layout-container .banner--light}
+::: {.image-section}
+![](img/ourTeam_images/ourteam.jpg){style="max-width: 100%; height: auto;"}
+:::
+::: {.welcome-section--light}
+
+# Our Team {style="color:black;"}
+
+The Wildcat Datahub partners with faculty and staff across campus to provide support for research projects. Our team includes faculty affiliates from the Statistics, Mathematics, Political Science departments, and more. Including our director Robin Donatello, and faculty affiliates Nick Lytal, Ginger Alonso, Kathy Gray, Edward Roualdes, and Kwadwo Boakye. Additionally, we have interns from various departments who provide support for research projects.
+
+
+<a href="/ourTeam.html" class="btn btn-primary" style="padding:10px 20px; text-decoration:none; background-color:9D2235#; color:#ffff; border-radius:5px;"> Meet the Team
+</a>
+:::
+
+::::
