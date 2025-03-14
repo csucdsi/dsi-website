@@ -61,6 +61,33 @@
   .welcome-section--light p {
     color: black;
   }
+/* faculty affiliates under WDH */
+
+.faculty-affiliates-section {
+  margin: 1em 0;
+}
+
+/* Use Flexbox to align the image and text side by side. */
+.affiliate-profile {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.affiliate-image {
+  /* The width/height in the Quarto markup is 80x80;
+     these additional rules ensure a circular crop. */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+
+/* end faculty affiliates */
 
   .main-content {
     display: flex;
