@@ -1,0 +1,39 @@
+---
+title: What Does Your Congressperson Really Think?
+author: Khushi Choudhary
+date: '2025-05-09'
+slug: congressperson-preferences
+categories: [Seminar, Data Science, Political Modeling]
+tags: [voting data, latent factor models, IRT, statistics, politics]
+banner: img/abel-rodriguez-flyer.png
+---
+
+## 🧠 Seminar Overview
+
+While party affiliation often drives how elected representatives vote, it's not the **whole story**.  
+
+In this seminar, **Dr. Abel Rodriguez** introduces a data-driven approach to uncovering **ideological preferences** using statistical models and **voting data**.
+
+You’ll learn how social scientists and statisticians use tools like:
+- **Latent Factor Models**
+- **Item Response Theory (IRT)**
+- Ideological scaling
+
+to map out where legislators and judges fall on the political spectrum — including identifying *centrists*, *extremists*, and *outliers* across both parties.
+
+---
+
+## 🔍 Key Topics Covered
+- How to rank legislators/judges on an **ideological scale**
+- How latent variables reveal hidden policy stances
+- Insights from U.S. **Congressional** and **Supreme Court** data
+
+---
+
+📅 **Date:** May 9, 2025  
+📍 **Location:** Holt Hall 291  
+👤 **Speaker:** Dr. Abel Rodriguez – [Learn more](https://stat.uw.edu/people/abel-rodriguez)
+
+---
+
+![](Abel-Rodriguez.png)

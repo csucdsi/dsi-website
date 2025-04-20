@@ -1,0 +1,42 @@
+---
+title: Introduction to Causality – Ricardo Aguilar
+author: Khushi Choudhary
+date: '2025-01-31'
+slug: causality-seminar
+categories: [Seminar, Data Science, Causal Inference]
+tags: [DAGs, IPTW, causal analysis, statistics]
+banner: img/causality-dag-flyer.png
+---
+
+## Upcoming Seminar: Introduction to Causality  
+**Presented by Ricardo Aguilar**
+
+Join us for an engaging seminar exploring the foundations of **causal inference** — a powerful framework for identifying *what truly causes what* in data.
+
+This talk will introduce key concepts in causal reasoning, blending classical statistical thinking with modern machine learning approaches.
+
+---
+
+### 📚 Topics Covered:
+- Understanding **Directed Acyclic Graphs (DAGs)** as tools for representing cause-and-effect  
+- The role of **counterfactuals** and **potential outcomes** in causal analysis  
+- Key assumptions: **exchangeability**, **positivity**, and **consistency**  
+- Approaches to **causal structure discovery** (test-based & score-based methods)  
+- A conceptual walkthrough of **Inverse Probability Treatment Weighting (IPTW)** and its practical challenges
+
+---
+
+### 🗓️ Event Details  
+📅 **Date:** January 31, 2025  
+📍 **Location:** Holt Hall 291  
+🗣️ **Speaker:** Ricardo Aguilar
+
+---
+
+Whether you're working in data science, public health, economics, or social science, this seminar will help sharpen how you approach **causal questions** in your field.
+
+All majors welcome — no prior causal inference experience required!
+
+---
+
+![](Ricardo-Aguilar.png)
