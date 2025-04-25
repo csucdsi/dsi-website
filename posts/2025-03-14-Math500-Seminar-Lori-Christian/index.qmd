@@ -1,0 +1,47 @@
+---
+title: Data Science Seminar – Your [Data] Powers Can Change the World!
+author: Khushi Choudhary
+date: '2025-03-14'
+slug: data-for-good-seminar
+categories: [Seminar, Social Impact, Data Science]
+tags: [data for good, civic tech, covid19, dashboard, public health, changemaking]
+banner: img/lori-chris.png
+---
+
+### 💬 What’s This All About?
+
+We all know data can power business decisions, but what if it could change the **world**?
+
+Join us for a **back-to-back seminar** featuring two incredible speakers who used their data science skills to make real social impact — from **fighting human trafficking** to helping a community **navigate a global pandemic**.
+
+---
+
+### 🧠 Featured Speakers
+
+#### 🗨️ Lori McNeil  
+**Using Your [Data] Powers for Good**  
+📅 March 14, 2025 | 🕐 1:00 PM – 1:30 PM  
+
+Discover how a civic hackathon inspired Lori to launch the [Civic Hacker Summit](https://civic-hackers.org/about/) — and how data scientists can lead grassroots change in their own communities.
+
+🔗 [About Lori](https://lori-mcneill.jimdosite.com/about-me/)  
+🔗 [Connect on LinkedIn](https://www.linkedin.com/in/lmcneill/)
+
+---
+
+#### 💻 Christian Hammond  
+**Coding for a Cause: Helping Butte County Navigate a Pandemic**  
+📅 March 14, 2025 | 🕑 2:00 PM – 2:30 PM  
+🔗 [Butte County COVID-19 Dashboard](https://github.com/chipx86/butte-covid19-dashboard)
+
+A behind-the-scenes look at how Christian developed the unofficial COVID-19 dashboard for Butte County — translating complex data into clarity for the people who needed it most.
+
+---
+
+📍 **Location:** Holt Hall 291  
+🌱 **Open to all majors. Come get inspired.**  
+🧑‍💻 Whether you’re into code, community, or both — this is for you.
+
+---
+
+![](lori-chris.png)

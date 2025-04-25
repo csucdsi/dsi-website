@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Khushi Choudhary">
+<meta name="dcterms.date" content="2025-01-31">
 
-<title>Data Science at Chico State – sidebar</title>
+<title>Data Science at Chico State - Introduction to Causality – Ricardo Aguilar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +25,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./img/DSI_Avatar_03.ico" rel="icon">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../img/DSI_Avatar_03.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -71,10 +73,10 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./img/DSI_Avatar_03.ico" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/DSI_Avatar_03.ico" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Data Science at Chico State</span>
     </a>
   </div>
@@ -85,23 +87,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./news.html" rel="" target="">
+    <a class="nav-link" href="../../news.html" rel="" target="">
  <span class="menu-text">News &amp; Events</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./datahub.html" rel="" target="">
+    <a class="nav-link" href="../../datahub.html" rel="" target="">
  <span class="menu-text">Wildcat Data Hub</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./communityCoding.html" rel="" target="">
+    <a class="nav-link" href="../../communityCoding.html" rel="" target="">
  <span class="menu-text">Community Coding</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html" rel="" target="">
+    <a class="nav-link" href="../../projects.html" rel="" target="">
  <span class="menu-text">Student Projects</span></a>
   </li>  
 </ul>
@@ -135,56 +137,96 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Introduction to Causality – Ricardo Aguilar</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Seminar</div>
+                <div class="quarto-category">Data Science</div>
+                <div class="quarto-category">Causal Inference</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Khushi Choudhary </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 31, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#upcoming-seminar-introduction-to-causality" id="toc-upcoming-seminar-introduction-to-causality" class="nav-link active" data-scroll-target="#upcoming-seminar-introduction-to-causality">Upcoming Seminar: Introduction to Causality</a>
+  <ul class="collapse">
+  <li><a href="#topics-covered" id="toc-topics-covered" class="nav-link" data-scroll-target="#topics-covered">📚 Topics Covered:</a></li>
+  <li><a href="#event-details" id="toc-event-details" class="nav-link" data-scroll-target="#event-details">🗓️ Event Details</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
-<h2 style="color: #9d2235;" class="anchored">
-HIGHLIGHTS
-</h2>
-<div class="highlights-container">
+
+<section id="upcoming-seminar-introduction-to-causality" class="level2">
+<h2 class="anchored" data-anchor-id="upcoming-seminar-introduction-to-causality">Upcoming Seminar: Introduction to Causality</h2>
+<p><strong>Presented by Ricardo Aguilar</strong></p>
+<p>Join us for an engaging seminar exploring the foundations of <strong>causal inference</strong> — a powerful framework for identifying <em>what truly causes what</em> in data.</p>
+<p>This talk will introduce key concepts in causal reasoning, blending classical statistical thinking with modern machine learning approaches.</p>
+<hr>
+<section id="topics-covered" class="level3">
+<h3 class="anchored" data-anchor-id="topics-covered">📚 Topics Covered:</h3>
 <ul>
-<li>
-<span class="date"> 2025-05-09 </span><a href=" /posts/2025-05-09-Math500-Seminar-Abel-Rodriguez/index.html " class="text"> What Does Your Congressperson Really Think? </a>
+<li>Understanding <strong>Directed Acyclic Graphs (DAGs)</strong> as tools for representing cause-and-effect<br>
 </li>
-<li>
-<span class="date"> 2025-04-17 </span><a href=" /posts/2025-04-25-Math500-Seminar-Chris-Barker/index.html " class="text"> Data Science Seminar – Dr.&nbsp;Chris Barker </a>
+<li>The role of <strong>counterfactuals</strong> and <strong>potential outcomes</strong> in causal analysis<br>
 </li>
-<li>
-<span class="date"> 2025-03-28 </span><a href=" /posts/2025-03-28-Math500-Seminar-Jing-Guo/index.html " class="text"> Data Science Seminar – Dr.&nbsp;Jing Guo </a>
+<li>Key assumptions: <strong>exchangeability</strong>, <strong>positivity</strong>, and <strong>consistency</strong><br>
 </li>
-<li>
-<span class="date"> 2025-03-14 </span><a href=" /posts/2025-03-14-Math500-Seminar-Lori-Christian/index.html " class="text"> Data Science Seminar – Your [Data] Powers Can Change the World! </a>
+<li>Approaches to <strong>causal structure discovery</strong> (test-based &amp; score-based methods)<br>
 </li>
-<li>
-<span class="date"> 2025-01-31 </span><a href=" /posts/2025-01-31-Math500-Seminar-Ricardo-Aguilar/index.html " class="text"> Introduction to Causality – Ricardo Aguilar </a>
-</li>
-<li>
-<span class="date"> 2024-12-06 </span><a href=" /posts/2024-12-06-swc_workshop-2024/index.en.html " class="text"> Workshop Reproducible Research using R </a>
-</li>
-<li>
-<span class="date"> 2024-12-03 </span><a href=" /posts/2024-12-03-msdsa_fall25/index.en.html " class="text"> Masters in Data Science and Analytics - Fall 25 enrollment open </a>
-</li>
-<li>
-<span class="date"> 2024-12-01 </span><a href=" /posts/2024-12-01-were_hiring/index.en.html " class="text"> We’re Hiring! </a>
-</li>
-<li>
-<span class="date"> 2024-03-15 </span><a href=" /posts/2024-03-15-datafest-2024/index.en.html " class="text"> DataFest 2024 <span class="citation" data-cites="Chico">@Chico</span> April 12-14 </a>
-</li>
-<li>
-<span class="date"> 2023-11-15 </span><a href=" /posts/2023-11-15-state-of-ds-f23/index.en.html " class="text"> State of Data Science at Chico State - Fall 23 </a>
-</li>
+<li>A conceptual walkthrough of <strong>Inverse Probability Treatment Weighting (IPTW)</strong> and its practical challenges</li>
 </ul>
-</div>
+<hr>
+</section>
+<section id="event-details" class="level3">
+<h3 class="anchored" data-anchor-id="event-details">🗓️ Event Details</h3>
+<p>📅 <strong>Date:</strong> January 31, 2025<br>
+📍 <strong>Location:</strong> Holt Hall 291<br>
+🗣️ <strong>Speaker:</strong> Ricardo Aguilar</p>
+<hr>
+<p>Whether you’re working in data science, public health, economics, or social science, this seminar will help sharpen how you approach <strong>causal questions</strong> in your field.</p>
+<p>All majors welcome — no prior causal inference experience required!</p>
+<hr>
+<p><img src="Ricardo-Aguilar.png" class="img-fluid"></p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <link rel="stylesheet" href="styles.css">

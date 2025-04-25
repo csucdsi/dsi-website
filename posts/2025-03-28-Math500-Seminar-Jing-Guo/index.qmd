@@ -1,0 +1,47 @@
+---
+title: Data Science Seminar – Dr. Jing Guo
+author: Khushi Choudhary
+date: '2025-03-28'
+slug: graph-learning-glreg
+categories: [Seminar, Data Science, Graph Theory]
+tags: [GLReg, graph learning, regression, smooth signals, network analysis]
+banner: img/Jing-Guo.png
+---
+
+### 🧠 Graph Learning from Smooth Signals and Regressors (GLReg)
+
+How do we learn the underlying structure of a graph when signals are both smooth and influenced by covariates?
+
+Join **Dr. Jing Guo** as she presents a novel graph learning framework that combines:
+- **Smoothness of signals on nodes**
+- **Linear regression using node-level predictors**
+
+This model (GLReg) enables the **inference of graph topology** using real-world, noisy data and can be applied to domains like:
+- 🌍 Geographical data  
+- 🧬 Biomedical networks  
+- 🧑‍🤝‍🧑 Social networks
+
+---
+
+### 📊 What You'll Learn
+- How to infer a **graph Laplacian** from both response and predictor signals
+- The interaction between smooth signals and regressors
+- Applications using both **simulated and real-world data**
+
+---
+
+📅 **Date:** March 28, 2025  
+🕐 **Time:** 1:30 pm - 2:00 pm 
+📍 **Venue:** Holt Hall 291
+
+---
+
+### 📚 Pre-Seminar Materials  
+Participants are encouraged to review the materials in advance:  
+- 📄 [Graph Learning From Signals With Smoothness Superimposed by Regressors (2023)](https://ieeexplore.ieee.org/document/10192271) 
+
+Bring questions — we’re here to learn together!
+
+---
+
+![](Jing-Guo.png)

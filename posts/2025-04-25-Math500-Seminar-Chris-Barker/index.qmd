@@ -1,0 +1,28 @@
+---
+title: Data Science Seminar – Dr. Chris Barker
+author: Khushi Choudhary
+date: '2025-04-17'
+slug: data-science-seminar-barker
+categories: [Seminar, Clinical Trials]
+tags: [randomization tests, data science, disruptions]
+banner: img/DataScienceSeminar.png
+---
+
+**When the Unexpected Happens, Statistics Steps Up.**
+
+Join us for a special seminar hosted by the **Data Science Initiative at CSU Chico**.  
+Dr. Chris Barker will present on how **randomization tests** can help make valid inferences when clinical trials are disrupted by unexpected events such as pandemics, wars, or natural disasters.
+
+---
+
+🗓️ **Date:** April 25, 2025  
+🕐 **Time:** 1:00 PM – 2:00 PM  
+📍 **Location:** Holt Hall 291  
+🎤 **Speaker:** [Dr. Chris Barker](https://barkerstats.com/)  
+📄 [View the related research paper](https://www.tandfonline.com/doi/full/10.1080/19466315.2023.2257894)
+
+---
+
+From pandemic lockdowns to war zones, disruptions in clinical trials are increasingly common. This talk will explore how modern **nonparametric statistical methods** help ensure valid results, even when assumptions break down.
+
+![](chrisbarker.png)
