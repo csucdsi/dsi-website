@@ -32,11 +32,8 @@ The goal was to create a Dynamic Report using the Shiny app, data analyses, and 
 
 ## Interactive Dashboard
 
-::: {.callout-tip appearance="default"}
-Click the 'Get new data' button to load the data.
-:::
 
-<iframe src="https://rwrgfj-juan-cortes.shinyapps.io/CFOChico-Office-Visit-Tracker/" width="100%" height="600px">
+<iframe src="https://juancortes-connect.shinyapps.io/Capstone/" width="100%" height="600px">
 
 </iframe>
 
@@ -86,6 +83,9 @@ Data was collected through a Google Form, which gathers:
 -   Name of the assistor
 
 ::: columns
+::: {.callout-note appearance="default"}
+## About Me
+:::
 ::: {.column width="40%"}
 ![](img/Juan.png){width="388"}
 :::
