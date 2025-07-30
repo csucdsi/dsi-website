@@ -1,104 +1,39 @@
-/* Home page */
+/*
+================================================================================
+                        DSI WEBSITE STYLES
+================================================================================
+This stylesheet contains all the styles for the Data Science Institute website.
+The CSS is organized into logical sections for easy navigation and maintenance.
+
+Table of Contents:
+1. General Layout & Base Styles
+2. Banner & Hero Sections
+3. Navigation
+4. Home Page Content
+5. Faculty & People Pages
+6. Community Features (Carousel, Calendar)
+7. Footer
+8. Forms & Interactive Elements
+9. Mobile Responsive Design
+
+Color Palette:
+- Primary Red: #9d2235ff
+- Secondary Blue: #043546
+- Light Background: #d0d1c9
+- Accent Blue: #006ba6ff
+================================================================================
+*/
+
+/* ========================================================================== */
+/* 1. GENERAL LAYOUT & BASE STYLES */
+/* ========================================================================== */
+
 .layout-container {
   display: flex;
   width: 100%;
   background-color: #9d2235ff;
   margin: 0;
 }
-
-.banner--light {
-  color: #000;
-  background-color: #d0d1c9;
-}
-
-.banner--blue {
-  background-color: #043546;
-}
-
-.banner--blue a {
-  color: orange;
-}
-
-.welcome-section {
-  width: 50%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.welcome-section--light {
-  width: 50%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.image-section {
-  width: 50%;
-  height: auto;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.image-section figcaption {
-  color: #d0d1c9;
-}
-
-.welcome-section h1 {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 16px;
-}
-
-.welcome-section p {
-  color: white;
-}
-
-.welcome-section--light p {
-  color: black;
-}
-/* faculty affiliates under WDH */
-
-.faculty-affiliates-section {
-  margin: 1em 0;
-}
-
-/* Use Flexbox to align the image and text side by side. */
-.affiliate-profile {
-  display: flex;
-  align-items: flex-start;
-  gap: 1em;
-  background-color: #f7f7f7;
-  border-radius: 5px;
-  padding: 1em;
-  margin-bottom: 1em;
-}
-.affiliate-image {
-  width: 120px;
-  height: 180px;
-  object-fit: cover; /* Crops instead of distorting */
-  border-radius: 10%; /* Optional: Makes it circular */
-}
-
-.director-section {
-  margin: 1em 0;
-}
-.director-image {
-  width: 150px;
-  height: 200px;
-  object-fit: cover; /* Crops instead of distorting */
-  border-radius: 10%; /* Optional: Makes it circular */
-}
-
-.interns-section {
-  margin: 1em 0;
-}
-
-/* end faculty affiliates */
 
 .main-content {
   display: flex;
@@ -115,7 +50,149 @@
   width: 75%;
 }
 
-/* Highlights section */
+.no-decoration-link {
+  text-decoration: none;
+}
+
+.text {
+  text-decoration: none;
+  color: #006ba6ff !important;
+}
+
+.text:hover {
+  color: blue !important;
+}
+
+/* ========================================================================== */
+/* 2. BANNER & HERO SECTIONS */
+/* ========================================================================== */
+
+.banner {
+  width: 99vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px 20px;
+  color: #fff;
+  background-color: #9d2235; /* Default background color */
+}
+
+.banner--light {
+  color: #000;
+  background-color: #d0d1c9;
+}
+
+.banner--blue {
+  background-color: #043546;
+}
+
+.banner--blue a {
+  color: orange;
+}
+
+/* Welcome Section Layouts */
+.welcome-section {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome-section--light {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome-section h1 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.welcome-section p {
+  color: white;
+}
+
+.welcome-section--light p {
+  color: black;
+}
+
+.image-section {
+  width: 50%;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-section figcaption {
+  color: #d0d1c9;
+}
+
+/* ========================================================================== */
+/* 3. NAVIGATION */
+/* ========================================================================== */
+
+nav.navbar {
+  background-color: #ffffff;
+}
+
+nav.navbar a {
+  color: #000000 !important; /* Temporary color for visibility */
+}
+
+.nav-link:not([id^="toc"]) {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link:not([id^="toc"]).active::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #9d2235ff; /* Change this to your desired underline color */
+}
+
+.aa-SubmitIcon {
+  fill: #000000;
+}
+
+/* ========================================================================== */
+/* 4. HOME PAGE CONTENT */
+/* ========================================================================== */
+
+/* Main Section Grid Layout */
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.section-card {
+  border: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Highlights Section */
 .highlights-container ul {
   list-style-type: none;
   padding: 0;
@@ -146,37 +223,54 @@
   border-bottom: none;
 }
 
-.text {
-  text-decoration: none;
-  color: #006ba6ff !important;
+/* ========================================================================== */
+/* 5. FACULTY & PEOPLE PAGES */
+/* ========================================================================== */
+
+/* Faculty Affiliates Section */
+.faculty-affiliates-section {
+  margin: 1em 0;
 }
 
-.text:hover {
-  color: blue !important;
-}
-
-/* Home page main section */
-
-.section-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-.section-card {
-  border: none;
-  padding: 10px;
+/* Use Flexbox to align the image and text side by side */
+.affiliate-profile {
   display: flex;
-  flex-direction: column;
-}
-.section-card img {
-  max-width: 100%;
-  height: auto;
-}
-.no-decoration-link {
-  text-decoration: none;
+  align-items: flex-start;
+  gap: 1em;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
-/* Community Coding */
+.affiliate-image {
+  width: 120px;
+  height: 180px;
+  object-fit: cover; /* Crops instead of distorting */
+  border-radius: 10%; /* Optional: Makes it circular */
+}
+
+/* Director Section */
+.director-section {
+  margin: 1em 0;
+}
+
+.director-image {
+  width: 150px;
+  height: 200px;
+  object-fit: cover; /* Crops instead of distorting */
+  border-radius: 10%; /* Optional: Makes it circular */
+}
+
+/* Interns Section */
+.interns-section {
+  margin: 1em 0;
+}
+
+/* ========================================================================== */
+/* 6. COMMUNITY FEATURES (CAROUSEL, CALENDAR) */
+/* ========================================================================== */
+
 /* Carousel Container */
 .carousel {
   position: relative;
@@ -232,12 +326,15 @@
   right: 10px;
 }
 
+/* Calendar Styles */
 .calendar {
   padding: 5px;
   background-color: #f9f9f9;
 }
 
-/* footer */
+/* ========================================================================== */
+/* 7. FOOTER */
+/* ========================================================================== */
 
 .custom-footer {
   background-color: white;
@@ -253,6 +350,7 @@
   z-index: 5;
 }
 
+/* Footer Desktop Responsive Adjustments */
 @media only screen and (min-width: 1700px) {
   .custom-footer {
     transform: translateX(-24%);
@@ -283,6 +381,7 @@
   }
 }
 
+/* Footer Layout Structure */
 .footer-header {
   display: flex;
   align-items: center;
@@ -296,37 +395,50 @@
 .footer-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 90%;
+  gap: 20px;
 }
 
-.footer-left,
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+/* Footer Sections */
+.footer-logo-section {
+  flex-shrink: 0;
 }
 
 .footer-logo {
-  width: 50%;
-  height: 100%;
-  margin-bottom: 10px;
+  width: 250px;
+  height: auto;
 }
 
-.footer-left {
-  text-align: left;
-}
-
-.footer-right {
+.footer-address {
+  flex: 1;
   text-align: center;
 }
 
-.footer-right a {
+.footer-address p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-gift {
+  flex-shrink: 0;
+}
+
+/* Footer Links & Buttons */
+.footer-contact a {
   color: black;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.footer-right a:hover {
+.footer-contact a:hover {
   color: #d64a54;
 }
 
@@ -345,6 +457,7 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Social Media Icons */
 .social-icons {
   display: flex;
 }
@@ -360,34 +473,9 @@
   transform: scale(1.5);
 }
 
-/* Navigation Bar */
-
-nav.navbar {
-  background-color: #ffffff;
-}
-
-nav.navbar a {
-  color: #000000 !important; /* Temporary color for visibility */
-}
-
-.nav-link:not([id^="toc"]) {
-  position: relative;
-  text-decoration: none;
-}
-
-.nav-link:not([id^="toc"]).active::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #9d2235ff; /* Change this to your desired underline color */
-}
-
-.aa-SubmitIcon {
-  fill: #000000;
-}
+/* ========================================================================== */
+/* 8. FORMS & INTERACTIVE ELEMENTS */
+/* ========================================================================== */
 
 #JotFormIFrame-241545296222152 {
   min-width: 100%;
@@ -397,22 +485,14 @@ nav.navbar a {
   margin-bottom: 50px;
 }
 
-.banner {
-  width: 99vw;
-  position: relative;
-  left: 50%;
-  margin-left: -50vw;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 40px 20px;
-  color: #fff;
-  background-color: #9d2235; /* Default background color */
-}
+/* ========================================================================== */
+/* 9. MOBILE RESPONSIVE DESIGN */
+/* ========================================================================== */
+/* Applied when screen width is 768px or less */
 
-/* Responsive layout for mobile */
 @media (max-width: 768px) {
+  
+  /* Layout Adjustments */
   .layout-container {
     flex-direction: column;
   }
@@ -433,6 +513,7 @@ nav.navbar a {
     border-right: none;
   }
 
+  /* Typography Adjustments */
   .highlights-container .date {
     font-size: 12px;
   }
@@ -445,22 +526,25 @@ nav.navbar a {
     padding-bottom: 8px;
   }
 
-  /* Home page main section */
-
+  /* Home Page Grid - Mobile */
   .section-grid {
     grid-template-columns: 1fr; /* Single column on smaller screens */
     gap: 15px; /* Slightly smaller gap on mobile */
   }
+  
   .section-card {
     padding: 8px; /* Less padding on mobile */
   }
+  
   .section-card h3 {
     font-size: 18px; /* Adjust heading size for mobile */
   }
+  
   .section-card p {
     font-size: 14px; /* Adjust paragraph text size for mobile */
   }
 
+  /* Footer - Mobile */
   .custom-footer {
     padding: 15px;
     width: 87vw;
@@ -477,18 +561,20 @@ nav.navbar a {
     width: 100%;
   }
 
-  .footer-left,
-  .footer-right {
+  .footer-logo-section,
+  .footer-address,
+  .footer-contact,
+  .footer-gift {
     margin-bottom: 20px;
     align-items: center;
     text-align: center;
   }
 
-  .footer-left {
+  .footer-address {
     text-align: center;
   }
 
-  .footer-right {
+  .footer-contact {
     text-align: center;
   }
 
@@ -513,6 +599,7 @@ nav.navbar a {
     margin-left: 15px;
   }
 
+  /* Forms - Mobile */
   #JotFormIFrame-241545296222152 {
     min-width: 100%;
     max-width: 100%;
