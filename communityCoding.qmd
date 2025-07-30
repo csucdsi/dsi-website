@@ -48,8 +48,12 @@ Students, staff, faculty, and the public are invited to join our Community Codin
 :::{.text-section}
 ## Schedule & Locations for Fall 2024
 
-Community Coding is regularly held at The Innovation Lab on the second floor of the Meriam Library next to the print center. Additional drop in help sessions are available by individual faculty in their office or over Zoom. Click your desired time to view more information about locations and language support.
+Community Coding is regularly held at The Innovation Lab on the second floor of the Meriam Library next to the print center. Additional drop in help sessions are available by individual faculty in their office or over Zoom. Please sign in at the link below to help us track attendance!
 :::
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfzHYqSO2DGD8ZPa_-q6JjpDi4AEcQDz2KyvgmtU1lWLSbORw/viewform " class="btn btn-primary" target="_blank" style="padding:10px 20px; text-decoration:none; background-color:9D2235#; color:#ffff; border-radius:5px;"> Sing In
+</a>
+
 
 :::{.calendar}
 <!-- If you ever need to change where the calendar source is, simply get the embedded link and paste it after 'src=' -->
