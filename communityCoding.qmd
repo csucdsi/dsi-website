@@ -46,7 +46,26 @@ Students, staff, faculty, and the public are invited to join our Community Codin
 ::::
 
 :::{.text-section}
-## Schedule & Locations for Fall 2024
+```{r, echo=FALSE, results='asis'}
+# Function to determine current semester
+get_current_semester <- function() {
+  current_date <- Sys.Date()
+  month <- as.numeric(format(current_date, "%m"))
+  year <- as.numeric(format(current_date, "%Y"))
+  
+  # Determine semester based on month
+  if (month >= 1 && month <= 6) {
+    semester <- "Spring"
+  } else {
+    semester <- "Fall"
+  }
+  
+  paste(semester, year)
+}
+
+# Generate dynamic header
+cat(paste("##", "Schedule & Locations for", get_current_semester()))
+```
 
 Community Coding is regularly held at The Innovation Lab on the second floor of the Meriam Library next to the print center. Additional drop in help sessions are available by individual faculty in their office or over Zoom. Please sign in at the link below to help us track attendance!
 :::
