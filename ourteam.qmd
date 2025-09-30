@@ -7,7 +7,8 @@ title-block-banner: true
 page-layout: full 
 ---
 
-::::  {.layout-container}
+<!-- begin layout container --> 
+::::  {.layout-container} 
 ::: {.welcome-section}
 
 # Our Team
@@ -19,9 +20,11 @@ The Wildcat Datahub partners with faculty and staff across campus to provide sup
 ![](img/ourTeam_images/ourteam.jpg){style="max-width: 100%; height: auto;"}
 :::
 
-:::: 
+::::  
+<!-- end layout container --> 
 
-::: {.director-section}
+<!-- director section -->
+::: {.director-section}  
 ## Director
 ::: {.column width="100%"}
 :::{.affiliate-profile}
@@ -32,13 +35,15 @@ Department: Data Science
 Read more: [Robin's Website](https://www.norcalbiostat.com){target="_blank}
 :::
 :::
-:::
+:::  
+<!-- end director section -->
 
+<!-- faculty affiliate section -->
 ::: {.faculty-affiliates-section}
 ## Faculty Affiliates
 
 ::: columns
-
+<!--  -->
 ::: {.column width="50%"}
 :::{.affiliate-profile}
 [![](img/ourTeam_images/lytal.jpg){.affiliate-image}](https://www.csuchico.edu/math/people/faculty/lytal-nicholas.shtml){target="_blank"}
@@ -47,7 +52,9 @@ Department: Statistics
 [nlytal@csuchico.edu](mailto:nlytal@csuchico.edu)
 :::
 :::
+<!--  -->
 
+<!--  -->
 ::: {.column width="50%"}
 :::{.affiliate-profile}
 [![](img/ourTeam_images/alonso.jpg){.affiliate-image}](https://www.csuchico.edu/pols/people/tenure-line-faculty/alonso-ginger.shtml){target="_blank"}
@@ -56,8 +63,9 @@ Department: Political Science
 [galonso2@csuchico.edu](mailto:galonso2@csuchico.edu)
 :::
 :::
+<!--  -->
 
-
+<!--  -->
 ::: {.column width="50%"}
 :::{.affiliate-profile}
 [![](img/ourTeam_images/gray.jpg){.affiliate-image}](https://www.csuchico.edu/math/people/faculty/gray-kathy.shtml){target="_blank"}
@@ -66,7 +74,9 @@ Department: Statistics
 [klgray@csuchico.edu](mailto:klgray@csuchico.edu)
 :::
 :::
+<!--  -->
 
+<!--  -->
 ::: {.column width="50%"}
 :::{.affiliate-profile}
 [![](img/ourTeam_images/roualdes.jpg){.affiliate-image}](https://www.csuchico.edu/math/people/faculty/roualdes-edward.shtml){target="_blank"}
@@ -75,8 +85,9 @@ Department: Statistics
 [eroualdes@csuchico.edu](mailto:eroualdes@csuchico.edu)
 :::
 :::
+<!--  -->
 
-
+<!--  -->
 ::: {.column width="50%"}
 :::{.affiliate-profile}
 [![](img/ourTeam_images/boakye.jpg){.affiliate-image}](https://www.csuchico.edu/phha/people/faculty/boakye.shtml){target="_blank"}
@@ -85,12 +96,18 @@ Department: Public Health & Health Services Administration
 [kaboakye@csuchico.edu](mailto:kaboakye@csuchico.edu)
 :::
 :::
-:::
-:::
+<!--  -->
 
+::: 
+<!-- end columns --> 
+::: 
+<!-- end faculty affiliate section --> 
+
+<!-- interns section --> 
 ::: {.interns-section}
 ## Interns
 ::: columns
+
 ::: {.column width="50%"}
 :::{.affiliate-profile}
 [![](img/ourTeam_images/rowan.jpeg){.affiliate-image}](https://github.com/rowanmorkner){target="_blank"}
@@ -101,6 +118,7 @@ Major: Economics and Data Science
 Portfolio: [rowanmorkner.com](https://rowanmorkner.com){target="_blank"}   
 :::
 :::
+
 ::: {.column width="50%"}
 :::{.affiliate-profile}
 [![](img/ourTeam_images/khushi.jpeg){.affiliate-image}](https://www.linkedin.com/in/khushichoudhary27/){target="_blank"}
@@ -111,7 +129,29 @@ Major: Masters in Data Science
 [Linkedin](https://www.linkedin.com/in/khushichoudhary27){target="_blank"}
 :::
 :::
+
+::: {.column width="50%"}
+:::{.affiliate-profile}
+[![](img/ourTeam_images/caleb.jpg){.affiliate-image}](https://www.linkedin.com/in/caleb-hearn-581921126/){target="_blank"}
+**Caleb Hearn**  
+Major: Major: Economics & Applied Statistics    
+[chearn@csuchico.edu](mailto:chearn@csuchico.edu)         
+[Linkedin](https://www.linkedin.com/in/caleb-hearn-581921126/){target="_blank"}
+:::
 :::
 
+::: {.column width="50%"}
+:::{.affiliate-profile}
+[![](img/ourTeam_images/snehitha.jpeg){.affiliate-image}](https://www.linkedin.com/in/snehitha-gorantla-3321b424a/){target="_blank"}
+**Snehitha Gorantla**  
+Major: Masters in Data Science    
+[sgorantla@csuchico.edu](mailto:sgorantla@csuchico.edu)       
+[Linkedin](https://www.linkedin.com/in/snehitha-gorantla-3321b424a/){target="_blank"}
 :::
+:::
+
+::: 
+<!-- end columns --> 
+:::
+ <!-- end intern section --> 
 
