@@ -86,6 +86,8 @@ Department: Public Health & Health Services Administration
 :::
 :::
 :::
+<a href="/Faculty_Expectations.html" class="btn btn-primary" style="padding:10px 20px; text-decoration:none; background-color:9D2235#; color:#ffff; border-radius:5px;"> Become an Affiliate
+</a>
 :::
 
 ::: {.interns-section}
