@@ -18,9 +18,10 @@ website:
         href: datahub.qmd
       - text: Community Coding
         href: communityCoding.qmd
+      - text: Our Team
+        href: ourteam.qmd
       - text: Student Projects
         href: projects.qmd
-
 
     right:
       - text: Campus Homepage
@@ -31,7 +32,6 @@ website:
             url: https://github.com/csucdsi
           - text: Student Projects
             url: https://github.com/DATA-490
-
 
 format:
   html:
