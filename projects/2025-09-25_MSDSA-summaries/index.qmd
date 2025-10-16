@@ -1,9 +1,14 @@
 ---
+title: MSDSA Project Descriptions (2024 Cohort) 
 format: html
-editor: source
-title: MSDSA Project Descriptions - Fall 2025
+author: Nate Dailey and Robin Donatello
 ---
+
 <img src="img/thumb.png" alt="MSDSA projects thumbnail" style="float: center;" width="0%"/>
+
+Masters project descriptions for the 2024 cohort of [Masters in Data Science and Analytics](https://www.csuchico.edu/math/degrees/msdsa.shtml) students. Final project defense slides will be added upon completion.  
+
+
 
 ### Pushpak Rane
 
