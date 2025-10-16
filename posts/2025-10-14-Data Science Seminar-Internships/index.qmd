@@ -1,0 +1,33 @@
+---
+title: Data Science Seminar - Internship Series
+author: Robin Donatello
+date: '2025-10-14'
+slug: ds-internships
+categories: [Seminar, Data Science, Internships]
+tags: [internship]
+banner: img/ds-internship.png
+---
+
+📅 **Date:** Selected Fridays 3-3:45pm\
+📍 **Location:** Holt Hall 175
+
+## Seminar Overview
+
+-   Are you interested in the field of Data Science?
+-   Are you already in the field (or adjacent) but not sure what you want to do with your skills?
+-   Are you looking for an internship?
+
+Come join us to learn about the exciting summer internships our current Masters in Data Science and Analytics students participated in last summer. We will also be inviting our internship partners to come share about their opportunities as well.
+
+## Schedule (in progress)
+
+| Date | Speakers | Organization | Topic |
+|-------------|-------------|------------------|------------------------------|
+| 10/17 | Khushi Choudary and Jayana Sarma | [Western Weather](https://www.westernweathergroup.com/) | The internship focused on engineering the software platform for "Joules," a conversational Al assistant we co-developed. Our goal was to architect and build a production-ready, full-stack Al chatbot from the ground up. The primary deliverable was a high-performance application that successfully integrates advanced NLP models to make complex weather data accessible through simple, natural language. |
+| 10/24 | TBD |  |  |
+| 10/31 | Shivam Pawar |  |  |
+| 11/7 | Amol Bhalerao |  |  |
+| 11/7 | Zakir Elaskar |  |  |
+| 11/14 | Abinesh S. |  |  |
+| 11/21 | TBD |  |  |
+| 12/5 | TBD |  |  |

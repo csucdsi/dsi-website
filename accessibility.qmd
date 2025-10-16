@@ -1,0 +1,9 @@
+---
+format: html
+editor: source
+title: Accessibility at Wildcat Data Hub
+---
+
+The Wildcat Data Hub is committed to providing data and research support that is accessible to all. We encourage all faculty, staff, students, and industry clients to participate in our consultations and project services.
+
+If you anticipate needing any type of accommodation or have questions about physical access, please contact the [Accessibility Resource Center (ARC)](https://www.csuchico.edu/arc/) at 530-898-5959 in advance of your visit.
