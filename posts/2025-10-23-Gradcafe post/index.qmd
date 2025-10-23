@@ -1,0 +1,24 @@
+---
+title: Data Analysis & Research Support at the Grad Café
+author: Khushi Choudhary
+date: '2025-10-23'
+slug: wdh-data-support
+categories: [Research Support, Data Science]
+tags: [data analysis, research, statistics, Wildcat Data Hub]
+banner: img/generated-image.png
+---
+
+**Need help with your data or research project?**  
+Drop by the **Wildcat Data Hub (WDH)** table at the **Grad Café** for free **data analysis and research support**.
+
+Our team offers assistance with data cleaning, visualization, statistical modeling, and more—no appointment needed!
+
+🗓️ **When:** Every Friday, 10:00 AM – 12:00 PM  
+📍 **Where:** Selvester’s Café  
+💻 **Who:** Hosted by the Wildcat Data Hub (WDH)
+
+Whether you're polishing a thesis, exploring new data, or tackling code challenges, we're here to help you move your research forward.
+
+![](/img/gradcafe-wdh.png)
+
+
