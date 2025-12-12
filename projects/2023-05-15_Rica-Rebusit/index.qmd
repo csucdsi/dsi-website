@@ -1,0 +1,236 @@
+---
+format: html
+author: Rica Rebusit
+title: Predicting Activity Priorities with Machine Learning
+---
+<!-- Thumbnail image - set width to 0% to hide from preview -->
+<img src="img/thumbnail.png" alt="Random Forest + CHC logo" style="float: center;" width="20%"/>
+
+My capstone project focused on using machine learning to predict activity priorities for Chico State's [Center for Healthy Communities](https://chcchicostate.org/) (CHC) based on text descriptions. The CHC is a non-profit organization that promotes food security, nutrition education, and various community health initiatives.
+
+The challenge was to develop a system that could automatically classify activities by priority level, helping the organization optimize resource allocation and better serve campus partners.
+
+## Project Goal
+
+The Center for Healthy Communities conducts numerous activities and programs throughout the year. Understanding which activities should be prioritized is crucial for effective resource management and maximizing community impact.
+
+**The goal:** Build a machine learning model that predicts activity priority based on text descriptions, using:
+
+- **Latent Dirichlet Allocation (LDA)** for topic modeling and feature extraction
+- **Random Forest** for classification and priority prediction
+- Natural language processing techniques for text preprocessing
+
+## The Technical Approach
+
+::: {.panel-tabset}
+
+### Data Preprocessing
+
+The first step involved cleaning and preparing the activity description data. This included removing special characters, standardizing text format, and handling missing values.
+
+```{r}
+#| echo: true
+#| eval: false
+
+# Load required libraries
+library(tidyverse)
+library(tm)
+library(tokenizers)
+
+# Data cleaning function
+clean_text <- function(text) {
+  text %>%
+    tolower() %>%                           # Convert to lowercase
+    str_replace_all("[[:punct:]]", " ") %>% # Remove punctuation
+    str_replace_all("\\s+", " ") %>%        # Normalize whitespace
+    str_trim()                               # Trim leading/trailing spaces
+}
+
+# Apply cleaning to activity descriptions
+df_clean <- df %>%
+  mutate(descrip_clean = clean_text(descrip))
+```
+
+### Tokenization
+
+Breaking down text into meaningful tokens is essential for text analysis. This process converts sentences into individual words while removing common stopwords.
+
+```{r}
+#| echo: true
+#| eval: false
+
+library(tidytext)
+
+# Tokenize and remove stopwords
+tokens <- df_clean %>%
+  unnest_tokens(word, descrip_clean) %>%
+  anti_join(stop_words) %>%
+  filter(!str_detect(word, "^\\d+$"))  # Remove numbers
+
+# Create document-term matrix
+dtm <- tokens %>%
+  count(activity_id, word) %>%
+  cast_dtm(activity_id, word, n)
+```
+
+### LDA Topic Modeling
+
+LDA discovers hidden topics within the activity descriptions, creating new features for the classification model.
+
+```{r}
+#| echo: true
+#| eval: false
+
+library(topicmodels)
+
+# Fit LDA model with 5 topics
+lda_model <- LDA(
+  dtm,
+  k = 5,                    # Number of topics
+  method = "Gibbs",
+  control = list(
+    seed = 123,
+    burnin = 1000,
+    iter = 2000,
+    thin = 100
+  )
+)
+
+# Extract topic probabilities for each activity
+topic_probs <- posterior(lda_model)$topics %>%
+  as.data.frame() %>%
+  rename_with(~paste0("topic_", 1:5))
+
+# View top words for each topic
+terms(lda_model, 10)
+```
+
+### Random Forest Model
+
+The Random Forest classifier uses the extracted topics and other features to predict activity priorities.
+
+```{r}
+#| echo: true
+#| eval: false
+
+library(randomForest)
+library(caret)
+
+# Combine features: topics + other variables
+model_data <- df %>%
+  bind_cols(topic_probs) %>%
+  select(priority, shortcode, quarter, topic_1:topic_5,
+         train_meet, partner, level)
+
+# Split data into training and testing sets
+set.seed(123)
+train_index <- createDataPartition(model_data$priority,
+                                   p = 0.8,
+                                   list = FALSE)
+train_data <- model_data[train_index, ]
+test_data <- model_data[-train_index, ]
+
+# Train Random Forest model
+rf_model <- randomForest(
+  priority ~ .,
+  data = train_data,
+  ntree = 500,
+  mtry = 3,
+  importance = TRUE
+)
+
+# Make predictions
+predictions <- predict(rf_model, test_data)
+
+# Evaluate model performance
+confusionMatrix(predictions, test_data$priority)
+```
+
+:::
+
+## Key Variables
+
+The project utilized several important variables to predict activity priorities:
+
+- **shortcode**: Brief identifier for the activity type
+- **quarter**: Academic term (Fall, Spring, Summer)
+- **contract_year**: Fiscal year of the activity
+- **train_meet**: Type of training or meeting conducted
+- **partner**: Campus or community partner organization
+- **descrip**: Full text description of the activity
+- **level**: Activity complexity or engagement level
+- **topic_1 to topic_5**: Probability distributions from LDA topic modeling
+
+## Impact & Applications
+
+::: {.callout-note appearance="default"}
+## Question
+
+**How does this project make a difference for the Center for Healthy Communities?**
+:::
+
+::: {.callout-tip appearance="default"}
+## Answer
+
+**Resource Optimization:** Enables data-driven decisions about where to allocate staff time and budget.
+
+**Strategic Planning:** Provides insights into which activity types have historically been high-priority, informing future programming.
+
+**Scalability:** Automates the classification process as CHC expands its programs, saving time on manual categorization.
+
+**Evidence-Based Decision Making:** Helps stakeholders understand activity impacts through quantitative analysis rather than intuition alone.
+:::
+
+## Platforms & Tools Used
+
+- **R and RStudio**: Primary environment for data analysis and model development
+- **tidyverse**: Data manipulation and visualization
+- **tm & tidytext**: Text mining and natural language processing
+- **topicmodels**: Latent Dirichlet Allocation implementation
+- **randomForest**: Machine learning classification
+- **caret**: Model training and evaluation
+- **Quarto**: Reproducible research and documentation
+- **GitHub**: Version control and collaboration
+
+## Lessons Learned
+
+Working on this project taught me several valuable lessons about applied machine learning:
+
+- **Data Quality Matters**: Text data requires extensive cleaning and preprocessing. The quality of your model is only as good as the quality of your input data.
+
+- **Feature Engineering is Crucial**: LDA topic modeling transformed unstructured text into meaningful features that significantly improved model performance.
+
+- **Iterate and Refine**: The initial cleaning and tokenization process needed several iterations to handle edge cases and improve accuracy.
+
+- **Balance Complexity and Interpretability**: While more complex models might offer marginal accuracy gains, Random Forest provided a good balance of performance and interpretability for stakeholders.
+
+## Future Enhancements
+
+Several opportunities exist to expand and improve this project:
+
+1. **More Labeled Data**: Collecting additional labeled examples would improve model accuracy and generalizability.
+
+2. **Model Comparison**: Evaluate alternative algorithms like XGBoost, Support Vector Machines, or neural networks.
+
+3. **Real-Time Deployment**: Create a Shiny application or API for real-time priority predictions.
+
+4. **Hyperparameter Tuning**: Systematic optimization of model parameters using grid search or Bayesian optimization.
+
+5. **Cross-Validation**: Implement k-fold cross-validation for more robust performance estimates.
+
+## About the Repository
+
+The complete project code is available on [GitHub](https://github.com/DATA-490/2023-rica-rebusit) and includes:
+
+- `scripts/LDA.qmd`: Data cleaning, preprocessing, and topic modeling
+- `scripts/Random_Forest.qmd`: Model training and evaluation
+- `documentations/`: Meeting notes and project documentation
+- `presentation/`: Poster and stakeholder reports
+
+::: {.callout-warning appearance="default"}
+**Note:** Access to the project data requires permission from the Center for Healthy Communities to protect sensitive program information.
+:::
+
+---
+
+*Thank you to Robin Donatello, the Chico State Mathematics and Statistics Department, and the Center for Healthy Communities team for their guidance and support throughout this project!*
