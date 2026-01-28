@@ -46,24 +46,7 @@ Students, staff, faculty, and the public are invited to join our Community Codin
 ::::
 
 :::{.text-section}
-```{r, echo=FALSE, results='asis'}
-# Function to determine current semester
-get_current_semester <- function() {
-  current_date <- Sys.Date()
-  month <- as.numeric(format(current_date, "%m"))
-  year <- as.numeric(format(current_date, "%Y"))
-  
-  # Determine semester based on month
-  if (month >= 1 && month <= 6) {
-    semester <- "Spring"
-  } else {
-    semester <- "Fall"
-  }
-  
-  paste(semester, year)
-}
-```
-## Schedule & Locations for `r get_current_semester()`
+## Schedule & Locations 
 
 Community Coding is regularly held at the [Innovation Lab](https://library.csuchico.edu/innovation-lab) on the second floor of the Meriam Library next to the print center. Additional drop in help sessions are available by individual faculty in their office or over Zoom. 
 
