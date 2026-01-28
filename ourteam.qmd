@@ -11,7 +11,6 @@ page-layout: full
 ::::  {.layout-container} 
 ::: {.welcome-section}
 
-# Our Team
 The Wildcat Datahub partners with faculty and staff across campus to provide support for research projects. Our team includes faculty affiliates from the Statistics, Mathematics, Political Science departments, and more. Additionally, we have interns from various departments who provide support for research projects. check out our team below.
 
 :::
@@ -134,6 +133,11 @@ Major: Statistics
 Major: Masters in Data Science    
 [sgorantla@csuchico.edu](mailto:sgorantla@csuchico.edu)       
 [Linkedin](https://www.linkedin.com/in/snehitha-gorantla-3321b424a/){target="_blank"}
+:::
+:::
+
+::: {.column width="50%"}
+:::{.affiliate-profile}
 :::
 :::
 

@@ -47,6 +47,7 @@ image3 <- image_files[3]
 ```
 
 ::::  {.layout-container}
+
 ::: {.welcome-section}
 
 # Wildcat Data Hub
