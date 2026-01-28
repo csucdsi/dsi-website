@@ -20,16 +20,10 @@ Learn more about this national event at the event website: <https://norcaldatafe
 
 This year we are proud to announce that we will have a major venue upgrade. DataFest 2026 will be held in the beautiful new Behavioral and Social Sciences building! 
 
-:::{.callout-important title = "title"}
-text
-
-:::
-
+:::{.callout-tip title = "Registration closes March 23rd"}
 [Register your team today](https://docs.google.com/forms/d/e/1FAIpQLSfKbXlJ96jlj2OUUO7WPP8ujRaswoBYnBa4t4fhQjxhVluJ-A/viewform)
 
-
-
-### Registration closes March 23rd
+:::
 
 
 # What students have had to say about the ASA DataFest
