@@ -18,11 +18,13 @@ In India, over 18 million deaf and hard-of-hearing patients face barriers to eff
 
 ---
 
-### Khushi Choudhary
+### Khushi Choudhary ([LinkedIn](https://www.linkedin.com/in/khushichoudhary27/), [Github](https://github.com/KhushiiChoudhary))
 
 **Optimizing Volunteer Scheduling and Emergency Response Using Machine Learning**
 
 This project aims to build a predictive, real-time volunteer scheduling system that connects operational needs with available resources. Currently, incident command struggles with limited visibility—uncertain who will arrive, when, and with what skills—while volunteers lack clarity on where they are needed, particularly across mutual aid groups. With three separate scheduling systems in play (NVADG, County, and Mutual Aid), coordination is chaotic. The new app will apply machine learning to forecast shortages and skill gaps, provide volunteers with clear shift visibility, and enable coordinators to make faster, data-driven decisions in real time.
+
+[Final Defense Presentation]("Choudhary_Final.pdf"), Project Report on Scholarworks Pending. 
 
 ---
 
@@ -32,6 +34,8 @@ This project aims to build a predictive, real-time volunteer scheduling system t
 
 This project develops an offline-first web app for geology fieldwork, designed for use in remote areas without internet access. Currently, students rely on paper notes, which can be lost or introduce errors during later entry. The app stores data locally, then automatically syncs once a connection is available, ensuring faster, more accurate collection and reducing the risk of lost observations. 
 
+[Final Defense Presentation]("Baddala_Final.pdf"), Project Report on Scholarworks Pending. 
+
 ---
 
 ### Shivam Pawar
@@ -39,6 +43,8 @@ This project develops an offline-first web app for geology fieldwork, designed f
 **GraphLearnR: An R Package for Powerful and Accessible Graph Learning**
 
 Graph learning is an emerging field that uncovers hidden network structures from observed data, with applications ranging from social networks and brain connectivity to protein interactions and transportation systems. Current methods often assume signal smoothness, overlook external factors, and require advanced coding skills. This project addresses these gaps by developing regression-aware graph learning tools in R, making advanced network structure discovery more accessible to researchers in neuroscience, social science, and biology.
+
+[Final Defense Presentation]("Pawar_Final.pdf"), Project Report on Scholarworks Pending. 
 
 ---
 
@@ -48,12 +54,16 @@ Graph learning is an emerging field that uncovers hidden network structures from
 
 This project develops a scriptable wildfire model in Python to help identify hazardous areas for treatment and reduce wildfire risk. By calculating rate of spread, fireline intensity, and flame length for each pixel, the model provides a technical basis for prioritizing treatments such as mechanical thinning or prescribed burns. Inputs include fuel model and slope rasters, as well as wind speed, wind direction, and fuel moisture, enabling flexible, data-driven fire behavior analysis.
 
+[Final Defense Presentation]("Dailey_Final.pdf"), Project Report on Scholarworks Pending. 
+
 ---
 
-### Zakir Elaskar
+### Zakir Elaskar ([LinkedIn](https://www.linkedin.com/in/zakir-elaskar-1a1a84263/), [Github](https://www.linkedin.com/in/zakir-elaskar-1a1a84263/))
 
 **B-Line Public Transit: A Data-Driven Analysis for Service Optimization**
-This project applies data science techniques to analyze B-Line, the public transportation system serving Chico and surrounding communities. Public transit is essential for students, workers, and residents, yet inefficiencies can limit service quality and cost effectiveness. By examining trends, detecting inefficiencies, and proposing optimization strategies, this work provides data-driven insights to improve service delivery and promote more sustainable, cost-effective urban mobility.
+This project applies data science techniques to analyze B-Line, the public transportation system serving Chico and surrounding communities. Public transit is essential for students, workers, and residents, yet inefficiencies can limit service quality and cost effectiveness. By examining trends, detecting inefficiencies, and proposing optimization strategies, this work provides data-driven insights to improve service delivery and promote more sustainable, cost-effective urban mobility. The findings reveal strong temporal patterns in ridership, with peak demand occurring during weekday commuting hours and significant declines during weekends and summer periods. Additionally, several routes and trips were identified as underutilized, highlighting opportunities for more efficient resource allocation. Overall, the results demonstrate that data-driven analysis can support practical, evidence-based improvements in transit scheduling and service planning.
+
+[Final Defense Presentation]("Elaskar_Final.pdf"), Project Report on Scholarworks Pending. 
 
 ---
 
@@ -63,6 +73,8 @@ This project applies data science techniques to analyze B-Line, the public trans
 
 This project develops a hybrid time series model to forecast air pollutant levels in California using EPA CASTNET data (1987–2025). By incorporating meteorological variables such as temperature, wind, and humidity, the model aims to improve the accuracy of short-term air quality predictions. The research explores how weather factors influence pollutant concentrations over time and evaluates the extent to which these variables enhance predictive precision across both rural and suburban regions.
 
+[Final Defense Presentation]("Gorantla_Final.pdf"), Project Report on Scholarworks Pending. 
+
 ---
 
 ### Abinesh S
@@ -70,6 +82,8 @@ This project develops a hybrid time series model to forecast air pollutant level
 **AI Driven Medical Case Manager**
 
 This project develops an AI-driven medical case manager designed to address the nationwide shortage of trained case managers in healthcare. The system replicates key human functions—including care coordination, advocacy, resource navigation, and health monitoring—while focusing on older adults (65+) with complex needs. By integrating patient advocacy and continuous monitoring, the AI aims to reduce fragmented care, minimize delays in treatment, and improve outcomes. Research will assess its impact on hospital readmissions, patient satisfaction, and workflow integration, while also exploring feasibility within existing healthcare infrastructures.
+
+[Final Defense Presentation]("Abinesh_Final.pdf"), Project Report on Scholarworks Pending. 
 
 ---
 
@@ -93,3 +107,6 @@ In summer 2021, the Park Fire burned through parts of the Big Chico Creek Ecolog
 **Morphometric Sex Determination and GPS Telemetry of Turkey Vultures in Western Montana**
 
 Turkey Vultures (Cathartes aura) play a vital ecological role as scavengers, yet key aspects of their biology in Western Montana remain poorly understood. This study focuses on the subspecies C. a. meridionalis, which exhibits both migratory and resident behaviors. Research goals include developing accurate morphometric models to determine sex—addressing the challenge of visually similar males and females—while correcting field data inconsistencies. In addition, GPS telemetry is used to track movements and locate hidden nesting sites, with interactive visualizations created to clearly communicate findings. Together, these methods provide new insights into vulture ecology, migration, and breeding in Montana.
+
+[Final Defense Presentation]("Sarma_Final.pdf"), Project Report on Scholarworks Pending. 
+
