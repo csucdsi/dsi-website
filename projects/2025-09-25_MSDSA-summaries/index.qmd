@@ -6,23 +6,33 @@ author: Nate Dailey and Robin Donatello
 
 <img src="img/thumb.png" alt="MSDSA projects thumbnail" style="float: center;" width="0%"/>
 
-Masters project descriptions for the 2024 cohort of [Masters in Data Science and Analytics](https://www.csuchico.edu/math/degrees/msdsa.shtml) students. Final project defense slides will be added upon completion.  
+Masters project abstracts for the 2024 cohort of [Masters in Data Science and Analytics](https://www.csuchico.edu/academics/majors-programs/data-science-and-analytics-ms.shtml) students. 
 
 
-
-### Pushpak Rane
+### Pushpak Rane ([Portfolio](https://sites.google.com/view/pushpaksunilrane))
 
 **Integrating Indian Sign Language (ISL) into Healthcare for Deaf Patients in India.**
 
-In India, over 18 million deaf and hard-of-hearing patients face barriers to effective healthcare communication. Although Indian Sign Language (ISL) is officially recognized, it is rarely implemented in medical settings due to a shortage of trained professionals, leading to miscommunication and inadequate treatment. This project develops an AI-based system for real-time ISL interpretation using computer vision, trained on medical sign datasets, to bridge communication gaps and improve healthcare accessibility for the Deaf community.
+This project builds a real-time Indian Sign Language (ISL) system for healthcare. It uses a normal webcam to watch your hands, finds hand landmarks with MediaPipe, and turns them into numbers the computer can learn from. A deep learning model (a CNN–LSTM style network with attention) then guesses one of three healthcare signs: doctor, pain, and skin. The app shows the sign name and a confidence score on screen and can read the result aloud for accessibility. Everything can run on your own computer locally. The goal is to reduce communication gaps when a sign language interpreter is not right there—not to replace interpreters, but to support quick, clear messages in clinics or triage-style situations. The system was trained on image data organized by sign class, with steps to balance classes and reduce bias. The model reached about 80% validation accuracy, while the live app focuses on speed and stable predictions (smoothing so labels do not flicker). Future work includes more signs, more diverse users and settings, and stronger real-world testing.
+
+[Final Defense Presentation]("Rane_Final.pdf")
+
 
 ---
 
-### Khushi Choudhary
+### Khushi Choudhary ([LinkedIn](https://www.linkedin.com/in/khushichoudhary27/), [Github](https://github.com/KhushiiChoudhary))
 
 **Optimizing Volunteer Scheduling and Emergency Response Using Machine Learning**
 
-This project aims to build a predictive, real-time volunteer scheduling system that connects operational needs with available resources. Currently, incident command struggles with limited visibility—uncertain who will arrive, when, and with what skills—while volunteers lack clarity on where they are needed, particularly across mutual aid groups. With three separate scheduling systems in play (NVADG, County, and Mutual Aid), coordination is chaotic. The new app will apply machine learning to forecast shortages and skill gaps, provide volunteers with clear shift visibility, and enable coordinators to make faster, data-driven decisions in real time.
+During wildfire emergencies, coordinating volunteer response is as urgent as the response itself. For the North Valley Animal Disaster Group (NVADG), that coordination happened across three separate scheduling systems with no real-time visibility into staffing levels or where gaps would emerge. This project replaces that process with a deployed, full-stack web application that connects operational need to available volunteers in real time.
+
+The application gives volunteers a color-coded shift calendar to view and claim availability, and gives coordinators live signup counts, per-location staffing controls, and one-click CSV exports for post-incident documentation. The colors are not arbitrary: they are driven by a Poisson regression model trained on 673 hourly records from four 2024 wildfire deployments covering 91 volunteers across four incidents. The model predicts expected volunteer counts by location, day, and shift band, and each calendar slot is colored based on how current signups compare to that expectation.
+
+Key findings include a consistent increase in volunteer turnout as an event progresses, significantly higher engagement during evening shifts, and roughly 76% more volunteers at one deployment site compared to another holding all else constant. The model achieves a pseudo-R-squared of 0.51 and a mean absolute error of 5.88 volunteers per shift.
+
+The application is live on Posit Connect through CSU Chico's Data Science Initiative and was built using Shiny for Python, Google Sheets, and statsmodels.
+
+[Final Defense Presentation]("Choudhary_Final.pdf")
 
 ---
 
@@ -32,59 +42,87 @@ This project aims to build a predictive, real-time volunteer scheduling system t
 
 This project develops an offline-first web app for geology fieldwork, designed for use in remote areas without internet access. Currently, students rely on paper notes, which can be lost or introduce errors during later entry. The app stores data locally, then automatically syncs once a connection is available, ensuring faster, more accurate collection and reducing the risk of lost observations. 
 
+[Final Defense Presentation]("Baddala_Final.pdf")
+
 ---
 
 ### Shivam Pawar
 
 **GraphLearnR: An R Package for Powerful and Accessible Graph Learning**
 
-Graph learning is an emerging field that uncovers hidden network structures from observed data, with applications ranging from social networks and brain connectivity to protein interactions and transportation systems. Current methods often assume signal smoothness, overlook external factors, and require advanced coding skills. This project addresses these gaps by developing regression-aware graph learning tools in R, making advanced network structure discovery more accessible to researchers in neuroscience, social science, and biology.
+This project addresses the challenge of learning network structures from observational data when external factors influence the measured signals. Traditional approaches assume that signals are determined solely by the underlying network, which can lead to inaccurate representations in real-world settings. The purpose of this study is to develop and evaluate a user-friendly software tool that incorporates external variables into the process of network inference.
+
+The study introduces GraphLearnR, an R-based software package designed to estimate network structure while accounting for additional influencing variables. The methodology combines signal-based network learning with regression techniques to separate network effects from external influences. The approach is validated using both simulated data and real-world temperature data collected from weather stations.
+
+Results from the simulated experiments demonstrate that incorporating external variables improves the accuracy of network recovery compared to traditional methods. The real-world application reveals meaningful patterns in temperature relationships that reflect both geographic and environmental factors. The learned networks show clear regional groupings and provide interpretable insights into how temperature behavior varies across locations.
+
+The findings indicate that accounting for external influences leads to more reliable and interpretable network structures. This work contributes a practical tool that can be applied across multiple fields, including environmental science, social science, and biology. The study highlights the importance of considering multiple sources of variation when analyzing complex systems and provides a foundation for future research in network modeling.
+The GraphLearnR package is publicly available at: [https://github.com/Shivam9927/GraphLearnR](https://github.com/Shivam9927/GraphLearnR)
+
+[Final Defense Presentation]("Pawar_Final.pdf")
 
 ---
 
-### Nate Dailey
+### Nate Dailey ([Portfolio](https://natedailey7.github.io/)) ([LinkedIn](https://www.linkedin.com/in/nate-dailey-432a19221/))
 
 **Raster-Based Wildfire Risk Model in Python** 
 
-This project develops a scriptable wildfire model in Python to help identify hazardous areas for treatment and reduce wildfire risk. By calculating rate of spread, fireline intensity, and flame length for each pixel, the model provides a technical basis for prioritizing treatments such as mechanical thinning or prescribed burns. Inputs include fuel model and slope rasters, as well as wind speed, wind direction, and fuel moisture, enabling flexible, data-driven fire behavior analysis.
+This study develops structure-level fire risk models for the 2025 Eaton and Palisades Fires to better understand the factors that contributed to their destructiveness. Exclusively pre-fire explanatory variables were used, such as structure density, structure area, vegetation presence, topography, structure age, and wind alignment. These variables were inputted into logistic regression and XGBoost models to predict whether residential-scale structures burned or survived. The models demonstrated strong predictive performance, even when trained on one study area and evaluated on the other. Density of surrounding structures and the presence of vegetation were the most impactful predictors, but slope, year built, structure area, and wind alignment were also significant factors. These findings are consistent with prior research identifying built-environment and vegetation characteristics as key drivers of structural loss during urban conflagrations. Because the models rely solely on pre-fire data, they are transferable to other fire-prone urban areas, provided that local wind patterns are considered. Given the scale of destruction and long-term social and economic impacts caused by the Eaton and Palisades fires, structure-level risk models such as this can support mitigation planning, defensible-space strategies, and city planning decisions aimed at reducing future wildfire losses.
+
+[Final Defense Presentation]("Dailey_Final.pdf")
 
 ---
 
-### Zakir Elaskar
+### Zakir Elaskar ([LinkedIn](https://www.linkedin.com/in/zakir-elaskar-1a1a84263/), [Github](https://www.linkedin.com/in/zakir-elaskar-1a1a84263/))
 
 **B-Line Public Transit: A Data-Driven Analysis for Service Optimization**
-This project applies data science techniques to analyze B-Line, the public transportation system serving Chico and surrounding communities. Public transit is essential for students, workers, and residents, yet inefficiencies can limit service quality and cost effectiveness. By examining trends, detecting inefficiencies, and proposing optimization strategies, this work provides data-driven insights to improve service delivery and promote more sustainable, cost-effective urban mobility.
+This project applies data science techniques to analyze B-Line, the public transportation system serving Chico and surrounding communities. Public transit is essential for students, workers, and residents, yet inefficiencies can limit service quality and cost effectiveness. By examining trends, detecting inefficiencies, and proposing optimization strategies, this work provides data-driven insights to improve service delivery and promote more sustainable, cost-effective urban mobility. The findings reveal strong temporal patterns in ridership, with peak demand occurring during weekday commuting hours and significant declines during weekends and summer periods. Additionally, several routes and trips were identified as underutilized, highlighting opportunities for more efficient resource allocation. Overall, the results demonstrate that data-driven analysis can support practical, evidence-based improvements in transit scheduling and service planning.
+
+[Final Defense Presentation]("Elaskar_Final.pdf")
 
 ---
 
 ### Snehitha Gorantla
 
-**Air Pollution Prediction using Time Series Analysis**
+**Gradient Boosting Model to Predict Air Pollution in California**
 
-This project develops a hybrid time series model to forecast air pollutant levels in California using EPA CASTNET data (1987–2025). By incorporating meteorological variables such as temperature, wind, and humidity, the model aims to improve the accuracy of short-term air quality predictions. The research explores how weather factors influence pollutant concentrations over time and evaluates the extent to which these variables enhance predictive precision across both rural and suburban regions.
+This study develops an integrated machine learning framework for forecasting ground-level ozone concentrations and assessing long-term vegetation exposure risk across California's federal air quality monitoring network. Using over three decades of hourly observations from ten Clean Air Status and Trends Network stations, three LightGBM gradient-boosted regression models were trained to predict ozone at one, eight, and twenty-four hour horizons, alongside a dedicated binary classifier for identifying exceedances of the National Ambient Air Quality Standard. The models incorporate approximately 160 predictive features including autoregressive ozone lags, atmospheric chemistry measurements, cyclical calendar variables, site geographic characteristics, and spatially explicit wildfire exposure derived from California Department of Forestry and Fire Protection perimeter records. Evaluated on a held-out test period spanning 2021 through 2025, the one-hour and eight-hour models reduced mean absolute error by 40 and 50 percent respectively relative to naive baselines, while the exceedance classifier achieved an area under the ROC curve of 0.918. A complementary vegetation exposure analysis applied Mann-Kendall trend testing and the W126 cumulative index to reveal statistically significant ozone improvements at seven of ten sites, improvements that were previously obscured by the saturation of European-derived binary risk thresholds in California's high-background-ozone environment. The findings demonstrate that explicitly incorporating wildfire exposure and site-specific bias correction improves both short-range forecast skill and long-term ecological risk assessment in an era of intensifying fire activity.
 
----
-
-### Abinesh S
-
-**AI Driven Medical Case Manager**
-
-This project develops an AI-driven medical case manager designed to address the nationwide shortage of trained case managers in healthcare. The system replicates key human functions—including care coordination, advocacy, resource navigation, and health monitoring—while focusing on older adults (65+) with complex needs. By integrating patient advocacy and continuous monitoring, the AI aims to reduce fragmented care, minimize delays in treatment, and improve outcomes. Research will assess its impact on hospital readmissions, patient satisfaction, and workflow integration, while also exploring feasibility within existing healthcare infrastructures.
+[Final Defense Presentation]("Gorantla_Final.pdf")
 
 ---
 
-### Amol Bhalerao
+### Abinesh S ([Website](https://abineshsrinivasan.com/))
+
+**Case Manager: An AI-Assisted Mobile Application for Health Record Organization, Medication Management, and Appointment Scheduling**
+
+As the global population aged 65 and older approaches 703 million and is projected to double by 2050 (UN DESA, 2023), managing complex health regimens has become a growing public health concern. Senior citizens and individuals with special needs frequently miss medications and appointments due to the cognitive demands of tracking fragmented health information across paper records, multiple applications, and verbal memory, contributing to preventable hospital readmissions and increased caregiver burden.
+
+This project presents Case Manager, a voice-first, AI-powered mobile health management application designed to address this gap. The system integrates a cross-platform React Native frontend with a Python FastAPI backend and Firebase cloud infrastructure. A multi-stage AI orchestration pipeline powered by the Groq Llama 3.3-70b large language model and Deepgram speech services classifies user voice queries across 15 or more intent types, retrieves relevant records from a personal Firestore database, and routes requests to specialized agents for medication, appointment, and general health guidance. Every response passes through a mandatory safety validation layer that filters unsupported medical claims and injects appropriate disclaimers.
+
+The implemented system supports 10 structured medical record categories with full CRUD functionality, achieves speech recognition accuracy exceeding 95%, and delivers end-to-end voice responses in 2 to 4 seconds across iOS, Android, and web platforms. Results demonstrate a robust framework for personalized, context-aware health assistance validated through functional and integration testing.
+
+[Final Defense Presentation]("Abinesh_Final.pdf")
+
+---
+
+### Amol Bhalerao ([LinkedIn](https://www.linkedin.com/in/amol-s-bhalerao/))
 
 **Leveraging Machine Learning to Model CalFresh Participation**
-CalFresh, California’s version of SNAP, provides essential food assistance to low-income individuals, including college students. Yet, despite 40% of California’s college students being eligible, 82% do not access these benefits. This gap is critical, as 1 in 3 students experience food insecurity, which can cause stress, poor nutrition, and difficulty focusing on academics. Using data from CHC-UCLA, this project will use machine learning to examine the barriers that prevent students from enrolling in CalFresh and identify strategies to increase participation, with the goal of improving student well-being and academic success.
+
+CalFresh, California’s version of SNAP, can help reduce food insecurity among college students, but many eligible students never enroll. My MS project used CHC-UCLA CalFresh Messaging Survey data to understand both who participates in CalFresh and why students drop out of the application process. I analyzed 4,968 baseline survey responses and 2,228 follow-up responses, comparing machine learning models alongside statistical barrier analysis.
+The strongest predictive results came from XGBoost for baseline CalFresh participation and SVM for post-survey application behavior. The post-survey model performed especially well, reaching an AUC of 0.818. More importantly, the results showed that nonparticipation is not explained by awareness alone. Many students assumed they were ineligible without checking, while self-reliance, stigma, documentation issues, family influence, and confusion about student eligibility created additional barriers. Among students who started but did not finish an application, common drop-off reasons included believing they were not eligible, being too busy, missing documentation, and family concerns. This project shows how machine learning can help identify who is least likely to access benefits and which barriers campus programs should address first.
 
 ---
 
 ### Anand Gangavarapu
 
-**Evaluating the Ecological Effects of Mastication and Wildfire in Chaparral**
+**Evaluating Post-Fire Vegetation Response in Masticated Chaparral at Big Chico Creek Ecological Reserve**
 
-In summer 2021, the Park Fire burned through parts of the Big Chico Creek Ecological Reserve (BCCER) in Butte County, California, impacting chaparral ecosystems and previously treated management units. While mastication is a widely used fuel treatment in chaparral, its ecological outcomes after wildfire remain uncertain. This project evaluates how masticated chaparral responds to fire, providing insight into treatment effectiveness, ecosystem recovery, and long-term resilience.
+Wildfire recovery is often discussed in broad terms, but land managers need site-level evidence to understand whether fuel treatments are supporting resilience or creating new ecological risks. This project evaluates post-fire vegetation response in a masticated chaparral site at Big Chico Creek Ecological Reserve after the 2024 Park Fire. Using paired transect data collected before and one year after the fire, I analyzed changes in woody cover, herbaceous cover, native and non-native species, Cal-IPC invasion-risk groups, and fuel consumption. Results showed a strong structural reset in the shrub layer, with woody cover declining from 46.4% to 9.7% across all paired transects. Herbaceous cover also declined overall, but its response was more variable. Native herbaceous cover remained relatively stable, while non-native cover declined significantly, mainly through Moderate and Limited Cal-IPC groups. However, High-rated invasive species did not clearly decline, meaning invasion risk still requires monitoring. Fuel consumption helped explain woody cover loss, but not herbaceous change. Overall, this project shows that post-fire recovery in treated chaparral should be evaluated through both vegetation structure and community composition. The work also provides a foundation for a repeatable monitoring framework to guide restoration, invasion management, and future fuel-treatment decisions.
+
+[Final Defense Presentation]("Gangavarapu_Final.pdf")
+
 
 ---
 
@@ -92,4 +130,7 @@ In summer 2021, the Park Fire burned through parts of the Big Chico Creek Ecolog
 
 **Morphometric Sex Determination and GPS Telemetry of Turkey Vultures in Western Montana**
 
-Turkey Vultures (Cathartes aura) play a vital ecological role as scavengers, yet key aspects of their biology in Western Montana remain poorly understood. This study focuses on the subspecies C. a. meridionalis, which exhibits both migratory and resident behaviors. Research goals include developing accurate morphometric models to determine sex—addressing the challenge of visually similar males and females—while correcting field data inconsistencies. In addition, GPS telemetry is used to track movements and locate hidden nesting sites, with interactive visualizations created to clearly communicate findings. Together, these methods provide new insights into vulture ecology, migration, and breeding in Montana.
+urkey Vultures (_Cathartes aura_) play an important ecological role as scavengers, but determining their sex in the field is difficult because males and females show little obvious external difference. My MS project evaluates whether morphometric measurements can be used to predict the sex of Turkey Vultures captured in western Montana. Using laboratory-confirmed sex records for 65 individuals, I compared several statistical and machine learning approaches, including logistic regression, linear discriminant analysis, random forest, and regularized regression. The results showed that morphometric measurements contain useful but incomplete information for sex classification. Logistic regression provided the strongest overall balance of predictive performance and interpretability. Although a 9-variable logistic regression model produced the highest cross-validated AUC, a reduced 3-variable model using tail length, culmen length, and head height remained competitive while being simpler and more practical for field use. Overall, this project suggests that morphometric models can serve as a useful preliminary screening tool when genetic sexing is unavailable or delayed, but they should not replace molecular confirmation. Future work should validate the model using larger and independent datasets.
+
+[Final Defense Presentation]("Sarma_Final.pdf")
+
