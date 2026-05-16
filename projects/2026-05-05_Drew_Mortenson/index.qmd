@@ -16,7 +16,7 @@ The purpose of this app is twofold:
 
 1. As a portfolio optimization assistant, Portfolio Lab helps users to visualize how their portfolio allocation decisions affect the portfolio outcome.
 
-2. As an exploratory education tool, Portfolio Lab demonstrates that mean-variance optimizations is highly sensitive to small changes in input, which results in portfolio outcomes that are unstable.
+2. As an exploratory education tool, Portfolio Lab demonstrates that mean-variance optimization is highly sensitive to small changes in input, which results in portfolio outcomes that are unstable.
 
 
 ## Platforms used
