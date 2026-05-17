@@ -33,9 +33,11 @@ The application is live on Posit Connect through CSU Chico's Data Science Initia
 
 ### Offline-First Web App for Collecting and Syncing Geology Field Data
 
-**_Govardhan Baddala_** [Final Defense Presentation]("Baddala_Final.pdf")
+**_Govardhan Baddala_** [Final Defense Presentation]("Baddala_Final.pdf") [GitHub](https://github.com/Baddala-Govardhan/geology-field-app), [LinkedIn](https://www.linkedin.com/in/baddala-govardhan-reddy/) 
 
-This project develops an offline-first web app for geology fieldwork, designed for use in remote areas without internet access. Currently, students rely on paper notes, which can be lost or introduce errors during later entry. The app stores data locally, then automatically syncs once a connection is available, ensuring faster, more accurate collection and reducing the risk of lost observations. 
+The Geology Field App is a web application designed for geology field courses where internet connection may be weak or unavailable. The app allows students to collect and store field data directly on their phones or laptops using simple forms. To prevent data loss in remote areas, the application uses PouchDB to save data locally in the browser even when the device is offline. When internet connectivity becomes available again, the data automatically syncs with the main CouchDB database on the server. The frontend was built using React, while Docker Compose and Nginx were used to manage deployment and communication between services. Testing showed that the offline-first approach worked reliably in field conditions and allowed users to continue entering data without interruption. The project demonstrates a practical solution for reliable field data collection in low connectivity environments.
+
+The project also showed that using local storage and automatic sync can make field data collection faster, easier, and more reliable for students and instructors
 
 ---
 
