@@ -1,12 +1,12 @@
 ---
-title: MSDSA Project Descriptions (2024 Cohort) 
+title: MSDSA Projects (2024 Cohort) 
 format: html
 author: Nate Dailey and Robin Donatello
 ---
 
 <img src="img/thumb.png" alt="MSDSA projects thumbnail" style="float: center;" width="0%"/>
 
-Masters project abstracts for the 2024 cohort of [Masters in Data Science and Analytics](https://www.csuchico.edu/academics/majors-programs/data-science-and-analytics-ms.shtml) students. 
+Masters project abstracts and final defense presentations for the 2024 cohort of [Masters in Data Science and Analytics](https://www.csuchico.edu/academics/majors-programs/data-science-and-analytics-ms.shtml) students. 
 
 
 ### Integrating Indian Sign Language (ISL) into Healthcare for Deaf Patients in India.
