@@ -2,7 +2,6 @@
 author: Jacob Collins
 format: html
 title: Road Network Processing & Analysis
-engine: markdown
 execute: 
   eval: false
 ---
@@ -87,7 +86,7 @@ Unfortunately, the `osmnx` library has no way to load OSM data from the binary
 stream format `.osm.pbf`, so the command-line tool '`osmium`' was used for the
 data conversion, ran as a python subprocess as seen below:
 
-```{python}
+```{.python}
 def convertOSMToPBF(pbf_path, out_path):
   try:
     command = ["osmium", "cat", pbf_path, "-o", out_path]
@@ -113,7 +112,7 @@ In order to avoid the obscene memory usage of the `osmnx` library, I wrote a
 custom OSM parser that read the binary `.osm.pbf` data and interpreted one edge
 at a time, only adding the necessary information to the generated graph.
 
-```{python}
+```{.python}
 # Handler for parsing ways
 def way(self, w):
   # Only highways
@@ -267,7 +266,7 @@ largely arbitrary, merely an attempt to demonstrate some level of relation betwe
 the generated networks (and therefore their network properties) and the 
 city statistics that will be predicted by our model.
 
-```{python}
+```{.python}
 n = 500
 n_graphs = len(city_base_stats)
 critical_point_p = 1/(n-1)
@@ -322,7 +321,7 @@ City properties include:
 
 Below is an overview of the code used to calculate the network properties on each of our pseudo-generated road networks:
 
-```{python}
+```{.python}
 # Gives the proportional distance distribution of the largest connected component in a graph
 def distanceDistribution(G):
     component_distances = []
