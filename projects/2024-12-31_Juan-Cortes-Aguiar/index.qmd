@@ -1,6 +1,7 @@
 ---
 format: html
 author: Juan Cortes
+date: 2025-12-31
 title: The CFO Office Sign-in Dashboard App
 ---
 
