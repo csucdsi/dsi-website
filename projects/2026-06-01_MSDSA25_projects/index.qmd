@@ -1,6 +1,7 @@
 ---
 title: MSDSA Project Descriptions (2025 Cohort) 
 format: html
+date: 2026-06-01
 author: Jesus Daniel Martinez and Robin Donatello
 ---
 

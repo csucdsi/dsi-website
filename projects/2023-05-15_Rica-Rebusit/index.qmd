@@ -1,7 +1,10 @@
 ---
 format: html
 author: Rica Rebusit
+date: 2023-05-15
 title: Predicting Activity Priorities with Machine Learning
+execute: 
+  eval: false
 ---
 <!-- Thumbnail image - set width to 0% to hide from preview -->
 <img src="img/thumbnail.png" alt="Random Forest + CHC logo" style="float: center;" width="20%"/>

@@ -2,6 +2,7 @@
 title: MSDSA Projects (2024 Cohort) 
 format: html
 author: Nate Dailey and Robin Donatello
+date: 2025-09-25
 ---
 
 <img src="img/thumb.png" alt="MSDSA projects thumbnail" style="float: center;" width="0%"/>

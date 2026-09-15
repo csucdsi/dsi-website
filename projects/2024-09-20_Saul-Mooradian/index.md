@@ -1,6 +1,7 @@
 ---
-format: html
 author: Saul Mooradian
+date: 2024-09-20
+format: html
 title: Building an R package
 ---
 

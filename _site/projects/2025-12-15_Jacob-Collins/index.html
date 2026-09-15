@@ -2,11 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jacob Collins">
+<meta name="dcterms.date" content="2025-12-15">
 
 <title>Road Network Processing &amp; Analysis – Data Science at Chico State</title>
 <style>
@@ -23,6 +24,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -41,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-975e726794ce811e14261b5ab5acfd7c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-33269adcf1721b81efc5ea7fcfe7f0ee.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-aeb9797f3846f510cfb5a85716dc64e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -241,6 +277,12 @@ window.Quarto = {
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 15, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -301,44 +343,44 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="osmnx-network-conversion">OSMNX Network Conversion</h2>
 <p>At first, we intended to use the <code>osmnx</code> library to process the OSM data, because it has some first-class OSM preprocessing functionality, such as <a href="https://onlinelibrary.wiley.com/doi/10.1111/tgis.70037">graph simplification</a>, figure generation, etc.</p>
 <p>Unfortunately, the <code>osmnx</code> library has no way to load OSM data from the binary stream format <code>.osm.pbf</code>, so the command-line tool ‘<code>osmium</code>’ was used for the data conversion, ran as a python subprocess as seen below:</p>
-<pre class="{python}"><code>def convertOSMToPBF(pbf_path, out_path):
-  try:
-    command = ["osmium", "cat", pbf_path, "-o", out_path]
-    subprocess.run(command, check=True)
-    print(f"Successfully converted {pbf_path} to {out_path} ")
-  except Exception as e:
-    print(f"Error occured during file conversion: {e}")</code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> convertOSMToPBF(pbf_path, out_path):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">try</span>:</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    command <span class="op">=</span> [<span class="st">"osmium"</span>, <span class="st">"cat"</span>, pbf_path, <span class="st">"-o"</span>, out_path]</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    subprocess.run(command, check<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Successfully converted </span><span class="sc">{</span>pbf_path<span class="sc">}</span><span class="ss"> to </span><span class="sc">{</span>out_path<span class="sc">}</span><span class="ss"> "</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> e:</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Error occured during file conversion: </span><span class="sc">{</span>e<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div>
 <p>This conversion took the <code>.osm.pbf</code> files, which had an original total size <span class="math inline">\(&lt;5\)</span>GB, and converted them to <code>.osm</code>, with a new total size <span class="math inline">\(&gt;50\)</span>GB.</p>
 <p>Furthermore, the <code>osmnx</code> library has no filestream parsing customization, so in order to convert the OSM data to a network and apply graph simplification, it would be necessary to have the OSM data, original network, <em>and</em> simplified networks all loaded in memory simultaneously. This is obviously infeasible, so we continued looking for alternative methodologies.</p>
 </section>
 <section id="manual-parsing" class="level2">
 <h2 class="anchored" data-anchor-id="manual-parsing">Manual Parsing</h2>
 <p>In order to avoid the obscene memory usage of the <code>osmnx</code> library, I wrote a custom OSM parser that read the binary <code>.osm.pbf</code> data and interpreted one edge at a time, only adding the necessary information to the generated graph.</p>
-<pre class="{python}"><code># Handler for parsing ways
-def way(self, w):
-  # Only highways
-  if 'highway' not in w.tags:
-    return
-  # Must be named
-  if 'name' not in w.tags:
-    return
-  for i in range(len(w.nodes)-1):
-    u = w.nodes[i].ref
-    v = w.nodes[i+1].ref
-    # Add the basic directional edge
-    unique_key = self.generateUniqueEdgeKey()
-    self.G.add_edge(u, v, key=unique_key, id=w.id, highway=w.tags['highway'], street=w.tags['name'], x=w.nodes[i].location.lat, y=w.nodes[i].location.lon)
-    # Add reverse edge if necessary
-    unique_key = self.generateUniqueEdgeKey()
-    if 'oneway' not in w.tags and w.tags['highway'] != 'motorway':
-      # Not a oneway, oneway tag DNE
-      self.G.add_edge(v, u, key=unique_key, osm_id='-'+str(w.id), highway = w.tags['highway'], street=w.tags['name'])
-    elif 'oneway' not in w.tags:
-      continue
-    elif w.tags['oneway'] != 'yes' and w.tags['oneway'] != '-1' and w.tags['highway'] != 'motorway':
-      # Not a oneway - oneway tag exists
-      self.G.add_edge(v, u, key=unique_key, osm_id=w.id, highway = w.tags['highway'], street=w.tags['name'])
-  return</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Handler for parsing ways</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> way(<span class="va">self</span>, w):</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Only highways</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="st">'highway'</span> <span class="kw">not</span> <span class="kw">in</span> w.tags:</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Must be named</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="st">'name'</span> <span class="kw">not</span> <span class="kw">in</span> w.tags:</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(w.nodes)<span class="op">-</span><span class="dv">1</span>):</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    u <span class="op">=</span> w.nodes[i].ref</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    v <span class="op">=</span> w.nodes[i<span class="op">+</span><span class="dv">1</span>].ref</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add the basic directional edge</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    unique_key <span class="op">=</span> <span class="va">self</span>.generateUniqueEdgeKey()</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.G.add_edge(u, v, key<span class="op">=</span>unique_key, <span class="bu">id</span><span class="op">=</span>w.<span class="bu">id</span>, highway<span class="op">=</span>w.tags[<span class="st">'highway'</span>], street<span class="op">=</span>w.tags[<span class="st">'name'</span>], x<span class="op">=</span>w.nodes[i].location.lat, y<span class="op">=</span>w.nodes[i].location.lon)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add reverse edge if necessary</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    unique_key <span class="op">=</span> <span class="va">self</span>.generateUniqueEdgeKey()</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">'oneway'</span> <span class="kw">not</span> <span class="kw">in</span> w.tags <span class="kw">and</span> w.tags[<span class="st">'highway'</span>] <span class="op">!=</span> <span class="st">'motorway'</span>:</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Not a oneway, oneway tag DNE</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>      <span class="va">self</span>.G.add_edge(v, u, key<span class="op">=</span>unique_key, osm_id<span class="op">=</span><span class="st">'-'</span><span class="op">+</span><span class="bu">str</span>(w.<span class="bu">id</span>), highway <span class="op">=</span> w.tags[<span class="st">'highway'</span>], street<span class="op">=</span>w.tags[<span class="st">'name'</span>])</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> <span class="st">'oneway'</span> <span class="kw">not</span> <span class="kw">in</span> w.tags:</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>      <span class="cf">continue</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> w.tags[<span class="st">'oneway'</span>] <span class="op">!=</span> <span class="st">'yes'</span> <span class="kw">and</span> w.tags[<span class="st">'oneway'</span>] <span class="op">!=</span> <span class="st">'-1'</span> <span class="kw">and</span> w.tags[<span class="st">'highway'</span>] <span class="op">!=</span> <span class="st">'motorway'</span>:</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Not a oneway - oneway tag exists</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>      <span class="va">self</span>.G.add_edge(v, u, key<span class="op">=</span>unique_key, osm_id<span class="op">=</span>w.<span class="bu">id</span>, highway <span class="op">=</span> w.tags[<span class="st">'highway'</span>], street<span class="op">=</span>w.tags[<span class="st">'name'</span>])</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span></span></code></pre></div>
 <p>This worked, but the <code>osmnx</code> and <code>pyrosm</code> libraries both have very stringent requirements for the attributes associated with each node and edge in the network, such that it is incredibly difficult to manually generate a network that is compatible with their provided functionality while still maintaining the benefit of reduced memory utilization.</p>
 <p>For context, the <code>osmnx</code> library’s implementation of <a href="https://onlinelibrary.wiley.com/doi/10.1111/tgis.70037">graph simplification</a> is of vital importance to get an intuitively meaningful road network from our source data, but it is practically impossible to load all of the necessary data in such a way that it remains compatible with the <code>osmnx</code> library’s functions without exceeding our 48GB limitation, even on some of our smallest networks.</p>
 <p>At this point, the data processing pipeline was efficient enough to successfully load the network and OSM road data for each of our cities, as seen below:</p>
@@ -421,31 +463,31 @@ def way(self, w):
 <p>At this point, I decided that I’d done more than a reasonable amount of data processing, attempting to streamline the process enough to run it on all our cities. This unfortunately was not entirely successful, and I now turn to the generation of faux Erdős–Rényi random graphs in the supercritical regime, with edge probability roughly proportional to the population of each city.</p>
 <p>These faux networks are unlikely to bear any resemblance to the real-world road networks, and are merely a stand-in until the processing pipeline can be run on a computer more powerful than my own.</p>
 <p>The decision to generate networks with edge probability correlated to city population is largely arbitrary, merely an attempt to demonstrate some level of relation between the generated networks (and therefore their network properties) and the city statistics that will be predicted by our model.</p>
-<pre class="{python}"><code>n = 500
-n_graphs = len(city_base_stats)
-critical_point_p = 1/(n-1)
-
-# Point at which most of the graph is part of one connected component
-print(f"critical point: p = 1/(n-1) = {critical_point_p}")
-connected_point_p = np.log(n)/n
-
-# Point at which ALL of the graph is part of one connected component
-print(f"connected regime: p &gt; ln(n)/n = {connected_point_p}")
-supercritical_range = connected_point_p - critical_point_p
-
-# List of points in this range
-erdos_p_vals = [critical_point_p + p for p in [((d+1)/n_graphs) * supercritical_range for d in range(n_graphs)]]
-print(f"p values for our graphs: {[float(p) for p in erdos_p_vals]}")
-
-# Generate erdos-renyi random graphs
-raw_G_list = [nx.erdos_renyi_graph(n, p, 42, directed=False) for p in erdos_p_vals]
-
-# Extract largest connected component from each
-conn_G_list = [G.subgraph(nodes) for G, nodes in [(G, max(nx.connected_components(G), key=len)) for G in raw_G_list]]
-
-# Display size of each graph
-n_list = [nx.number_of_nodes(G) for G in conn_G_list]
-print(f"Graph node counts: {n_list}")</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">500</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>n_graphs <span class="op">=</span> <span class="bu">len</span>(city_base_stats)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>critical_point_p <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>(n<span class="op">-</span><span class="dv">1</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Point at which most of the graph is part of one connected component</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"critical point: p = 1/(n-1) = </span><span class="sc">{</span>critical_point_p<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>connected_point_p <span class="op">=</span> np.log(n)<span class="op">/</span>n</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Point at which ALL of the graph is part of one connected component</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"connected regime: p &gt; ln(n)/n = </span><span class="sc">{</span>connected_point_p<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>supercritical_range <span class="op">=</span> connected_point_p <span class="op">-</span> critical_point_p</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># List of points in this range</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>erdos_p_vals <span class="op">=</span> [critical_point_p <span class="op">+</span> p <span class="cf">for</span> p <span class="kw">in</span> [((d<span class="op">+</span><span class="dv">1</span>)<span class="op">/</span>n_graphs) <span class="op">*</span> supercritical_range <span class="cf">for</span> d <span class="kw">in</span> <span class="bu">range</span>(n_graphs)]]</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"p values for our graphs: </span><span class="sc">{</span>[<span class="bu">float</span>(p) <span class="cf">for</span> p <span class="kw">in</span> erdos_p_vals]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate erdos-renyi random graphs</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>raw_G_list <span class="op">=</span> [nx.erdos_renyi_graph(n, p, <span class="dv">42</span>, directed<span class="op">=</span><span class="va">False</span>) <span class="cf">for</span> p <span class="kw">in</span> erdos_p_vals]</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract largest connected component from each</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>conn_G_list <span class="op">=</span> [G.subgraph(nodes) <span class="cf">for</span> G, nodes <span class="kw">in</span> [(G, <span class="bu">max</span>(nx.connected_components(G), key<span class="op">=</span><span class="bu">len</span>)) <span class="cf">for</span> G <span class="kw">in</span> raw_G_list]]</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Display size of each graph</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>n_list <span class="op">=</span> [nx.number_of_nodes(G) <span class="cf">for</span> G <span class="kw">in</span> conn_G_list]</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Graph node counts: </span><span class="sc">{</span>n_list<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div>
 <pre><code>critical point: p = 1/(n-1) = 0.002004008016032064
 connected regime: p &gt; ln(n)/n = 0.012429216196844383
 p values for our graphs: [0.003741542712834117, 0.005479077409636169, 0.0072166121064382235, 0.008954146803240276, 0.01069168150004233, 0.012429216196844383]
@@ -467,75 +509,75 @@ Graph node counts: [376, 460, 480, 494, 498, 500]</code></pre>
 <li><strong>Area</strong>: Square miles</li>
 </ul>
 <p>Below is an overview of the code used to calculate the network properties on each of our pseudo-generated road networks:</p>
-<pre class="{python}"><code># Gives the proportional distance distribution of the largest connected component in a graph
-def distanceDistribution(G):
-    component_distances = []
-    # Get all the connected subcomponents
-    S = [G.subgraph(c).copy() for c in nx.connected_components(G)]
-    # Select the largest one
-    largest_sg = max(S, key=len)
-    # Get the distances
-    raw_distances = nx.shortest_path_length(largest_sg)
-    # largest_size = nx.number_of_nodes(largest_sg)
-    # unreachable_nodes = sum([len(g) for g in nx.connected_components(G)])-largest_size
-    for d in raw_distances:
-        distances = list(
-            dict(d[1]).values()
-        )  # Distances to nodes reachable from this node
-        component_distances += distances
-
-    # Update histogram for each distance
-    max_distance = max(component_distances)
-    y_list = list(np.zeros(max_distance))
-    for d in distances:
-        y_list[d - 1] += 1  # Update histogram
-    y_list = [y / sum(y_list) for y in y_list]
-    return y_list
-
-# Get the diameter of each graph
-diam_list = [nx.diameter(G) for G in conn_G_list]
-city_base_stats['Diameter'] = diam_list
-
-# Get the x range for the cumulative distribution
-x_list = [x/100 for x in range(101)]
-y_lists = []
-y_labels = []
-min_centralities = []
-mean_centralities = []
-max_centralities = []
-# Calculate eigenvector centrality for each
-for i, G in enumerate(conn_G_list):
-  # Save the city name
-  city_name = city_base_stats.City[i]
-  y_labels.append(city_name)
-  print(f"{COLORS.white}Graph {i}: {city_name}{COLORS.default}")
-
-  # centrality of each node; [0,1]
-  centralities = list(nx.eigenvector_centrality(G, max_iter=100, tol=0.01).values())
-
-  # Centrality stats for this city
-  n_c = len(centralities)
-  min_c = np.min(centralities)
-  min_centralities.append(min_c)
-  mean_c = np.mean(centralities)
-  mean_centralities.append(mean_c)
-  max_c = np.max(centralities)
-  max_centralities.append(max_c)
-  print(f"n: {n_c}")
-  print(f"min: {min_c}")
-  print(f"mean: {mean_c}")
-  print(f"max: {max_c}")
-
-  # Start the y values all at 0
-  y_list = [0]*101
-  # Bin them correctly and add 1
-  for c in centralities:
-    idx = int(np.floor(c * 100))
-    y_list[idx] += 1
-  # Divide each by n to get a normalized distribution
-  for i, y in enumerate(y_list):
-    y_list[i] = y / n_c
-  y_lists.append(y_list)</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gives the proportional distance distribution of the largest connected component in a graph</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> distanceDistribution(G):</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    component_distances <span class="op">=</span> []</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get all the connected subcomponents</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    S <span class="op">=</span> [G.subgraph(c).copy() <span class="cf">for</span> c <span class="kw">in</span> nx.connected_components(G)]</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Select the largest one</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    largest_sg <span class="op">=</span> <span class="bu">max</span>(S, key<span class="op">=</span><span class="bu">len</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the distances</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    raw_distances <span class="op">=</span> nx.shortest_path_length(largest_sg)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># largest_size = nx.number_of_nodes(largest_sg)</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># unreachable_nodes = sum([len(g) for g in nx.connected_components(G)])-largest_size</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> d <span class="kw">in</span> raw_distances:</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>        distances <span class="op">=</span> <span class="bu">list</span>(</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>            <span class="bu">dict</span>(d[<span class="dv">1</span>]).values()</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>        )  <span class="co"># Distances to nodes reachable from this node</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>        component_distances <span class="op">+=</span> distances</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Update histogram for each distance</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    max_distance <span class="op">=</span> <span class="bu">max</span>(component_distances)</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    y_list <span class="op">=</span> <span class="bu">list</span>(np.zeros(max_distance))</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> d <span class="kw">in</span> distances:</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>        y_list[d <span class="op">-</span> <span class="dv">1</span>] <span class="op">+=</span> <span class="dv">1</span>  <span class="co"># Update histogram</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    y_list <span class="op">=</span> [y <span class="op">/</span> <span class="bu">sum</span>(y_list) <span class="cf">for</span> y <span class="kw">in</span> y_list]</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> y_list</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the diameter of each graph</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>diam_list <span class="op">=</span> [nx.diameter(G) <span class="cf">for</span> G <span class="kw">in</span> conn_G_list]</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>city_base_stats[<span class="st">'Diameter'</span>] <span class="op">=</span> diam_list</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the x range for the cumulative distribution</span></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>x_list <span class="op">=</span> [x<span class="op">/</span><span class="dv">100</span> <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">101</span>)]</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>y_lists <span class="op">=</span> []</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>y_labels <span class="op">=</span> []</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>min_centralities <span class="op">=</span> []</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>mean_centralities <span class="op">=</span> []</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>max_centralities <span class="op">=</span> []</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate eigenvector centrality for each</span></span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, G <span class="kw">in</span> <span class="bu">enumerate</span>(conn_G_list):</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Save the city name</span></span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>  city_name <span class="op">=</span> city_base_stats.City[i]</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>  y_labels.append(city_name)</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>COLORS<span class="sc">.</span>white<span class="sc">}</span><span class="ss">Graph </span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>city_name<span class="sc">}{</span>COLORS<span class="sc">.</span>default<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>  <span class="co"># centrality of each node; [0,1]</span></span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>  centralities <span class="op">=</span> <span class="bu">list</span>(nx.eigenvector_centrality(G, max_iter<span class="op">=</span><span class="dv">100</span>, tol<span class="op">=</span><span class="fl">0.01</span>).values())</span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Centrality stats for this city</span></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>  n_c <span class="op">=</span> <span class="bu">len</span>(centralities)</span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>  min_c <span class="op">=</span> np.<span class="bu">min</span>(centralities)</span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>  min_centralities.append(min_c)</span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>  mean_c <span class="op">=</span> np.mean(centralities)</span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>  mean_centralities.append(mean_c)</span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>  max_c <span class="op">=</span> np.<span class="bu">max</span>(centralities)</span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>  max_centralities.append(max_c)</span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f"n: </span><span class="sc">{</span>n_c<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f"min: </span><span class="sc">{</span>min_c<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f"mean: </span><span class="sc">{</span>mean_c<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f"max: </span><span class="sc">{</span>max_c<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Start the y values all at 0</span></span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>  y_list <span class="op">=</span> [<span class="dv">0</span>]<span class="op">*</span><span class="dv">101</span></span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Bin them correctly and add 1</span></span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> c <span class="kw">in</span> centralities:</span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a>    idx <span class="op">=</span> <span class="bu">int</span>(np.floor(c <span class="op">*</span> <span class="dv">100</span>))</span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a>    y_list[idx] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Divide each by n to get a normalized distribution</span></span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> i, y <span class="kw">in</span> <span class="bu">enumerate</span>(y_list):</span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>    y_list[i] <span class="op">=</span> y <span class="op">/</span> n_c</span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>  y_lists.append(y_list)</span></code></pre></div>
 <section id="centrality-distributions" class="level3">
 <h3 class="anchored" data-anchor-id="centrality-distributions">Centrality Distributions</h3>
 <p><img src="img/centrality.png" alt="Centrality Distributions" style="float: center;" width="100%"></p>
